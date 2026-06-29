@@ -1,0 +1,1341 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>华工科技、兆易创新、卫星化学｜专属跟踪简报 2026-06-27</title>
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --ink: #1d1d1f;
+      --muted: #6e6e73;
+      --faint: #86868b;
+      --panel: #ffffff;
+      --panel-2: #f5f5f7;
+      --line: rgba(0, 0, 0, 0.08);
+      --line-strong: rgba(0, 0, 0, 0.16);
+      --red: #ff3b30;
+      --blue: #0066cc;
+      --green: #248a3d;
+      --gold: #b7791f;
+      --stone: #424245;
+      --danger: #d70015;
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.08);
+      --radius: 28px;
+      --max: 1280px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background: var(--bg);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.48;
+      letter-spacing: -0.01em;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.92), transparent 34%),
+        radial-gradient(circle at 16% 18%, rgba(0, 102, 204, 0.08), transparent 26%),
+        radial-gradient(circle at 84% 18%, rgba(255, 59, 48, 0.08), transparent 28%);
+      opacity: 0.9;
+      mask-image: linear-gradient(180deg, #000, transparent 66%);
+      z-index: -1;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 24px 34px;
+    }
+
+    .top {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      min-height: 48px;
+      margin: 0 -24px;
+      padding: 8px 24px;
+      background: rgba(245, 245, 247, 0.78);
+      backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .identity {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 235px;
+    }
+
+    .seal {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border: 0;
+      border-radius: 9px;
+      background: #1d1d1f;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 1000;
+      line-height: 1;
+      letter-spacing: -0.12em;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+    }
+
+    .identity strong {
+      display: block;
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .identity span {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 6px 18px;
+    }
+
+    .nav a {
+      position: relative;
+      padding: 6px 0;
+      color: var(--stone);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0;
+      text-decoration: none;
+      opacity: 0.84;
+    }
+
+    .nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 1px;
+      height: 1px;
+      background: var(--ink);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 180ms ease;
+    }
+
+    .nav a:hover {
+      opacity: 1;
+      text-decoration: none;
+    }
+
+    .nav a:hover::after { transform: scaleX(1); }
+
+    .hero {
+      position: relative;
+      min-height: 610px;
+      display: grid;
+      align-content: end;
+      overflow: hidden;
+      margin: 12px -24px 0;
+      padding: 78px 32px 44px;
+      border: 0;
+      border-radius: 0 0 34px 34px;
+      background:
+        radial-gradient(circle at 50% 32%, rgba(255, 255, 255, 0.96), transparent 12%),
+        radial-gradient(circle at 50% 42%, rgba(0, 102, 204, 0.16), transparent 27%),
+        linear-gradient(180deg, #ffffff 0%, #fbfbfd 52%, #eaf2ff 100%);
+      box-shadow: var(--shadow);
+      isolation: isolate;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: auto 8% -42% 8%;
+      height: 54%;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(29, 29, 31, 0.16), rgba(29, 29, 31, 0.04) 32%, transparent 66%);
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+      transform: rotate(-2deg);
+      z-index: -1;
+    }
+
+    .hero::after {
+      content: "Client Daily";
+      position: absolute;
+      right: 32px;
+      top: 34px;
+      color: rgba(29, 29, 31, 0.22);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 5px 12px;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.72);
+      color: var(--stone);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 960px;
+      margin: 0;
+      color: var(--ink);
+      font-size: clamp(44px, 7vw, 86px);
+      line-height: 1.02;
+      letter-spacing: -0.07em;
+      text-align: center;
+      text-wrap: balance;
+    }
+
+    .lead {
+      max-width: 820px;
+      margin: 20px auto 0;
+      color: var(--muted);
+      font-size: clamp(18px, 2.2vw, 25px);
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .quick {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      max-width: 920px;
+      margin: 42px auto 0;
+      border: 0;
+      background: transparent;
+    }
+
+    .quick-card,
+    .panel,
+    .company,
+    .brief-card {
+      border: 0;
+      border-radius: var(--radius);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .quick-card {
+      position: relative;
+      min-height: 118px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.82);
+      box-shadow: 0 18px 48px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    .quick-card::before {
+      content: "";
+      position: absolute;
+      inset: auto 20px 18px 20px;
+      height: 3px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #0071e3, #a7d4ff);
+      opacity: 0.9;
+    }
+
+    .quick-card span,
+    .label {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0;
+    }
+
+    .quick-card strong {
+      display: block;
+      margin-top: 8px;
+      color: var(--ink);
+      font-size: 25px;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .section {
+      margin-top: 18px;
+      scroll-margin-top: 70px;
+    }
+
+    .section-title {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: end;
+      gap: 18px;
+      margin-bottom: 12px;
+      padding: 0 10px;
+      border-bottom: 0;
+    }
+
+    .section-title h2 {
+      position: relative;
+      margin: 0;
+      padding-left: 0;
+      color: var(--ink);
+      font-size: clamp(30px, 4vw, 56px);
+      line-height: 1.04;
+      letter-spacing: -0.06em;
+    }
+
+    .section-title h2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      display: none;
+    }
+
+    .section-title p {
+      max-width: 460px;
+      margin: 0;
+      color: var(--faint);
+      font-size: 13px;
+      font-weight: 800;
+      text-align: right;
+    }
+
+    .panel,
+    .gold-module {
+      position: relative;
+      padding: 26px;
+      border: 0;
+      border-radius: var(--radius);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.88)),
+        var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .panel::before,
+    .gold-module::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      display: none;
+    }
+
+    .conclusion-grid,
+    .company-grid,
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .brief-card {
+      min-height: 186px;
+      padding: 24px;
+      box-shadow: none;
+    }
+
+    .brief-card strong {
+      display: block;
+      margin: 10px 0 10px;
+      color: var(--ink);
+      font-size: 25px;
+      line-height: 1.12;
+      letter-spacing: -0.04em;
+    }
+
+    .brief-card p,
+    .product-copy p,
+    .company-head p,
+    .event p,
+    .watch,
+    .gold-card small,
+    .gold-note,
+    .source-list,
+    .notice {
+      color: var(--muted);
+    }
+
+    .gold-dashboard {
+      display: grid;
+      grid-template-columns: minmax(0, 1.22fr) minmax(320px, 0.78fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .gold-chart {
+      overflow: hidden;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      border-radius: 24px;
+      background: #fff;
+      box-shadow: 0 18px 48px rgba(0, 0, 0, 0.08);
+    }
+
+    .gold-chart img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .gold-side {
+      display: grid;
+      gap: 12px;
+    }
+
+    .gold-cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      border: 0;
+      background: transparent;
+    }
+
+    .gold-card {
+      padding: 18px;
+      border: 0;
+      border-radius: 22px;
+      background: var(--panel-2);
+    }
+
+    .gold-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0;
+    }
+
+    .gold-card strong {
+      display: block;
+      margin-top: 6px;
+      color: var(--ink);
+      font-size: 32px;
+      line-height: 1;
+      letter-spacing: -0.055em;
+    }
+
+    .gold-note {
+      padding: 15px 16px;
+      border: 0;
+      border-radius: 20px;
+      background: var(--panel-2);
+      font-size: 14px;
+    }
+
+    .gold-table-wrap {
+      max-height: 260px;
+      overflow: auto;
+      border: 0;
+      border-radius: 20px;
+      background: var(--panel-2);
+    }
+
+    .gold-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .gold-table th,
+    .gold-table td {
+      padding: 9px 10px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    .gold-table th {
+      position: sticky;
+      top: 0;
+      background: #f5f5f7;
+      color: var(--ink);
+      z-index: 1;
+    }
+
+    .product-card {
+      overflow: hidden;
+      border: 0;
+      border-radius: var(--radius);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .product-media {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: #f5f5f7;
+    }
+
+    .product-media img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(0.98) contrast(1.02) brightness(1);
+      transform: scale(1.01);
+    }
+
+    .product-media::after {
+      content: "IMAGE2";
+      position: absolute;
+      right: 12px;
+      bottom: 12px;
+      padding: 5px 9px;
+      border: 0;
+      border-radius: 999px;
+      background: rgba(245, 245, 247, 0.78);
+      color: var(--stone);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .product-copy {
+      padding: 18px;
+    }
+
+    .product-copy h3 {
+      margin: 0;
+      color: var(--ink);
+      font-size: 25px;
+      line-height: 1.06;
+      letter-spacing: -0.04em;
+    }
+
+    .product-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 14px;
+    }
+
+    .product-points span {
+      padding: 5px 8px;
+      border: 0;
+      border-radius: 999px;
+      background: var(--panel-2);
+      color: var(--stone);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0;
+    }
+
+    .company { overflow: hidden; }
+
+    .company-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 18px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      background: linear-gradient(180deg, #fff, #fafafa);
+    }
+
+    .company-head h3 {
+      margin: 0;
+      color: var(--ink);
+      font-size: 27px;
+      line-height: 1;
+      letter-spacing: -0.045em;
+    }
+
+    .price {
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .price strong {
+      display: block;
+      color: var(--ink);
+      font-size: 27px;
+      line-height: 1;
+      letter-spacing: -0.055em;
+    }
+
+    .red { color: var(--danger); }
+    .green { color: var(--green); }
+    .blue,
+    .gold { color: var(--blue); }
+
+    .mark-red {
+      color: var(--danger);
+      font-weight: 700;
+    }
+
+    .company-body {
+      display: grid;
+      gap: 0;
+      padding: 0;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 92px 1fr;
+      gap: 14px;
+      padding: 14px 18px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      color: var(--stone);
+      font-size: 14px;
+    }
+
+    .row:last-child { border-bottom: 0; }
+
+    .row span {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 12px;
+      border: 0;
+      background: transparent;
+    }
+
+    .event {
+      position: relative;
+      display: grid;
+      grid-template-columns: 138px 1fr 120px;
+      gap: 18px;
+      padding: 20px;
+      border: 0;
+      border-radius: 22px;
+      background: var(--panel-2);
+      overflow: hidden;
+    }
+
+    .event::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      display: none;
+    }
+
+    .event time {
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0;
+    }
+
+    .event strong {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--ink);
+      font-size: 18px;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    .pill {
+      align-self: start;
+      justify-self: end;
+      padding: 6px 9px;
+      border: 0;
+      border-radius: 999px;
+      background: #fff;
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+
+    .watch-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      border: 0;
+      background: transparent;
+    }
+
+    .watch {
+      padding: 17px;
+      border: 0;
+      border-radius: 22px;
+      background: var(--panel-2);
+      font-size: 14px;
+    }
+
+    .watch strong {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--ink);
+      font-size: 18px;
+    }
+
+    .source-list {
+      display: grid;
+      gap: 0;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .source-list li {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 16px;
+      padding: 13px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      font-size: 14px;
+    }
+
+    .source-list span {
+      color: var(--ink);
+      font-weight: 600;
+      letter-spacing: 0;
+    }
+
+    .notice {
+      margin-top: 18px;
+      padding: 16px;
+      border: 0;
+      border-radius: 20px;
+      border-left: 4px solid var(--blue);
+      background: var(--panel-2);
+      font-size: 14px;
+    }
+
+    @media (max-width: 980px) {
+      .quick,
+      .conclusion-grid,
+      .product-grid,
+      .gold-dashboard,
+      .company-grid,
+      .watch-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .event {
+        grid-template-columns: 1fr;
+      }
+
+      .pill {
+        justify-self: start;
+      }
+
+      .section-title {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title p {
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .page { padding: 0 16px 24px; }
+
+      .top {
+        display: block;
+        margin: 0 -16px;
+        padding: 14px 16px;
+      }
+
+      .nav {
+        justify-content: flex-start;
+        margin-top: 14px;
+        gap: 6px 13px;
+      }
+
+      .hero {
+        min-height: 560px;
+        margin: 12px -16px 0;
+        padding: 92px 16px 34px;
+      }
+
+      h1 {
+        font-size: clamp(38px, 12vw, 60px);
+      }
+
+      .row,
+      .source-list li {
+        grid-template-columns: 1fr;
+      }
+
+      .gold-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* 客户转发 / 手机阅读基础样式：提升邮件附件、微信内置浏览器和窄屏设备的可读性。 */
+    body {
+      margin: 0;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+      font-size: 16px;
+      color: #111;
+      background: #fff;
+      letter-spacing: 0;
+    }
+
+    body::before,
+    .hero::before,
+    .hero::after,
+    .product-media::after {
+      display: none;
+    }
+
+    .container,
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .page {
+      padding: 0;
+    }
+
+    h1,
+    .hero h1 {
+      max-width: none;
+      font-size: 24px;
+      line-height: 1.3;
+      letter-spacing: 0;
+      text-align: left;
+    }
+
+    h2,
+    .section-title h2 {
+      font-size: 20px;
+      line-height: 1.35;
+      letter-spacing: 0;
+      margin-top: 28px;
+    }
+
+    table,
+    .gold-table {
+      width: 100%;
+      border-collapse: collapse;
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .summary,
+    .lead {
+      padding: 14px;
+      border-radius: 12px;
+      background: #f5f5f5;
+      margin-bottom: 20px;
+    }
+
+    .top {
+      position: static;
+      display: block;
+      min-height: 0;
+      margin: 0 0 18px;
+      padding: 0 0 12px;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      backdrop-filter: none;
+    }
+
+    .identity {
+      min-width: 0;
+    }
+
+    .nav {
+      justify-content: flex-start;
+      gap: 8px 14px;
+      margin-top: 10px;
+      overflow-x: auto;
+    }
+
+    .hero {
+      min-height: auto;
+      display: block;
+      margin: 0;
+      padding: 8px 0 18px;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .meta {
+      justify-content: flex-start;
+      margin-bottom: 12px;
+    }
+
+    .tag {
+      background: #f5f5f5;
+      border-color: #eee;
+    }
+
+    .lead {
+      max-width: none;
+      color: #555;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: left;
+    }
+
+    .quick,
+    .gold-dashboard,
+    .gold-cards,
+    .company-grid,
+    .conclusion-grid,
+    .watch-grid,
+    .product-grid {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .quick {
+      max-width: none;
+      margin: 14px 0 0;
+    }
+
+    .quick-card,
+    .panel,
+    .gold-module,
+    .company,
+    .brief-card,
+    .product-card {
+      border: 1px solid #eee;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: none;
+    }
+
+    .quick-card {
+      min-height: 0;
+      padding: 14px;
+    }
+
+    .quick-card::before {
+      display: none;
+    }
+
+    .quick-card strong,
+    .brief-card strong,
+    .product-copy h3,
+    .company-head h3,
+    .price strong,
+    .gold-card strong {
+      letter-spacing: 0;
+    }
+
+    .section {
+      margin-top: 20px;
+      scroll-margin-top: 0;
+    }
+
+    .section-title {
+      display: block;
+      margin-bottom: 10px;
+      padding: 0;
+    }
+
+    .section-title p {
+      max-width: none;
+      text-align: left;
+    }
+
+    .panel,
+    .gold-module {
+      padding: 14px;
+    }
+
+    .event {
+      grid-template-columns: 1fr;
+      gap: 8px;
+      padding: 14px;
+      border-radius: 12px;
+      background: #f7f7f7;
+    }
+
+    .pill {
+      justify-self: start;
+      background: #fff;
+    }
+
+    .gold-chart,
+    .gold-table-wrap,
+    .gold-card,
+    .gold-note,
+    .watch,
+    .notice {
+      border-radius: 12px;
+      background: #f5f5f5;
+      box-shadow: none;
+    }
+
+    .gold-table-wrap {
+      max-height: none;
+    }
+
+    .company-head,
+    .row,
+    .source-list li {
+      grid-template-columns: 1fr;
+    }
+
+    .company-head {
+      display: block;
+    }
+
+    .price {
+      margin-top: 8px;
+      text-align: left;
+    }
+
+    .product-media {
+      aspect-ratio: auto;
+      border-radius: 12px;
+    }
+
+    .product-media img {
+      height: auto;
+      object-fit: contain;
+    }
+
+    html,
+    body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    main,
+    section,
+    article,
+    div {
+      min-width: 0;
+    }
+
+    p,
+    a,
+    li,
+    .lead,
+    .event,
+    .row div,
+    .notice,
+    .source-list li,
+    .section-title p {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .nav {
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      padding-bottom: 4px;
+    }
+
+    .nav a {
+      flex: 0 0 auto;
+    }
+
+    .gold-table-wrap,
+    table,
+    .gold-table {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page container">
+    <header class="top">
+      <div class="identity">
+        <div class="seal">投</div>
+        <div>
+          <strong>专属跟踪简报</strong>
+          <span>华工科技｜兆易创新｜卫星化学</span>
+        </div>
+      </div>
+      <nav class="nav" aria-label="页面导航">
+        <a href="#events">公告速览</a>
+        <a href="#news">重大新闻</a>
+        <a href="#gold">黄金</a>
+        <a href="#companies">公司情况</a>
+        <a href="#view">核心结论</a>
+        <a href="#next">后续关注</a>
+        <a href="#sources">来源说明</a>
+        <a href="#products">产品图解</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="meta">
+        <span class="tag">2026-06-27 更新</span>
+        <span class="tag">官方公告优先</span>
+        <span class="tag">不构成买卖建议</span>
+      </div>
+      <h1>投研情报专栏</h1>
+      <p class="lead">截至 2026-06-27 09:56 CST，<span class="mark-red">仅兆易创新新增官方公告</span>；<span class="mark-red">三家公司 6月26日收盘均回落</span>，黄金作为大类资产背景同步跟踪。</p>
+      <div class="quick">
+        <div class="quick-card">
+          <span>新增公告</span>
+          <strong class="red">兆易创新 1条</strong>
+        </div>
+        <div class="quick-card">
+          <span>收盘表现</span>
+          <strong class="red">三家公司回落</strong>
+        </div>
+        <div class="quick-card">
+          <span>黄金背景</span>
+          <strong class="red">Au99.99 887.00元/克</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section panel" id="events">
+      <div class="section-title">
+        <h2>公告速览</h2>
+        <p>窗口：2026-06-27 00:00 至当前；仅展示新增官方公告，无新增公司不在本区展示</p>
+      </div>
+      <div class="timeline">
+        <article class="event">
+          <time>2026-06-26 16:27</time>
+          <div>
+            <strong>兆易创新：部分股票期权注销完成</strong>
+            <p>公司完成 2020、2021、2023、2024 年部分股票期权合计 <span class="mark-red">67.6485 万份注销</span>；公告称已于 2026-06-25 完成相关注销业务，<span class="mark-red">本次股票期权注销不影响公司股本</span>。</p>
+          </div>
+          <span class="pill red">新增公告</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section panel" id="news">
+      <div class="section-title">
+        <h2>今日重大新闻</h2>
+        <p>截至当前未发现 6月27日新增重大新闻；以下为近期仍需跟踪的有效背景</p>
+      </div>
+      <div class="timeline">
+        <article class="event">
+          <time>2026-06-23</time>
+          <div>
+            <strong>兆易创新官网媒体报道：国产 MCU 破解 AIDC 供电转型难题</strong>
+            <p>公司官网媒体报道提到，兆易创新在 SNEC 展示基于 GD 系列主控芯片的电源方案，覆盖分布式光伏到算力数据中心用电侧场景；作为公司业务理解和 AIDC 电源链条观察，<span class="mark-red">不等同于新增公告</span>。</p>
+          </div>
+          <span class="pill">公司官网</span>
+        </article>
+        <article class="event">
+          <time>2026-06-25</time>
+          <div>
+            <strong>存储周期背景：美光财报超预期带动全球存储景气讨论</strong>
+            <p>媒体报道将兆易创新纳入存储龙头行情讨论，核心背景是 <span class="mark-red">AI 需求、存储扩产和设备链条共振</span>；该内容属于行业背景，需要结合公司公告和估值风险单独判断。</p>
+          </div>
+          <span class="pill red">行业背景</span>
+        </article>
+        <article class="event">
+          <time>2026-06-22/23</time>
+          <div>
+            <strong>卫星化学业绩预告引发媒体关注</strong>
+            <p>证券时报围绕公司半年度业绩预告做延伸报道，关注 <span class="mark-red">C2/C3 一体化、成本优势和利润兑现</span>；正式判断仍以公司公告和半年报为准。</p>
+          </div>
+          <span class="pill green">媒体跟踪</span>
+        </article>
+        <article class="event">
+          <time>2026-06-04</time>
+          <div>
+            <strong>华工科技业务背景：光模块与晶圆激光加工装备</strong>
+            <p>武汉市科技局转载长江日报报道，提到华工激光 <span class="mark-red">12 英寸晶圆激光加工装备导入头部存储晶圆量产线</span>，以及华工科技光模块产品进展；作为业务理解素材，非当日新增公告。</p>
+          </div>
+          <span class="pill">业务背景</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section gold-module" id="gold">
+      <div class="section-title">
+        <h2>黄金</h2>
+        <p>近6个月日K：人民币黄金 + 国际金价；最新日K收盘价用鲜红光圈标注</p>
+      </div>
+      <div class="gold-dashboard">
+        <div class="gold-chart">
+          <img src="assets/gold-6m-rmb-international-2026-06-27.svg" alt="黄金近6个月日K走势：人民币黄金与国际金价，最新收盘价光圈标注">
+        </div>
+        <div class="gold-side">
+          <div class="gold-cards">
+            <div class="gold-card"><span>人民币黄金｜Au99.99 延时</span><strong>887.00</strong><small>元/克｜上金所 2026-06-27 延时行情</small></div>
+            <div class="gold-card"><span>Au99.99 日线收盘</span><strong>883.70</strong><small>2026-06-26｜+1.00%</small></div>
+            <div class="gold-card"><span>国际金价｜GC=F 延时</span><strong>$4103.00</strong><small>Gold Aug 26｜美元/盎司</small></div>
+            <div class="gold-card"><span>GC=F 日线收盘</span><strong>$4103.00</strong><small>2026-06-26｜+1.80%</small></div>
+          </div>
+          <div class="gold-note">
+            <strong>观察口径：</strong>人民币金价使用上金所 Au99.99，国际金价使用 COMEX Gold Futures GC=F。两者单位、交易时区和合约口径不同，因此用于观察趋势和风险偏好，不直接比较绝对价格。
+          </div>
+          <div class="gold-table-wrap" aria-label="近期黄金价格涨跌幅">
+            <table class="gold-table">
+              <tr><th>日期</th><th>Au99.99收盘</th><th>人民币涨跌</th><th>GC=F收盘</th><th>国际涨跌</th></tr>
+              <tr><td>2026-06-26</td><td>883.70</td><td><span class="red">+1.00%</span></td><td>$4103.00</td><td><span class="red">+1.80%</span></td></tr>
+              <tr><td>2026-06-25</td><td>874.95</td><td><span class="green">-2.17%</span></td><td>$4030.50</td><td><span class="red">+1.01%</span></td></tr>
+              <tr><td>2026-06-24</td><td>894.39</td><td><span class="green">-0.51%</span></td><td>$3990.30</td><td><span class="green">-3.38%</span></td></tr>
+              <tr><td>2026-06-23</td><td>898.93</td><td><span class="green">-1.69%</span></td><td>$4129.90</td><td><span class="green">-1.24%</span></td></tr>
+              <tr><td>2026-06-22</td><td>914.35</td><td><span class="green">-2.30%</span></td><td>$4181.90</td><td><span class="green">-1.00%</span></td></tr>
+              <tr><td>2026-06-18</td><td>935.86</td><td><span class="green">-0.35%</span></td><td>$4224.10</td><td><span class="green">-3.09%</span></td></tr>
+              <tr><td>2026-06-17</td><td>939.18</td><td><span class="green">-0.14%</span></td><td>$4358.90</td><td><span class="red">+0.65%</span></td></tr>
+              <tr><td>2026-06-16</td><td>940.48</td><td><span class="red">+0.32%</span></td><td>$4330.90</td><td><span class="red">+0.07%</span></td></tr>
+              <tr><td>2026-06-15</td><td>937.51</td><td><span class="red">+3.31%</span></td><td>$4328.00</td><td><span class="red">+2.68%</span></td></tr>
+              <tr><td>2026-06-12</td><td>907.47</td><td><span class="red">+1.28%</span></td><td>$4215.00</td><td><span class="red">+3.05%</span></td></tr>
+            </table>
+          </div>
+          <div class="gold-note">近6个月图表样本区间为 2025-12-26 至 2026-06-26；最新日K收盘价已在图中用鲜红光圈标注，完整每日价格与涨跌幅保存到 <code>clients/client-001/data/gold-2026-06-27.json</code>。</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="companies">
+      <div class="section-title">
+        <h2>三家公司情况</h2>
+        <p>行情为 2026-06-26 收盘后快照；2026-06-27 为周六非交易时段</p>
+      </div>
+      <div class="company-grid">
+        <article class="company">
+          <div class="company-head"><div><h3>华工科技</h3><p>000988｜激光装备 / 感知 / 光联接</p></div><div class="price"><strong>160.94</strong><span class="red">-7.28%</span></div></div>
+          <div class="company-body">
+            <div class="row"><span>公告事实</span><div><span class="mark-red">未检索到 2026-06-27 新增官方公告</span>；最新为股东会决议公告。</div></div>
+            <div class="row"><span>行情资金</span><div>6月26日收盘 <span class="mark-red">160.94 元</span>，成交额约 <span class="mark-red">110.14亿元</span>，主力净流入 <span class="mark-red">-24.13亿元</span>。</div></div>
+            <div class="row"><span>业务观察</span><div>光模块、晶圆激光加工装备和智能制造订单仍是客户沟通主线。</div></div>
+            <div class="row"><span>后续关注</span><div>下个交易日是否继续放量回撤，以及公司是否披露订单/业务进展。</div></div>
+          </div>
+        </article>
+        <article class="company">
+          <div class="company-head"><div><h3>兆易创新</h3><p>603986｜存储器 / MCU / 传感器</p></div><div class="price"><strong>770.00</strong><span class="red">-0.67%</span></div></div>
+          <div class="company-body">
+            <div class="row"><span>公告事实</span><div>新增部分股票期权注销完成公告，合计注销 <span class="mark-red">67.6485 万份</span>，公告称<span class="mark-red">不影响公司股本</span>。</div></div>
+            <div class="row"><span>行情资金</span><div>6月26日收盘 <span class="mark-red">770.00 元</span>，成交额约 <span class="mark-red">374.18亿元</span>，主力净流入 <span class="mark-red">-34.12亿元</span>。</div></div>
+            <div class="row"><span>业务观察</span><div>存储周期和 AIDC 供电/MCU 方案是新闻层面的主要跟踪背景。</div></div>
+            <div class="row"><span>风险提醒</span><div>新增公告偏激励事项落地；此前<span class="mark-red">异常波动与估值风险提示</span>仍需延续跟踪。</div></div>
+          </div>
+        </article>
+        <article class="company">
+          <div class="company-head"><div><h3>卫星化学</h3><p>002648｜当前证券简称：卫星化学｜C2/C3 / 丙烯酸酯 / 高分子材料</p></div><div class="price"><strong>24.87</strong><span class="red">-3.15%</span></div></div>
+          <div class="company-body">
+            <div class="row"><span>公告事实</span><div><span class="mark-red">未检索到 2026-06-27 新增官方公告</span>；最新高权重事项仍为半年度业绩预告。</div></div>
+            <div class="row"><span>行情资金</span><div>6月26日收盘 <span class="mark-red">24.87 元</span>，成交额约 <span class="mark-red">37.80亿元</span>，主力净流入 <span class="mark-red">-2.26亿元</span>。</div></div>
+            <div class="row"><span>业务观察</span><div>C2/C3 一体化、丙烯酸及酯价差、原料成本和产能利用率是业绩兑现关键。</div></div>
+            <div class="row"><span>后续关注</span><div>正式半年报披露前，重点复核利润结构、毛利率和产品价差持续性。</div></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="view">
+      <div class="section-title"><h2>核心结论</h2><p>先事实后观察，不提供买卖建议</p></div>
+      <div class="conclusion-grid">
+        <article class="brief-card"><span class="label">事实</span><strong>今日新增公告集中在兆易创新</strong><p>兆易创新披露部分股票期权注销完成，数量 <span class="mark-red">67.6485 万份</span>，公告称<span class="mark-red">不影响股本</span>；华工科技、卫星化学未检索到 6月27日新增官方公告。</p></article>
+        <article class="brief-card"><span class="label">观察</span><strong>6月26日收盘交易层面偏弱</strong><p><span class="mark-red">三家公司收盘均下跌且主力资金均净流出</span>，其中兆易创新和华工科技成交额、资金流出更高，需将交易波动与公告性质分开。</p></article>
+        <article class="brief-card"><span class="label">跟踪</span><strong>重大新闻没有改变主线</strong><p>近期新闻仍围绕存储周期、AI光模块/激光装备、卫星化学业绩兑现展开；没有发现 6月27日凌晨新增的公司级重大新闻。</p></article>
+      </div>
+    </section>
+
+    <section class="section panel" id="next">
+      <div class="section-title"><h2>后续关注清单</h2><p>下次更新优先检查这些事项</p></div>
+      <div class="watch-grid">
+        <div class="watch"><strong>兆易创新</strong>复核股票期权注销公告后的市场反应，以及异常波动风险提示是否继续影响估值消化。</div>
+        <div class="watch"><strong>华工科技</strong>关注光模块、激光装备订单和高端制造业务新闻是否出现官方确认。</div>
+        <div class="watch"><strong>卫星化学</strong>关注半年报正式披露、利润结构、C2/C3 价差和成本优势持续性。</div>
+        <div class="watch"><strong>非交易日提示</strong>2026-06-27 为周六，行情需等下个交易日开盘/收盘后再复核。</div>
+      </div>
+    </section>
+
+    <section class="section panel" id="sources">
+      <div class="section-title"><h2>来源说明</h2><p>重要事实均标注来源和日期</p></div>
+      <ul class="source-list">
+        <li><span>兆易创新公告</span><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0626/2026062600846_c.pdf">部分股票期权注销完成公告，公告日 2026-06-27，披露时间 2026-06-26 16:27</a></li>
+        <li><span>上交所公告页</span><a href="https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=603986">兆易创新公司公告页，用于交叉核验公告入口</a></li>
+        <li><span>华工科技公告</span><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202606251823852036">2026年第二次临时股东会决议公告，披露时间 2026-06-25 17:39</a></li>
+        <li><span>卫星化学公告</span><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202606221823738881">卫星化学 2026 年半年度业绩预告，披露时间 2026-06-22 16:58</a></li>
+        <li><span>重大新闻</span><div><a href="https://www.gigadevice.com.cn/about/news-and-event/media-coverage">兆易创新官网媒体报道 2026-06-23</a>；<a href="https://finance.sina.com.cn/jjxw/2026-06-25/doc-inieqsma5793687.shtml">新浪财经/财闻存储周期报道 2026-06-25</a>；<a href="https://www.stcn.com/article/detail/3976105.html">证券时报卫星化学业绩报道 2026-06-22</a>；<a href="https://kjj.wuhan.gov.cn/xwzx_8/kjspxw/202606/t20260604_2773010.html">武汉市科技局/长江日报华工科技业务报道 2026-06-04</a>。</div></li>
+        <li><span>黄金</span><div><a href="https://www.sge.com.cn/sjzx/yshqbg">上海黄金交易所延时行情</a>；<a href="https://www.sge.com.cn/sjzx/quotation_daily_new?start_date=2026-06-26&amp;end_date=2026-06-26">上海黄金交易所 Au99.99 每日行情</a>；<a href="https://query1.finance.yahoo.com/v8/finance/chart/GC%3DF?range=1y&amp;interval=1d&amp;includePrePost=false">Yahoo Finance GC=F 日线</a>。页面图表展示最近6个月：人民币黄金 118 个有效交易日，国际金价 125 个有效交易日；完整近1年数据仍保留在结构化数据文件中。</div></li>
+        <li><span>行情快照</span><div><a href="https://qt.gtimg.cn/q=sz000988">华工科技</a> ｜ <a href="https://qt.gtimg.cn/q=sh603986">兆易创新</a> ｜ <a href="https://qt.gtimg.cn/q=sz002648">卫星化学</a>；腾讯行情时间约 2026-06-26 16:14，东方财富资金流为 2026-06-26 日线数据。</div></li>
+      </ul>
+      <div class="notice">免责声明：本简报仅用于信息跟踪和交流，不构成任何投资建议、收益承诺或交易指令。2026-06-27 为周六非交易时段，行情使用最近交易日 2026-06-26 收盘快照；黄金数据中的国际金价为 GC=F 期货口径，不等同于现货 XAU/USD；当前证券简称为卫星化学。</div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-title">
+        <h2>主营产品图解</h2>
+        <p>Image2 辅助理解图，非公司官方产品照片</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-media"><img src="assets/hgtech-product-companyfirst-2026-06-26.png" alt="华工科技激光智能制造、光联接和传感器业务理解图"></div>
+          <div class="product-copy">
+            <h3>华工科技：激光 + 感知 + 联接</h3>
+            <p>公司业务围绕激光技术、传感器技术、电子信息技术，关注光模块、激光智能制造和工业感知的订单兑现。</p>
+            <div class="product-points"><span>激光装备</span><span>传感器</span><span>光联接</span><span>智能制造</span></div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-media"><img src="assets/gigadevice-product-companyfirst-2026-06-26.png" alt="兆易创新存储器、MCU、DRAM、传感器和模拟产品理解图"></div>
+          <div class="product-copy">
+            <h3>兆易创新：存储 + MCU + 传感</h3>
+            <p>公司产品线包括存储器、32 位 MCU、传感器、模拟产品及整体解决方案，本次新增公告偏激励事项落地，不改变业务主线。</p>
+            <div class="product-points"><span>Flash</span><span>MCU</span><span>DRAM</span><span>传感器</span></div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-media"><img src="assets/satellite-chemical-product-companyfirst-2026-06-26.png" alt="卫星化学 C2 C3 化工链、丙烯酸酯、SAP 和高分子材料理解图"></div>
+          <div class="product-copy">
+            <h3>卫星化学：C2/C3 + 新材料</h3>
+            <p>公司坚持 C2、C3 双产业链布局，关注丙烯酸及酯、高分子乳液、功能性高分子材料等方向的盈利持续性。</p>
+            <div class="product-points"><span>丙烯酸酯</span><span>SAP</span><span>聚丙烯</span><span>高分子材料</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>个人投研情报中枢｜中芯国际、东芯股份、京东方A、中兴通讯、联赢激光、SpaceX</title>
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --panel: #12161c;
+      --panel-soft: #181d24;
+      --ink: #f5f0e8;
+      --muted: #a9a29a;
+      --line: rgba(245, 240, 232, 0.12);
+      --accent: #ff3b30;
+      --amber: #d8a24a;
+      --cyan: #78dce8;
+      --green: #8bd17c;
+      --shadow: 0 28px 90px rgba(0, 0, 0, 0.38);
+      --radius: 28px;
+      --max: 1280px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 10%, rgba(255, 59, 48, 0.20), transparent 30%),
+        radial-gradient(circle at 90% 8%, rgba(120, 220, 232, 0.14), transparent 26%),
+        linear-gradient(180deg, #0b0d10 0%, #101319 52%, #090a0d 100%);
+      font-family: "Avenir Next", "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.62;
+      letter-spacing: -0.01em;
+    }
+
+    a {
+      color: var(--cyan);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 20px 22px 56px;
+    }
+
+    .top {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 12px 0;
+      background: rgba(11, 13, 16, 0.76);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 260px;
+    }
+
+    .mark {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--accent), #5d1111);
+      color: #fff;
+      font-weight: 900;
+      box-shadow: 0 18px 44px rgba(255, 59, 48, 0.22);
+    }
+
+    .brand strong {
+      display: block;
+      font-size: 15px;
+      line-height: 1.1;
+    }
+
+    .brand span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 12px 18px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      margin-top: 22px;
+      padding: 76px 42px 44px;
+      border: 1px solid var(--line);
+      border-radius: 38px;
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
+        radial-gradient(circle at 72% 26%, rgba(216, 162, 74, 0.22), transparent 30%),
+        var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -70px;
+      top: -70px;
+      width: 260px;
+      height: 260px;
+      border: 1px solid rgba(245, 240, 232, 0.12);
+      border-radius: 50%;
+      box-shadow: 0 0 0 42px rgba(245, 240, 232, 0.03);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .tag {
+      padding: 7px 12px;
+      border: 1px solid rgba(245, 240, 232, 0.13);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    h1 {
+      max-width: 920px;
+      margin: 0;
+      font-size: clamp(42px, 7vw, 90px);
+      line-height: 0.98;
+      letter-spacing: -0.07em;
+    }
+
+    .lead {
+      max-width: 860px;
+      margin: 24px 0 0;
+      color: var(--muted);
+      font-size: clamp(17px, 2vw, 23px);
+      font-weight: 600;
+    }
+
+    .mark-red {
+      color: var(--accent);
+      font-weight: 900;
+    }
+
+    .quick {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .quick-card,
+    .panel,
+    .company,
+    .module,
+    .warning {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(18, 22, 28, 0.84);
+      box-shadow: var(--shadow);
+    }
+
+    .quick-card {
+      min-height: 118px;
+      padding: 18px;
+    }
+
+    .quick-card span,
+    .label {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .quick-card strong {
+      display: block;
+      margin-top: 10px;
+      font-size: 25px;
+      line-height: 1.1;
+    }
+
+    .section {
+      margin-top: 26px;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+      margin: 0 0 14px;
+      padding: 0 8px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 54px);
+      line-height: 1.02;
+      letter-spacing: -0.055em;
+    }
+
+    .section-title p {
+      max-width: 520px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: right;
+    }
+
+    .company-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .company {
+      overflow: hidden;
+    }
+
+    .company-head {
+      min-height: 170px;
+      display: grid;
+      align-content: space-between;
+      padding: 22px;
+      background:
+        radial-gradient(circle at 100% 0%, rgba(255, 59, 48, 0.16), transparent 38%),
+        rgba(255, 255, 255, 0.03);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .company h3 {
+      margin: 0;
+      font-size: 29px;
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .company small {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .focus-list {
+      display: grid;
+      gap: 11px;
+      margin: 0;
+      padding: 18px 22px 22px;
+      list-style: none;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .focus-list li {
+      display: grid;
+      grid-template-columns: 84px 1fr;
+      gap: 12px;
+      padding-bottom: 11px;
+      border-bottom: 1px solid rgba(245, 240, 232, 0.08);
+    }
+
+    .focus-list li:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .focus-list span {
+      color: var(--ink);
+      font-weight: 800;
+    }
+
+    .module-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 16px;
+    }
+
+    .module {
+      padding: 24px;
+    }
+
+    .module h3 {
+      margin: 0 0 14px;
+      font-size: 25px;
+      letter-spacing: -0.03em;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 12px;
+    }
+
+    .event {
+      padding: 16px;
+      border-radius: 18px;
+      background: var(--panel-soft);
+    }
+
+    .event strong {
+      display: block;
+      margin-bottom: 7px;
+    }
+
+    .event p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .matrix {
+      width: 100%;
+      border-collapse: collapse;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .matrix th,
+    .matrix td {
+      padding: 12px 10px;
+      border-bottom: 1px solid rgba(245, 240, 232, 0.08);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .matrix th {
+      color: var(--ink);
+      font-size: 12px;
+    }
+
+    .warning {
+      padding: 20px;
+      color: var(--muted);
+      background:
+        linear-gradient(90deg, rgba(255, 59, 48, 0.16), transparent),
+        rgba(18, 22, 28, 0.92);
+    }
+
+    .warning strong {
+      color: var(--ink);
+    }
+
+    .footer {
+      margin-top: 28px;
+      padding: 22px;
+      color: var(--muted);
+      font-size: 13px;
+      border-top: 1px solid var(--line);
+    }
+
+    @media (max-width: 980px) {
+      .quick,
+      .company-grid,
+      .module-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .top,
+      .section-title {
+        display: block;
+      }
+
+      .nav {
+        justify-content: flex-start;
+        margin-top: 14px;
+      }
+
+      .section-title p {
+        margin-top: 8px;
+        text-align: left;
+      }
+
+      .hero {
+        padding: 44px 22px 30px;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .page {
+        padding: 12px 14px 36px;
+      }
+
+      h1 {
+        font-size: 43px;
+      }
+
+      .company-head {
+        min-height: 130px;
+      }
+
+      .focus-list li {
+        grid-template-columns: 1fr;
+      }
+
+      .matrix {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="top">
+      <div class="brand">
+        <div class="mark">研</div>
+        <div>
+          <strong>个人投研情报中枢</strong>
+          <span>自用｜非客户展示版｜不构成买卖建议</span>
+        </div>
+      </div>
+      <nav class="nav" aria-label="页面导航">
+        <a href="#scope">标的池</a>
+        <a href="#workflow">更新机制</a>
+        <a href="#matrix">跟踪矩阵</a>
+        <a href="#sources">核验规则</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="tags">
+        <span class="tag">个人版</span>
+        <span class="tag">六家公司池</span>
+        <span class="tag">GitHub Pages 可发布</span>
+      </div>
+      <h1>投研情报中枢</h1>
+      <p class="lead">
+        本页是与你客户001页面区分的<span class="mark-red">自用投研工作台</span>。当前为框架版，后续自动化运行时将实时核验公告、行情、重大新闻、SpaceX 动态和来源索引。
+      </p>
+      <div class="quick">
+        <div class="quick-card"><span>覆盖标的</span><strong>6 家</strong></div>
+        <div class="quick-card"><span>A/H/A股</span><strong>5 家</strong></div>
+        <div class="quick-card"><span>海外非上市/基金映射</span><strong>SpaceX</strong></div>
+        <div class="quick-card"><span>页面状态</span><strong class="mark-red">待首次实时更新</strong></div>
+      </div>
+    </section>
+
+    <section class="section" id="scope">
+      <div class="section-title">
+        <h2>标的池</h2>
+        <p>与客户版华工科技、兆易创新、卫星化学区分；本页服务于个人投研复盘。</p>
+      </div>
+      <div class="company-grid">
+        <article class="company">
+          <div class="company-head">
+            <small>688981 / 00981</small>
+            <h3>中芯国际</h3>
+          </div>
+          <ul class="focus-list">
+            <li><span>主线</span><div>晶圆代工周期、产能利用率、先进制程、AI/国产替代需求。</div></li>
+            <li><span>公告</span><div>上交所、HKEX、公司 IR 与定期报告优先。</div></li>
+            <li><span>风险</span><div>资本开支、毛利率、出口管制、行业价格周期。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <div class="company-head">
+            <small>688110</small>
+            <h3>东芯股份</h3>
+          </div>
+          <ul class="focus-list">
+            <li><span>主线</span><div>存储周期、SLC NAND/NOR/DRAM 相关进展、库存和客户导入。</div></li>
+            <li><span>公告</span><div>上交所、公司公告、投资者关系活动记录。</div></li>
+            <li><span>风险</span><div>价格波动、去库存、供应链和产品结构。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <div class="company-head">
+            <small>000725</small>
+            <h3>京东方A</h3>
+          </div>
+          <ul class="focus-list">
+            <li><span>主线</span><div>面板周期、AMOLED、Mini/Micro LED、物联网创新业务。</div></li>
+            <li><span>公告</span><div>深交所、巨潮资讯、公司官网与投资者互动。</div></li>
+            <li><span>风险</span><div>供需周期、折旧压力、价格修复持续性。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <div class="company-head">
+            <small>000063 / 00763</small>
+            <h3>中兴通讯</h3>
+          </div>
+          <ul class="focus-list">
+            <li><span>主线</span><div>算力网络、运营商资本开支、服务器/交换机、光网络和 AI 基建。</div></li>
+            <li><span>公告</span><div>深交所、HKEX、公司公告与官方新闻。</div></li>
+            <li><span>风险</span><div>运营商投资节奏、海外监管、毛利结构。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <div class="company-head">
+            <small>688518</small>
+            <h3>联赢激光</h3>
+          </div>
+          <ul class="focus-list">
+            <li><span>主线</span><div>动力电池激光焊接、消费电子/半导体激光设备、订单兑现。</div></li>
+            <li><span>公告</span><div>上交所、公司公告、订单和定期报告优先。</div></li>
+            <li><span>风险</span><div>新能源资本开支周期、应收账款、盈利修复。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <div class="company-head">
+            <small>SpaceX / Starlink / SPCX 相关映射</small>
+            <h3>SpaceX</h3>
+          </div>
+          <ul class="focus-list">
+            <li><span>主线</span><div>Starlink 订阅、发射节奏、Starship、政府合同、融资估值。</div></li>
+            <li><span>来源</span><div>SpaceX/Starlink 官方、SEC、NASA、FAA、FCC、可靠海外媒体。</div></li>
+            <li><span>风险</span><div>监管、发射事故、资本开支、马斯克治理和关联交易。</div></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="workflow">
+      <div class="section-title">
+        <h2>更新机制</h2>
+        <p>后续 skill/自动化会沿用客户版的输出纪律，但页面定位、标的池和设计语言不同。</p>
+      </div>
+      <div class="module-grid">
+        <article class="module">
+          <h3>每日更新模块</h3>
+          <div class="timeline">
+            <div class="event"><strong>公告事实优先</strong><p>先检索交易所、巨潮、HKEX、公司 IR；没有新增公告必须写明，不用媒体报道冒充公告。</p></div>
+            <div class="event"><strong>行情与资金面</strong><p>A/H 股标注盘前、盘中、盘后或最近交易日；SpaceX 需要说明直接股权不可交易时的映射口径。</p></div>
+            <div class="event"><strong>重大新闻与催化</strong><p>半导体、显示、通信、激光设备、商业航天和 AI 算力按主题归纳，并区分事实与推断。</p></div>
+            <div class="event"><strong>来源索引与核验限制</strong><p>每次生成 sources 文件，列出链接、日期、无法核验事项和下一步复核动作。</p></div>
+          </div>
+        </article>
+        <article class="module">
+          <h3>与客户版的区别</h3>
+          <div class="timeline">
+            <div class="event"><strong>用途不同</strong><p>客户版用于对外连接和简洁沟通；个人版用于自用复盘、横向比较和后续研究沉淀。</p></div>
+            <div class="event"><strong>标的不同</strong><p>客户版关注华工科技、兆易创新、卫星化学；个人版关注中芯国际、东芯股份、京东方A、中兴通讯、联赢激光、SpaceX。</p></div>
+            <div class="event"><strong>设计不同</strong><p>客户版偏 Apple 白底展示；个人版采用深色情报台风格，更适合信息密度和个人判断复盘。</p></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="matrix">
+      <div class="section-title">
+        <h2>跟踪矩阵</h2>
+        <p>首次实时更新后，这里将替换为当天公告、新闻、行情、催化和风险。</p>
+      </div>
+      <div class="module">
+        <table class="matrix">
+          <tr>
+            <th>公司</th>
+            <th>公告事实</th>
+            <th>行情/资金</th>
+            <th>重大新闻</th>
+            <th>后续关注</th>
+          </tr>
+          <tr>
+            <td>中芯国际</td>
+            <td>待实时核验</td>
+            <td>待快照</td>
+            <td>晶圆代工/国产替代/AI需求</td>
+            <td>产能、毛利率、制裁变量</td>
+          </tr>
+          <tr>
+            <td>东芯股份</td>
+            <td>待实时核验</td>
+            <td>待快照</td>
+            <td>存储周期/产品结构</td>
+            <td>库存、价格、客户导入</td>
+          </tr>
+          <tr>
+            <td>京东方A</td>
+            <td>待实时核验</td>
+            <td>待快照</td>
+            <td>面板价格/AMOLED/新型显示</td>
+            <td>价格修复、折旧、盈利弹性</td>
+          </tr>
+          <tr>
+            <td>中兴通讯</td>
+            <td>待实时核验</td>
+            <td>待快照</td>
+            <td>AI基建/算力网络/运营商资本开支</td>
+            <td>订单、毛利、海外监管</td>
+          </tr>
+          <tr>
+            <td>联赢激光</td>
+            <td>待实时核验</td>
+            <td>待快照</td>
+            <td>激光设备/新能源资本开支</td>
+            <td>订单兑现、回款、毛利修复</td>
+          </tr>
+          <tr>
+            <td>SpaceX</td>
+            <td>待实时核验</td>
+            <td>直接股权/基金映射需说明</td>
+            <td>Starlink/发射/Starship/政府合同</td>
+            <td>估值、监管、融资、马斯克风险</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="sources">
+      <div class="section-title">
+        <h2>核验规则</h2>
+        <p>该页面不会把未经实时核验的信息写成事实。</p>
+      </div>
+      <div class="warning">
+        <strong>当前状态：</strong>本页面为自用投研站点框架版，尚未执行首次实时数据更新。后续自动化必须逐条标注来源链接和发布日期/披露时间；事实、推断、假设、建议分开写；不提供买卖建议。
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>页面版本：2026-06-28 框架版｜用途：个人投研复盘｜公开发布前需确认无敏感信息。</div>
+    </footer>
+  </main>
+</body>
+</html>
