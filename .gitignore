@@ -1,4 +1,5 @@
 .DS_Store
 *.provenance-backup-*
 .*.tmp
+.*.tmp-*
 archive/debug-sync*/

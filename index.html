@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
+  <meta name="dashboard-version" content="2026-06-29 20:30:12 CST">
   <title>个人投研核心监控台｜2026-06-29</title>
   <style>
     :root {
@@ -122,6 +123,31 @@
     }
     .source-table td:nth-child(1) { width: 26%; }
     .footer { margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+    .live-status {
+      position: fixed; left: 50%; bottom: 18px; z-index: 50; transform: translateX(-50%);
+      display: flex; align-items: center; gap: 10px; max-width: calc(100vw - 28px);
+      padding: 10px 12px; border: 1px solid rgba(116,215,239,.28); border-radius: 999px;
+      background: rgba(7,9,13,.78); color: var(--ink); box-shadow: 0 18px 58px rgba(0,0,0,.38);
+      backdrop-filter: blur(18px); font-size: 12px; font-weight: 850;
+    }
+    .live-status.is-update { border-color: rgba(255,59,48,.58); background: rgba(54,9,12,.86); }
+    .live-dot {
+      width: 9px; height: 9px; flex: 0 0 auto; border-radius: 999px;
+      background: var(--green); box-shadow: 0 0 0 0 rgba(66,211,146,.52);
+      animation: livePulse 1.9s infinite;
+    }
+    .live-status.is-update .live-dot { background: var(--red); box-shadow: 0 0 0 0 rgba(255,59,48,.56); }
+    .live-status button {
+      appearance: none; border: 1px solid rgba(255,247,237,.18); border-radius: 999px;
+      background: rgba(255,255,255,.07); color: var(--ink); cursor: pointer;
+      padding: 6px 9px; font: inherit; font-size: 11px;
+    }
+    .live-status button:hover { background: rgba(255,255,255,.12); }
+    @keyframes livePulse {
+      0% { box-shadow: 0 0 0 0 rgba(66,211,146,.52); }
+      70% { box-shadow: 0 0 0 9px rgba(66,211,146,0); }
+      100% { box-shadow: 0 0 0 0 rgba(66,211,146,0); }
+    }
     @media (max-width: 860px) {
       .page { padding: 14px 14px 40px; }
       .top { align-items: flex-start; flex-direction: column; }
@@ -133,10 +159,20 @@
       .section-title p { margin-top: 8px; text-align: left; }
       table { display: block; overflow-x: auto; white-space: nowrap; }
       .list li { grid-template-columns: 70px 1fr; }
+      .live-status {
+        right: 12px; left: 12px; bottom: 12px; transform: none;
+        justify-content: space-between; border-radius: 18px;
+      }
+      .live-status span:nth-child(2) { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     }
   </style>
 </head>
 <body>
+  <div class="live-status" id="liveStatus" role="status" aria-live="polite">
+    <span class="live-dot" aria-hidden="true"></span>
+    <span id="liveStatusText">动态更新已开启｜自动检查最新版本</span>
+    <button id="liveRefreshButton" type="button">立即检查</button>
+  </div>
   <main class="page">
     <header class="top">
       <div class="brand">
@@ -155,7 +191,7 @@
     <section class="hero">
       <div class="tags">
         <span class="tag">2026-06-29 更新</span>
-        <span class="tag">北京时间 2026-06-29 20:15:12 CST</span>
+        <span class="tag">北京时间 2026-06-29 20:30:12 CST</span>
         <span class="tag">交易后：收盘后快照</span>
         <span class="tag">官方公告优先</span>
       </div>
@@ -163,7 +199,7 @@
       <p class="lead">只保留需要第一时间处理的信息：<span class="red">新增公告、公司最新状态、关键行情、复盘入口</span>。公告不与媒体报道混同，SpaceX 按私有公司单独跟踪。</p>
       <div class="quick">
         <div class="quick-card"><span>覆盖标的</span><strong>6 家</strong></div>
-        <div class="quick-card"><span>公告雷达</span><strong>已接入</strong></div>
+        <div class="quick-card"><span>公告雷达</span><strong>新增 5</strong></div>
         <div class="quick-card"><span>最新公告</span><strong>25 条</strong></div>
         <div class="quick-card"><span>行情证券</span><strong>7 个</strong></div>
       </div>
@@ -178,12 +214,12 @@
       <div class="alert-banner">
         <div>
           <span class="label">公告提醒</span>
-          <strong>无新增</strong>
-          <span class="source-pill">持续监控</span>
+          <strong>新增 5 条</strong>
+          <span class="source-pill">已提示</span>
         </div>
         <div>
-          <p>本次未发现相较上次检查的新增公告。</p>
-          <p>检查时间：2026-06-29 20:15:12 CST</p>
+          <p>发现 5 条新增公告，页面已更新。</p>
+          <p>检查时间：2026-06-29 20:30:12 CST</p>
         </div>
       </div>
       <table>
@@ -197,18 +233,18 @@
             <th>来源</th>
           </tr>
         </thead>
-        <tbody><tr><td>中兴通讯</td><td>000063</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826547098">中兴通讯:关于按照《香港上市规则》公布人民币3,584百万元零息美元结算于2030年到期的H股可转换债券转股价格调整的公告</a></td><td>2026-06-29 19:05:54:620</td><td>其他</td><td>东方财富公告中心</td></tr>
-<tr><td>中兴通讯</td><td>000063</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826547103">中兴通讯:关于按照《香港上市规则》公布截至2025年12月31日止年度之末期股息的公告</a></td><td>2026-06-29 19:05:54:600</td><td>其他</td><td>东方财富公告中心</td></tr>
-<tr><td>中兴通讯</td><td>000063</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826547096">中兴通讯:关于按照《香港上市规则》公布关于派发末期股息的说明</a></td><td>2026-06-29 19:05:54:592</td><td>其他</td><td>东方财富公告中心</td></tr>
-<tr><td>中兴通讯</td><td>000063</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826546915">中兴通讯:关于按照《香港上市规则》公布翌日披露报表的公告</a></td><td>2026-06-29 19:03:09:575</td><td>其他</td><td>东方财富公告中心</td></tr>
-<tr><td>中芯国际</td><td>688981</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826545520">中芯国际:港股公告:翌日披露报表</a></td><td>2026-06-29 18:35:57:511</td><td>其他</td><td>东方财富公告中心</td></tr>
-<tr><td>中芯国际</td><td>688981</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606261825042437">中芯国际:中芯国际股东会议事规则</a></td><td>2026-06-26 21:28:15:748</td><td>议事规则/实施细则</td><td>东方财富公告中心</td></tr>
-<tr><td>中芯国际</td><td>688981</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606261825042433">中芯国际:中芯国际董事及高级管理人员薪酬管理制度</a></td><td>2026-06-26 21:28:15:716</td><td>管理办法/制度</td><td>东方财富公告中心</td></tr>
-<tr><td>中芯国际</td><td>688981</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606261825042432">中芯国际:中芯国际董事会议事规则</a></td><td>2026-06-26 21:28:15:713</td><td>议事规则/实施细则</td><td>东方财富公告中心</td></tr>
-<tr><td>中芯国际</td><td>688981</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606261825042431">中芯国际:上海市锦天城律师事务所关于2026年度股东会的法律意见书</a></td><td>2026-06-26 21:28:15:709</td><td>法律意见书</td><td>东方财富公告中心</td></tr>
-<tr><td>京东方A</td><td>000725</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606251823856017">京东方Ａ:京东方科技集团股份有限公司2026年跟踪评级报告</a></td><td>2026-06-25 18:53:08:356</td><td>其他、跟踪评级公告</td><td>东方财富公告中心</td></tr>
-<tr><td>京东方A</td><td>000725</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606251823852589">京东方Ａ:028-2026年6月25日投资者关系活动记录表</a></td><td>2026-06-25 17:54:00:689</td><td>调研活动</td><td>东方财富公告中心</td></tr>
-<tr><td>京东方A</td><td>000725</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606251823846609">京东方Ａ:京东方科技集团股份有限公司公司债券受托管理事务报告(2025年度)</a></td><td>2026-06-25 16:00:06:313</td><td>其他、受托管理事务定期报告</td><td>东方财富公告中心</td></tr></tbody>
+        <tbody><tr><td>中兴通讯</td><td>000063</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826547098">中兴通讯:关于按照《香港上市规则》公布人民币3,584百万元零息美元结算于2030年到期的H股可转换债券转股价格调整的公告</a></td><td>2026-06-29 19:05:54:623</td><td>其他</td><td>东方财富公告中心</td></tr>
+<tr><td>中兴通讯</td><td>000063</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826547103">中兴通讯:关于按照《香港上市规则》公布截至2025年12月31日止年度之末期股息的公告</a></td><td>2026-06-29 19:05:54:603</td><td>其他</td><td>东方财富公告中心</td></tr>
+<tr><td>中兴通讯</td><td>000063</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826547096">中兴通讯:关于按照《香港上市规则》公布关于派发末期股息的说明</a></td><td>2026-06-29 19:05:54:594</td><td>其他</td><td>东方财富公告中心</td></tr>
+<tr><td>中兴通讯</td><td>000063</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826546915">中兴通讯:关于按照《香港上市规则》公布翌日披露报表的公告</a></td><td>2026-06-29 19:03:09:578</td><td>其他</td><td>东方财富公告中心</td></tr>
+<tr><td>中芯国际</td><td>688981</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826545520">中芯国际:港股公告:翌日披露报表</a></td><td>2026-06-29 18:35:57:612</td><td>其他</td><td>东方财富公告中心</td></tr>
+<tr><td>中芯国际</td><td>688981</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606261825042437">中芯国际:中芯国际股东会议事规则</a></td><td>2026-06-26 21:28:15:821</td><td>议事规则/实施细则</td><td>东方财富公告中心</td></tr>
+<tr><td>中芯国际</td><td>688981</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606261825042433">中芯国际:中芯国际董事及高级管理人员薪酬管理制度</a></td><td>2026-06-26 21:28:15:820</td><td>管理办法/制度</td><td>东方财富公告中心</td></tr>
+<tr><td>中芯国际</td><td>688981</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606261825042432">中芯国际:中芯国际董事会议事规则</a></td><td>2026-06-26 21:28:15:815</td><td>议事规则/实施细则</td><td>东方财富公告中心</td></tr>
+<tr><td>中芯国际</td><td>688981</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606261825042431">中芯国际:上海市锦天城律师事务所关于2026年度股东会的法律意见书</a></td><td>2026-06-26 21:28:15:809</td><td>法律意见书</td><td>东方财富公告中心</td></tr>
+<tr><td>京东方A</td><td>000725</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606251823856017">京东方Ａ:京东方科技集团股份有限公司2026年跟踪评级报告</a></td><td>2026-06-25 18:53:08:336</td><td>其他、跟踪评级公告</td><td>东方财富公告中心</td></tr>
+<tr><td>京东方A</td><td>000725</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606251823852589">京东方Ａ:028-2026年6月25日投资者关系活动记录表</a></td><td>2026-06-25 17:54:00:582</td><td>调研活动</td><td>东方财富公告中心</td></tr>
+<tr><td>京东方A</td><td>000725</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606251823846609">京东方Ａ:京东方科技集团股份有限公司公司债券受托管理事务报告(2025年度)</a></td><td>2026-06-25 16:00:06:281</td><td>其他、受托管理事务定期报告</td><td>东方财富公告中心</td></tr></tbody>
       </table>
     </section>
 
@@ -223,7 +259,7 @@
           <small>688981 / 00981</small>
           <h3>中芯国际</h3>
           <ul class="list">
-            <li><span>公告</span><div><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826545520" class="red">中芯国际:港股公告:翌日披露报表｜2026-06-29 18:35:57:511</a><br><span class="source-pill">东方财富公告中心</span></div></li>
+            <li><span>公告</span><div><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826545520" class="red">中芯国际:港股公告:翌日披露报表｜2026-06-29 18:35:57:612</a><br><span class="source-pill">东方财富公告中心</span></div></li>
             <li><span>跟踪</span><div>晶圆代工、成熟制程、资本开支、国产替代、出口管制。</div></li>
             <li><span>下一步</span><div>继续跟踪 A/H 两地公告、产能利用率、毛利率和外部限制变化。</div></li>
           </ul>
@@ -243,7 +279,7 @@
           <small>000725</small>
           <h3>京东方A</h3>
           <ul class="list">
-            <li><span>公告</span><div><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606251823856017" class="red">京东方Ａ:京东方科技集团股份有限公司2026年跟踪评级报告｜2026-06-25 18:53:08:356</a><br><span class="source-pill">东方财富公告中心</span></div></li>
+            <li><span>公告</span><div><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606251823856017" class="red">京东方Ａ:京东方科技集团股份有限公司2026年跟踪评级报告｜2026-06-25 18:53:08:336</a><br><span class="source-pill">东方财富公告中心</span></div></li>
             <li><span>跟踪</span><div>LCD/OLED 面板价格、车载显示、IoT 创新业务和折旧压力。</div></li>
             <li><span>下一步</span><div>重点看面板价格修复、OLED 良率和下游补库持续性。</div></li>
           </ul>
@@ -253,7 +289,7 @@
           <small>000063 / 00763</small>
           <h3>中兴通讯</h3>
           <ul class="list">
-            <li><span>公告</span><div><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826547098" class="red">中兴通讯:关于按照《香港上市规则》公布人民币3,584百万元零息美元结算于2030年到期的H股可转换债券转股价格调整的公告｜2026-06-29 19:05:54:620</a><br><span class="source-pill">东方财富公告中心</span></div></li>
+            <li><span>公告</span><div><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826547098" class="red">中兴通讯:关于按照《香港上市规则》公布人民币3,584百万元零息美元结算于2030年到期的H股可转换债券转股价格调整的公告｜2026-06-29 19:05:54:623</a><br><span class="source-pill">东方财富公告中心</span></div></li>
             <li><span>跟踪</span><div>通信设备、算力网络、服务器、运营商资本开支和海外合规。</div></li>
             <li><span>下一步</span><div>继续跟踪运营商招标、AI 算力产品、毛利结构和海外监管。</div></li>
           </ul>
@@ -263,7 +299,7 @@
           <small>688518</small>
           <h3>联赢激光</h3>
           <ul class="list">
-            <li><span>公告</span><div><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202605271822917657" class="red">联赢激光:投资者关系活动记录表2026年5月27日｜2026-05-27 18:19:00:649</a><br><span class="source-pill">东方财富公告中心</span></div></li>
+            <li><span>公告</span><div><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202605271822917657" class="red">联赢激光:投资者关系活动记录表2026年5月27日｜2026-05-27 18:19:00:648</a><br><span class="source-pill">东方财富公告中心</span></div></li>
             <li><span>跟踪</span><div>锂电激光焊接、消费电子/半导体激光设备、订单和回款。</div></li>
             <li><span>下一步</span><div>观察新能源设备资本开支、订单兑现、应收账款和毛利修复。</div></li>
           </ul>
@@ -337,28 +373,28 @@
         <article class="review-card">
           <small>2026-06-26｜客户专属页｜已收录</small>
           <h3>客户001试验页</h3>
-          <p>最早版本，用于复盘客户页信息架构和展示节奏。（本次未重新复制，沿用既有快照。）</p>
+          <p>最早版本，用于复盘客户页信息架构和展示节奏。</p>
           <a href="review/client-001/2026-06-26-client-trial.html">打开页面</a>
         </article>
 
         <article class="review-card">
           <small>2026-06-27｜对外展示页｜已收录</small>
           <h3>客户001公开展示页</h3>
-          <p>当前客户版主页面，可复盘公告、行情、黄金和产品图排序。（本次未重新复制，沿用既有快照。）</p>
+          <p>当前客户版主页面，可复盘公告、行情、黄金和产品图排序。</p>
           <a href="review/client-001/2026-06-27-public.html">打开页面</a>
         </article>
 
         <article class="review-card">
           <small>2026-06-27｜电脑网页｜已收录</small>
           <h3>投研情报专栏电脑网页版</h3>
-          <p>适合电脑打开的完整 HTML，可复盘客户转发和网页发布效果。（本次未重新复制，沿用既有快照。）</p>
+          <p>适合电脑打开的完整 HTML，可复盘客户转发和网页发布效果。</p>
           <a href="review/client-001/2026-06-27-desktop.html">打开页面</a>
         </article>
 
         <article class="review-card">
           <small>2026-06-27｜手机阅读｜已收录</small>
           <h3>投研情报专栏手机阅读版</h3>
-          <p>适合微信/手机阅读的 HTML，可复盘移动端阅读体验。（本次未重新复制，沿用既有快照。）</p>
+          <p>适合微信/手机阅读的 HTML，可复盘移动端阅读体验。</p>
           <a href="review/client-001/2026-06-27-mobile.html">打开页面</a>
         </article></div>
     </section>
@@ -393,8 +429,77 @@
     </section>
 
     <footer class="footer">
-      <div>生成时间：2026-06-29 20:15:12 CST｜数据文件：data/daily-tracking-2026-06-29.json｜用途：个人自用投研复盘，不构成买卖建议。</div>
+      <div>生成时间：2026-06-29 20:30:12 CST｜数据文件：data/daily-tracking-2026-06-29.json｜用途：个人自用投研复盘，不构成买卖建议。</div>
     </footer>
   </main>
+  <script>
+    (() => {
+      const currentVersion = document.querySelector('meta[name="dashboard-version"]')?.content || "";
+      const status = document.getElementById("liveStatus");
+      const statusText = document.getElementById("liveStatusText");
+      const refreshButton = document.getElementById("liveRefreshButton");
+      const pageUrl = window.location.href.split("#")[0].split("?")[0];
+      const isLocalFile = window.location.protocol === "file:";
+      const checkIntervalMs = 60 * 1000;
+      const localReloadMs = 5 * 60 * 1000;
+
+      function shortTime() {
+        return new Intl.DateTimeFormat("zh-CN", {
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false,
+          timeZone: "Asia/Shanghai",
+        }).format(new Date());
+      }
+
+      function setStatus(message, isUpdate = false) {
+        statusText.textContent = message;
+        status.classList.toggle("is-update", isUpdate);
+      }
+
+      async function checkForUpdate() {
+        if (isLocalFile) {
+          setStatus(`本地预览动态刷新｜${shortTime()}｜每5分钟自动重载`);
+          return;
+        }
+
+        try {
+          setStatus(`正在检查更新｜${shortTime()}`);
+          const response = await fetch(`${pageUrl}?live_check=${Date.now()}`, { cache: "no-store" });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const nextHtml = await response.text();
+          const versionMatch = nextHtml.match(/<meta\s+name=["']dashboard-version["']\s+content=["']([^"']+)["']/i);
+          const nextVersion = versionMatch ? versionMatch[1] : "";
+          if (nextVersion && currentVersion && nextVersion !== currentVersion) {
+            setStatus("发现新版本，正在自动刷新", true);
+            window.setTimeout(() => window.location.reload(), 900);
+            return;
+          }
+          setStatus(`已是最新｜${shortTime()}`);
+        } catch (error) {
+          setStatus(`更新检查受限｜${shortTime()}｜可手动刷新`);
+        }
+      }
+
+      refreshButton.addEventListener("click", () => {
+        if (isLocalFile) {
+          window.location.reload();
+          return;
+        }
+        checkForUpdate();
+      });
+
+      document.addEventListener("visibilitychange", () => {
+        if (!document.hidden) checkForUpdate();
+      });
+
+      if (isLocalFile) {
+        window.setInterval(() => window.location.reload(), localReloadMs);
+      }
+      window.setTimeout(checkForUpdate, 1800);
+      window.setInterval(checkForUpdate, checkIntervalMs);
+    })();
+  </script>
 </body>
 </html>

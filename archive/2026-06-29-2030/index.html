@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="dashboard-version" content="2026-06-29 20:30:12 CST">
+  <title>个人投研核心监控台｜2026-06-29</title>
+  <style>
+    :root {
+      --bg: #07090d;
+      --panel: rgba(17, 22, 30, 0.86);
+      --panel-2: rgba(28, 34, 45, 0.76);
+      --ink: #fff7ed;
+      --muted: #a9a39a;
+      --line: rgba(255, 247, 237, 0.13);
+      --red: #ff3b30;
+      --gold: #d8a24a;
+      --cyan: #74d7ef;
+      --green: #42d392;
+      --shadow: 0 30px 90px rgba(0, 0, 0, 0.46);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, rgba(255,59,48,.24), transparent 28%),
+        radial-gradient(circle at 92% 4%, rgba(116,215,239,.16), transparent 24%),
+        linear-gradient(180deg, #080a0f 0%, #10141c 52%, #06070a 100%);
+      font-family: "Avenir Next", "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.65;
+    }
+    a { color: var(--cyan); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .page { max-width: 1280px; margin: 0 auto; padding: 20px 22px 64px; }
+    .top {
+      position: sticky; top: 0; z-index: 20;
+      display: flex; justify-content: space-between; align-items: center; gap: 18px;
+      padding: 13px 0; border-bottom: 1px solid var(--line);
+      background: rgba(7,9,13,.8); backdrop-filter: blur(18px);
+    }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .mark {
+      width: 42px; height: 42px; border-radius: 14px; display: grid; place-items: center;
+      background: linear-gradient(135deg, var(--red), #6b1111); font-weight: 900;
+    }
+    .brand strong { display: block; font-size: 15px; }
+    .brand span, .nav, .muted { color: var(--muted); }
+    .brand span { display: block; margin-top: 2px; font-size: 12px; }
+    .nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px 16px; font-size: 12px; }
+    .hero {
+      position: relative; overflow: hidden; margin-top: 22px; padding: 62px 42px 40px;
+      border: 1px solid var(--line); border-radius: 34px; background: linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.02)), var(--panel);
+      box-shadow: var(--shadow);
+    }
+    .hero:after {
+      content: ""; position: absolute; right: -72px; top: -84px; width: 280px; height: 280px;
+      border: 1px solid rgba(255,247,237,.13); border-radius: 999px;
+      box-shadow: 0 0 0 42px rgba(255,247,237,.035);
+    }
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px; }
+    .tag {
+      padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px;
+      background: rgba(255,255,255,.045); color: var(--muted); font-size: 12px; font-weight: 800;
+    }
+    h1 { max-width: 930px; margin: 0; font-size: clamp(42px, 6vw, 82px); line-height: .98; letter-spacing: -.065em; }
+    .lead { max-width: 920px; margin: 22px 0 0; color: var(--muted); font-size: clamp(16px, 1.8vw, 22px); font-weight: 650; }
+    .red { color: var(--red); font-weight: 900; }
+    .quick { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: 30px; }
+    .quick-card, .panel, .company, .review-card, .warning, .alert-banner {
+      border: 1px solid var(--line); border-radius: 26px; background: var(--panel); box-shadow: var(--shadow);
+    }
+    .quick-card { min-height: 112px; padding: 18px; }
+    .quick-card span, .label { display: block; color: var(--muted); font-size: 12px; font-weight: 850; }
+    .quick-card strong { display: block; margin-top: 9px; font-size: 26px; line-height: 1.12; }
+    .section { margin-top: 30px; }
+    .section-title { display: flex; align-items: end; justify-content: space-between; gap: 18px; margin-bottom: 14px; padding: 0 8px; }
+    h2 { margin: 0; font-size: clamp(30px, 4vw, 52px); line-height: 1.02; letter-spacing: -.055em; }
+    .section-title p { max-width: 560px; margin: 0; color: var(--muted); font-size: 13px; text-align: right; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .company-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .review-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .panel, .company { padding: 22px; }
+    .panel h3, .company h3 { margin: 0 0 12px; font-size: 24px; }
+    .company small { color: var(--muted); font-weight: 800; }
+    .review-card { position: relative; overflow: hidden; display: flex; flex-direction: column; min-height: 210px; padding: 20px; }
+    .review-card:before {
+      content: ""; position: absolute; inset: 0 0 auto 0; height: 4px;
+      background: linear-gradient(90deg, var(--red), var(--gold), transparent);
+    }
+    .review-card small { color: var(--muted); font-weight: 850; }
+    .review-card h3 { margin: 12px 0 10px; font-size: 21px; line-height: 1.18; }
+    .review-card p { margin: 0 0 18px; color: var(--muted); font-size: 13px; }
+    .review-card a {
+      display: inline-flex; align-items: center; gap: 8px; margin-top: auto;
+      padding: 9px 12px; border: 1px solid rgba(116,215,239,.32); border-radius: 999px;
+      background: rgba(116,215,239,.08); font-size: 13px; font-weight: 850;
+    }
+    .panel > .review-grid { grid-template-columns: 1fr; }
+    .list { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+    .list li { display: grid; grid-template-columns: 86px 1fr; gap: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
+    .list span { color: var(--muted); font-size: 12px; font-weight: 850; }
+    table { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 22px; background: var(--panel); box-shadow: var(--shadow); }
+    th, td { padding: 14px 14px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; font-size: 14px; }
+    th { color: var(--muted); font-size: 12px; letter-spacing: .04em; text-transform: uppercase; background: rgba(255,255,255,.04); }
+    tr:last-child td { border-bottom: 0; }
+    .up { color: var(--red); font-weight: 900; }
+    .down { color: var(--green); font-weight: 900; }
+    .flat { color: var(--muted); font-weight: 900; }
+    .warning { padding: 20px 22px; color: var(--muted); }
+    .alert-banner {
+      display: grid; grid-template-columns: 180px 1fr; gap: 18px;
+      padding: 20px 22px; margin-bottom: 16px;
+      background: linear-gradient(135deg, rgba(255,59,48,.16), rgba(116,215,239,.06)), var(--panel);
+    }
+    .alert-banner strong { display: block; font-size: 26px; line-height: 1; }
+    .alert-banner p { margin: 4px 0 0; color: var(--muted); }
+    .source-pill {
+      display: inline-flex; margin-top: 8px; padding: 6px 10px; border-radius: 999px;
+      border: 1px solid rgba(116,215,239,.28); background: rgba(116,215,239,.08);
+      color: var(--cyan); font-size: 12px; font-weight: 850;
+    }
+    .source-table td:nth-child(1) { width: 26%; }
+    .footer { margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+    .live-status {
+      position: fixed; left: 50%; bottom: 18px; z-index: 50; transform: translateX(-50%);
+      display: flex; align-items: center; gap: 10px; max-width: calc(100vw - 28px);
+      padding: 10px 12px; border: 1px solid rgba(116,215,239,.28); border-radius: 999px;
+      background: rgba(7,9,13,.78); color: var(--ink); box-shadow: 0 18px 58px rgba(0,0,0,.38);
+      backdrop-filter: blur(18px); font-size: 12px; font-weight: 850;
+    }
+    .live-status.is-update { border-color: rgba(255,59,48,.58); background: rgba(54,9,12,.86); }
+    .live-dot {
+      width: 9px; height: 9px; flex: 0 0 auto; border-radius: 999px;
+      background: var(--green); box-shadow: 0 0 0 0 rgba(66,211,146,.52);
+      animation: livePulse 1.9s infinite;
+    }
+    .live-status.is-update .live-dot { background: var(--red); box-shadow: 0 0 0 0 rgba(255,59,48,.56); }
+    .live-status button {
+      appearance: none; border: 1px solid rgba(255,247,237,.18); border-radius: 999px;
+      background: rgba(255,255,255,.07); color: var(--ink); cursor: pointer;
+      padding: 6px 9px; font: inherit; font-size: 11px;
+    }
+    .live-status button:hover { background: rgba(255,255,255,.12); }
+    @keyframes livePulse {
+      0% { box-shadow: 0 0 0 0 rgba(66,211,146,.52); }
+      70% { box-shadow: 0 0 0 9px rgba(66,211,146,0); }
+      100% { box-shadow: 0 0 0 0 rgba(66,211,146,0); }
+    }
+    @media (max-width: 860px) {
+      .page { padding: 14px 14px 40px; }
+      .top { align-items: flex-start; flex-direction: column; }
+      .nav { justify-content: flex-start; }
+      .hero { padding: 42px 20px 26px; border-radius: 26px; }
+      .quick, .company-grid, .grid-2, .review-grid { grid-template-columns: 1fr; }
+      .alert-banner { grid-template-columns: 1fr; }
+      .section-title { display: block; }
+      .section-title p { margin-top: 8px; text-align: left; }
+      table { display: block; overflow-x: auto; white-space: nowrap; }
+      .list li { grid-template-columns: 70px 1fr; }
+      .live-status {
+        right: 12px; left: 12px; bottom: 12px; transform: none;
+        justify-content: space-between; border-radius: 18px;
+      }
+      .live-status span:nth-child(2) { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    }
+  </style>
+</head>
+<body>
+  <div class="live-status" id="liveStatus" role="status" aria-live="polite">
+    <span class="live-dot" aria-hidden="true"></span>
+    <span id="liveStatusText">动态更新已开启｜自动检查最新版本</span>
+    <button id="liveRefreshButton" type="button">立即检查</button>
+  </div>
+  <main class="page">
+    <header class="top">
+      <div class="brand">
+        <div class="mark">研</div>
+        <div><strong>个人投研情报中枢</strong><span>自用｜公告雷达｜核心监控｜不构成买卖建议</span></div>
+      </div>
+      <nav class="nav">
+        <a href="#monitor">公告雷达</a>
+        <a href="#announcements">公司状态</a>
+        <a href="#market">行情</a>
+        <a href="#review">复盘</a>
+        <a href="#sources">来源</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="tags">
+        <span class="tag">2026-06-29 更新</span>
+        <span class="tag">北京时间 2026-06-29 20:30:12 CST</span>
+        <span class="tag">交易后：收盘后快照</span>
+        <span class="tag">官方公告优先</span>
+      </div>
+      <h1>核心监控台</h1>
+      <p class="lead">只保留需要第一时间处理的信息：<span class="red">新增公告、公司最新状态、关键行情、复盘入口</span>。公告不与媒体报道混同，SpaceX 按私有公司单独跟踪。</p>
+      <div class="quick">
+        <div class="quick-card"><span>覆盖标的</span><strong>6 家</strong></div>
+        <div class="quick-card"><span>公告雷达</span><strong>新增 5</strong></div>
+        <div class="quick-card"><span>最新公告</span><strong>25 条</strong></div>
+        <div class="quick-card"><span>行情证券</span><strong>7 个</strong></div>
+      </div>
+    </section>
+
+    <section class="section" id="monitor">
+      <div class="section-title">
+        <h2>公告雷达</h2>
+        <p>已接入东方财富公告中心。每次运行会比对公告代码，发现新增公告时更新页面并生成提醒。</p>
+      </div>
+      
+      <div class="alert-banner">
+        <div>
+          <span class="label">公告提醒</span>
+          <strong>新增 5 条</strong>
+          <span class="source-pill">已提示</span>
+        </div>
+        <div>
+          <p>发现 5 条新增公告，页面已更新。</p>
+          <p>检查时间：2026-06-29 20:30:12 CST</p>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>公司</th>
+            <th>代码</th>
+            <th>最新公告</th>
+            <th>披露时间</th>
+            <th>类别</th>
+            <th>来源</th>
+          </tr>
+        </thead>
+        <tbody><tr><td>中兴通讯</td><td>000063</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826547098">中兴通讯:关于按照《香港上市规则》公布人民币3,584百万元零息美元结算于2030年到期的H股可转换债券转股价格调整的公告</a></td><td>2026-06-29 19:05:54:623</td><td>其他</td><td>东方财富公告中心</td></tr>
+<tr><td>中兴通讯</td><td>000063</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826547103">中兴通讯:关于按照《香港上市规则》公布截至2025年12月31日止年度之末期股息的公告</a></td><td>2026-06-29 19:05:54:603</td><td>其他</td><td>东方财富公告中心</td></tr>
+<tr><td>中兴通讯</td><td>000063</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826547096">中兴通讯:关于按照《香港上市规则》公布关于派发末期股息的说明</a></td><td>2026-06-29 19:05:54:594</td><td>其他</td><td>东方财富公告中心</td></tr>
+<tr><td>中兴通讯</td><td>000063</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826546915">中兴通讯:关于按照《香港上市规则》公布翌日披露报表的公告</a></td><td>2026-06-29 19:03:09:578</td><td>其他</td><td>东方财富公告中心</td></tr>
+<tr><td>中芯国际</td><td>688981</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826545520">中芯国际:港股公告:翌日披露报表</a></td><td>2026-06-29 18:35:57:612</td><td>其他</td><td>东方财富公告中心</td></tr>
+<tr><td>中芯国际</td><td>688981</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606261825042437">中芯国际:中芯国际股东会议事规则</a></td><td>2026-06-26 21:28:15:821</td><td>议事规则/实施细则</td><td>东方财富公告中心</td></tr>
+<tr><td>中芯国际</td><td>688981</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606261825042433">中芯国际:中芯国际董事及高级管理人员薪酬管理制度</a></td><td>2026-06-26 21:28:15:820</td><td>管理办法/制度</td><td>东方财富公告中心</td></tr>
+<tr><td>中芯国际</td><td>688981</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606261825042432">中芯国际:中芯国际董事会议事规则</a></td><td>2026-06-26 21:28:15:815</td><td>议事规则/实施细则</td><td>东方财富公告中心</td></tr>
+<tr><td>中芯国际</td><td>688981</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606261825042431">中芯国际:上海市锦天城律师事务所关于2026年度股东会的法律意见书</a></td><td>2026-06-26 21:28:15:809</td><td>法律意见书</td><td>东方财富公告中心</td></tr>
+<tr><td>京东方A</td><td>000725</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606251823856017">京东方Ａ:京东方科技集团股份有限公司2026年跟踪评级报告</a></td><td>2026-06-25 18:53:08:336</td><td>其他、跟踪评级公告</td><td>东方财富公告中心</td></tr>
+<tr><td>京东方A</td><td>000725</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606251823852589">京东方Ａ:028-2026年6月25日投资者关系活动记录表</a></td><td>2026-06-25 17:54:00:582</td><td>调研活动</td><td>东方财富公告中心</td></tr>
+<tr><td>京东方A</td><td>000725</td><td><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606251823846609">京东方Ａ:京东方科技集团股份有限公司公司债券受托管理事务报告(2025年度)</a></td><td>2026-06-25 16:00:06:281</td><td>其他、受托管理事务定期报告</td><td>东方财富公告中心</td></tr></tbody>
+      </table>
+    </section>
+
+    <section class="section" id="announcements">
+      <div class="section-title">
+        <h2>公司核心状态</h2>
+        <p>每家公司只展示最新公告、当前跟踪重点和下一步动作；更详细信息放入来源和复盘。</p>
+      </div>
+      <div class="company-grid">
+        
+        <article class="company">
+          <small>688981 / 00981</small>
+          <h3>中芯国际</h3>
+          <ul class="list">
+            <li><span>公告</span><div><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826545520" class="red">中芯国际:港股公告:翌日披露报表｜2026-06-29 18:35:57:612</a><br><span class="source-pill">东方财富公告中心</span></div></li>
+            <li><span>跟踪</span><div>晶圆代工、成熟制程、资本开支、国产替代、出口管制。</div></li>
+            <li><span>下一步</span><div>继续跟踪 A/H 两地公告、产能利用率、毛利率和外部限制变化。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <small>688110</small>
+          <h3>东芯股份</h3>
+          <ul class="list">
+            <li><span>公告</span><div><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606221823742712" class="red">东芯股份:东芯半导体股份有限公司章程｜2026-06-22 18:27:27:289</a><br><span class="source-pill">东方财富公告中心</span></div></li>
+            <li><span>跟踪</span><div>SLC NAND、NOR、DRAM、小容量存储、库存和价格周期。</div></li>
+            <li><span>下一步</span><div>观察存储价格、客户导入、产品结构和费用率变化。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <small>000725</small>
+          <h3>京东方A</h3>
+          <ul class="list">
+            <li><span>公告</span><div><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606251823856017" class="red">京东方Ａ:京东方科技集团股份有限公司2026年跟踪评级报告｜2026-06-25 18:53:08:336</a><br><span class="source-pill">东方财富公告中心</span></div></li>
+            <li><span>跟踪</span><div>LCD/OLED 面板价格、车载显示、IoT 创新业务和折旧压力。</div></li>
+            <li><span>下一步</span><div>重点看面板价格修复、OLED 良率和下游补库持续性。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <small>000063 / 00763</small>
+          <h3>中兴通讯</h3>
+          <ul class="list">
+            <li><span>公告</span><div><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202606291826547098" class="red">中兴通讯:关于按照《香港上市规则》公布人民币3,584百万元零息美元结算于2030年到期的H股可转换债券转股价格调整的公告｜2026-06-29 19:05:54:623</a><br><span class="source-pill">东方财富公告中心</span></div></li>
+            <li><span>跟踪</span><div>通信设备、算力网络、服务器、运营商资本开支和海外合规。</div></li>
+            <li><span>下一步</span><div>继续跟踪运营商招标、AI 算力产品、毛利结构和海外监管。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <small>688518</small>
+          <h3>联赢激光</h3>
+          <ul class="list">
+            <li><span>公告</span><div><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202605271822917657" class="red">联赢激光:投资者关系活动记录表2026年5月27日｜2026-05-27 18:19:00:648</a><br><span class="source-pill">东方财富公告中心</span></div></li>
+            <li><span>跟踪</span><div>锂电激光焊接、消费电子/半导体激光设备、订单和回款。</div></li>
+            <li><span>下一步</span><div>观察新能源设备资本开支、订单兑现、应收账款和毛利修复。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <small>Private / Starlink</small>
+          <h3>SpaceX</h3>
+          <ul class="list">
+            <li><span>公告</span><div><span class="red">非上市公司，无交易所公告口径</span></div></li>
+            <li><span>跟踪</span><div>Starlink、Starship、发射节奏、监管许可、政府合同和融资估值。</div></li>
+            <li><span>下一步</span><div>只跟踪官方、监管、政府合同和可靠媒体，不写成可直接交易股票。</div></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="market">
+      <div class="section-title">
+        <h2>关键行情</h2>
+        <p>交易后：收盘后快照；只保留价格、涨跌幅、成交额和资金方向。</p>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>证券</th>
+            <th>代码</th>
+            <th>最新价</th>
+            <th>涨跌幅</th>
+            <th>成交额</th>
+            <th>主力净流入</th>
+            <th>快照时间</th>
+          </tr>
+        </thead>
+        <tbody><tr><td>中芯国际 A</td><td>688981</td><td>151</td><td class="up">+1.51%</td><td>151.58 亿</td><td>-4.83 亿</td><td>2026-06-29 16:11:50</td></tr>
+<tr><td>东芯股份</td><td>688110</td><td>193.3</td><td class="up">+1.45%</td><td>66.40 亿</td><td>7.42 亿</td><td>2026-06-29 16:11:55</td></tr>
+<tr><td>京东方A</td><td>000725</td><td>7.95</td><td class="up">+2.05%</td><td>324.89 亿</td><td>-26.64 亿</td><td>2026-06-29 15:34:24</td></tr>
+<tr><td>中兴通讯 A</td><td>000063</td><td>35.2</td><td class="down">-1.32%</td><td>41.56 亿</td><td>-4.39 亿</td><td>2026-06-29 15:34:00</td></tr>
+<tr><td>联赢激光</td><td>688518</td><td>27.2</td><td class="down">-4.96%</td><td>9.24 亿</td><td>-5115.97 万</td><td>2026-06-29 16:11:42</td></tr>
+<tr><td>中芯国际 H</td><td>00981</td><td>84.8</td><td class="up">+6.00%</td><td>102.81 亿</td><td>8.91 亿</td><td>2026-06-29 16:08:50</td></tr>
+<tr><td>中兴通讯 H</td><td>00763</td><td>22.96</td><td class="up">+0.70%</td><td>2.71 亿</td><td>2042.17 万</td><td>2026-06-29 16:08:50</td></tr></tbody>
+      </table>
+    </section>
+
+    <section class="section" id="review">
+      <div class="section-title">
+        <h2>复盘</h2>
+        <p>将之前为客户提供的 HTML 页面纳入个人复盘入口，按周沉淀内容结构、阅读体验和下一轮优化事项。</p>
+      </div>
+      <div class="grid-2" style="margin-bottom:16px;">
+        <article class="panel">
+          <h3>客户 HTML 入口</h3>
+          <ul class="list">
+            <li><span>用途</span><div>快速打开客户001历史页面，复查客户看到的真实页面效果。</div></li>
+            <li><span>方法</span><div>每次客户页交付后复制快照到个人站点 `review/`，避免原文件移动后入口失效。</div></li>
+            <li><span>边界</span><div>这里是个人复盘入口，不替代客户正式展示页。</div></li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3>按周复盘</h3>
+          <div class="review-grid">
+        <article class="review-card">
+          <small>2026-06-22 至 2026-06-28</small>
+          <h3>2026年第26周客户内容复盘</h3>
+          <p>客户001页面从试验版到投研情报专栏的结构、转发场景和移动端体验复盘。</p>
+          <a href="review/weekly/2026-W26.html">进入周复盘</a>
+        </article></div>
+        </article>
+      </div>
+      <div class="review-grid">
+        <article class="review-card">
+          <small>2026-06-26｜客户专属页｜已收录</small>
+          <h3>客户001试验页</h3>
+          <p>最早版本，用于复盘客户页信息架构和展示节奏。</p>
+          <a href="review/client-001/2026-06-26-client-trial.html">打开页面</a>
+        </article>
+
+        <article class="review-card">
+          <small>2026-06-27｜对外展示页｜已收录</small>
+          <h3>客户001公开展示页</h3>
+          <p>当前客户版主页面，可复盘公告、行情、黄金和产品图排序。</p>
+          <a href="review/client-001/2026-06-27-public.html">打开页面</a>
+        </article>
+
+        <article class="review-card">
+          <small>2026-06-27｜电脑网页｜已收录</small>
+          <h3>投研情报专栏电脑网页版</h3>
+          <p>适合电脑打开的完整 HTML，可复盘客户转发和网页发布效果。</p>
+          <a href="review/client-001/2026-06-27-desktop.html">打开页面</a>
+        </article>
+
+        <article class="review-card">
+          <small>2026-06-27｜手机阅读｜已收录</small>
+          <h3>投研情报专栏手机阅读版</h3>
+          <p>适合微信/手机阅读的 HTML，可复盘移动端阅读体验。</p>
+          <a href="review/client-001/2026-06-27-mobile.html">打开页面</a>
+        </article></div>
+    </section>
+
+    <section class="section" id="sources">
+      <div class="section-title">
+        <h2>来源索引与限制</h2>
+        <p>当前版本是第一版每日跟踪底座，来源链路已列出，仍需在正式日报中逐条核验公告详情。</p>
+      </div>
+      <table class="source-table">
+        <thead><tr><th>项目</th><th>来源</th><th>链接</th></tr></thead>
+        <tbody><tr><td>行情快照</td><td>东方财富行情接口</td><td><a href="https://push2.eastmoney.com/api/qt/ulist.np/get?fltt=2&amp;secids=1.688981,1.688110,0.000725,0.000063,1.688518,116.00981,116.00763&amp;fields=f12,f14,f2,f3,f4,f5,f6,f15,f16,f17,f18,f20,f21,f62,f124">打开来源</a></td></tr>
+<tr><td>中芯国际公告列表</td><td>东方财富公告中心</td><td><a href="https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&amp;page_size=5&amp;page_index=1&amp;ann_type=A&amp;client_source=web&amp;stock_list=688981">打开来源</a></td></tr>
+<tr><td>东芯股份公告列表</td><td>东方财富公告中心</td><td><a href="https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&amp;page_size=5&amp;page_index=1&amp;ann_type=A&amp;client_source=web&amp;stock_list=688110">打开来源</a></td></tr>
+<tr><td>京东方A公告列表</td><td>东方财富公告中心</td><td><a href="https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&amp;page_size=5&amp;page_index=1&amp;ann_type=A&amp;client_source=web&amp;stock_list=000725">打开来源</a></td></tr>
+<tr><td>中兴通讯公告列表</td><td>东方财富公告中心</td><td><a href="https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&amp;page_size=5&amp;page_index=1&amp;ann_type=A&amp;client_source=web&amp;stock_list=000063">打开来源</a></td></tr>
+<tr><td>联赢激光公告列表</td><td>东方财富公告中心</td><td><a href="https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&amp;page_size=5&amp;page_index=1&amp;ann_type=A&amp;client_source=web&amp;stock_list=688518">打开来源</a></td></tr>
+<tr><td>中芯国际公告</td><td>上交所</td><td><a href="https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688981">打开来源</a></td></tr>
+<tr><td>东芯股份公告</td><td>上交所</td><td><a href="https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688110">打开来源</a></td></tr>
+<tr><td>联赢激光公告</td><td>上交所</td><td><a href="https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688518">打开来源</a></td></tr>
+<tr><td>京东方A公告</td><td>巨潮资讯</td><td><a href="https://www.cninfo.com.cn/new/disclosure/stock?stockCode=000725">打开来源</a></td></tr>
+<tr><td>中兴通讯公告</td><td>巨潮资讯</td><td><a href="https://www.cninfo.com.cn/new/disclosure/stock?stockCode=000063">打开来源</a></td></tr>
+<tr><td>中芯国际H公告</td><td>HKEX披露易</td><td><a href="https://www.hkexnews.hk/index.htm">打开来源</a></td></tr>
+<tr><td>中兴通讯H公告</td><td>HKEX披露易</td><td><a href="https://www.hkexnews.hk/index.htm">打开来源</a></td></tr>
+<tr><td>SpaceX官方</td><td>SpaceX</td><td><a href="https://www.spacex.com/">打开来源</a></td></tr>
+<tr><td>Starlink官方</td><td>Starlink</td><td><a href="https://www.starlink.com/">打开来源</a></td></tr>
+<tr><td>FAA商业航天</td><td>FAA</td><td><a href="https://www.faa.gov/space">打开来源</a></td></tr></tbody>
+      </table>
+      <div class="warning" style="margin-top:16px;">
+        <strong>核验限制：</strong>本次已抓取行情快照并建立公告核验口径；巨潮接口在本次窗口未返回新增公告。HKEX 与 SpaceX 动态页面可能存在动态加载，正式外发前应补充人工复核或专门接口。
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>生成时间：2026-06-29 20:30:12 CST｜数据文件：data/daily-tracking-2026-06-29.json｜用途：个人自用投研复盘，不构成买卖建议。</div>
+    </footer>
+  </main>
+  <script>
+    (() => {
+      const currentVersion = document.querySelector('meta[name="dashboard-version"]')?.content || "";
+      const status = document.getElementById("liveStatus");
+      const statusText = document.getElementById("liveStatusText");
+      const refreshButton = document.getElementById("liveRefreshButton");
+      const pageUrl = window.location.href.split("#")[0].split("?")[0];
+      const isLocalFile = window.location.protocol === "file:";
+      const checkIntervalMs = 60 * 1000;
+      const localReloadMs = 5 * 60 * 1000;
+
+      function shortTime() {
+        return new Intl.DateTimeFormat("zh-CN", {
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false,
+          timeZone: "Asia/Shanghai",
+        }).format(new Date());
+      }
+
+      function setStatus(message, isUpdate = false) {
+        statusText.textContent = message;
+        status.classList.toggle("is-update", isUpdate);
+      }
+
+      async function checkForUpdate() {
+        if (isLocalFile) {
+          setStatus(`本地预览动态刷新｜${shortTime()}｜每5分钟自动重载`);
+          return;
+        }
+
+        try {
+          setStatus(`正在检查更新｜${shortTime()}`);
+          const response = await fetch(`${pageUrl}?live_check=${Date.now()}`, { cache: "no-store" });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const nextHtml = await response.text();
+          const versionMatch = nextHtml.match(/<meta\s+name=["']dashboard-version["']\s+content=["']([^"']+)["']/i);
+          const nextVersion = versionMatch ? versionMatch[1] : "";
+          if (nextVersion && currentVersion && nextVersion !== currentVersion) {
+            setStatus("发现新版本，正在自动刷新", true);
+            window.setTimeout(() => window.location.reload(), 900);
+            return;
+          }
+          setStatus(`已是最新｜${shortTime()}`);
+        } catch (error) {
+          setStatus(`更新检查受限｜${shortTime()}｜可手动刷新`);
+        }
+      }
+
+      refreshButton.addEventListener("click", () => {
+        if (isLocalFile) {
+          window.location.reload();
+          return;
+        }
+        checkForUpdate();
+      });
+
+      document.addEventListener("visibilitychange", () => {
+        if (!document.hidden) checkForUpdate();
+      });
+
+      if (isLocalFile) {
+        window.setInterval(() => window.location.reload(), localReloadMs);
+      }
+      window.setTimeout(checkForUpdate, 1800);
+      window.setInterval(checkForUpdate, checkIntervalMs);
+    })();
+  </script>
+</body>
+</html>
