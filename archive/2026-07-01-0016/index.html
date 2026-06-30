@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="dashboard-version" content="2026-06-30 23:59:03 CST">
-  <title>个人投研核心监控台｜2026-06-30</title>
+  <meta name="dashboard-version" content="2026-07-01 00:16:18 CST">
+  <title>个人投研核心监控台｜2026-07-01</title>
   <style>
     :root {
       --bg: #07090d;
@@ -109,6 +109,7 @@
     .up { color: var(--red); font-weight: 900; }
     .down { color: var(--green); font-weight: 900; }
     .flat { color: var(--muted); font-weight: 900; }
+    .warn { color: var(--gold); font-weight: 900; }
     .warning { padding: 20px 22px; color: var(--muted); }
     .alert-banner {
       display: grid; grid-template-columns: 180px 1fr; gap: 18px;
@@ -122,6 +123,22 @@
       border: 1px solid rgba(116,215,239,.28); background: rgba(116,215,239,.08);
       color: var(--cyan); font-size: 12px; font-weight: 850;
     }
+    .announcement-details { display: grid; gap: 12px; margin-top: 16px; }
+    .announcement-detail summary {
+      cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 12px;
+      padding: 18px 20px; border: 1px solid var(--line); border-radius: 22px; background: var(--panel);
+      box-shadow: var(--shadow); font-weight: 900;
+    }
+    .announcement-detail summary::-webkit-details-marker { display: none; }
+    .announcement-detail summary span { color: var(--muted); font-size: 12px; font-weight: 850; }
+    .announcement-detail[open] summary { border-radius: 22px 22px 0 0; border-bottom-color: rgba(255,247,237,.08); }
+    .announcement-detail-body {
+      padding: 20px; border: 1px solid var(--line); border-top: 0; border-radius: 0 0 22px 22px;
+      background: rgba(17,22,30,.72);
+    }
+    .announcement-detail-body h3 { margin: 0 0 10px; font-size: 24px; }
+    .announcement-detail-body p { margin: 8px 0; }
+    .announcement-detail-body ul { margin: 8px 0 0; padding-left: 20px; }
     .source-table td:nth-child(1) { width: 26%; }
     .footer { margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
     .live-status {
@@ -192,9 +209,9 @@
 
     <section class="hero">
       <div class="tags">
-        <span class="tag">2026-06-30 更新</span>
-        <span class="tag">北京时间 2026-06-30 23:59:03 CST</span>
-        <span class="tag">交易后：收盘后快照；行情接口异常，沿用上一快照：Remote end closed connection without response</span>
+        <span class="tag">2026-07-01 更新</span>
+        <span class="tag">北京时间 2026-07-01 00:16:18 CST</span>
+        <span class="tag">交易日前：最近交易日快照；行情接口异常，沿用上一快照：Remote end closed connection without response</span>
         <span class="tag">官方公告优先</span>
       </div>
       <h1>核心监控台</h1>
@@ -202,7 +219,7 @@
       <div class="quick">
         <div class="quick-card"><span>公告雷达</span><strong>已接入</strong></div>
         <div class="quick-card"><span>最新公告</span><strong>25 条</strong></div>
-        <div class="quick-card"><span>更新时间</span><strong>23:59</strong></div>
+        <div class="quick-card"><span>更新时间</span><strong>00:16</strong></div>
         <div class="quick-card"><span>更新规则</span><strong>盘中5分钟 / 晚20点</strong></div>
       </div>
     </section>
@@ -221,7 +238,7 @@
         </div>
         <div>
           <p>本次未发现相较上次检查的新增公告。</p>
-          <p>检查时间：2026-06-30 23:59:03 CST</p>
+          <p>检查时间：2026-07-01 00:16:18 CST</p>
         </div>
       </div>
       <table>
@@ -234,19 +251,229 @@
             <th>入口</th>
           </tr>
         </thead>
-        <tbody><tr><td><strong>京东方A</strong><br><span class="muted">000725</span></td><td>2026-06-30 22:27:15:911</td><td><strong>京东方Ａ:029-2026年6月30日投资者关系活动记录表</strong><br><span class="source-pill">调研活动</span></td><td>投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。</td><td><a class="source-pill" href="announcements/AN202606301826610084.html">查看精排详情</a></td></tr>
-<tr><td><strong>东芯股份</strong><br><span class="muted">688110</span></td><td>2026-06-30 20:10:37:126</td><td><strong>东芯股份:关于股票交易风险提示的公告</strong><br><span class="source-pill">风险提示性公告</span></td><td>风险提示或交易异动类事项，需要优先核验风险原因、持续性和监管关注点。</td><td><a class="source-pill" href="announcements/AN202606301826604635.html">查看精排详情</a></td></tr>
-<tr><td><strong>中芯国际</strong><br><span class="muted">688981</span></td><td>2026-06-30 18:39:19:164</td><td><strong>中芯国际:港股公告:翌日披露报表</strong><br><span class="source-pill">其他</span></td><td>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</td><td><a class="source-pill" href="announcements/AN202606301826598916.html">查看精排详情</a></td></tr>
-<tr><td><strong>京东方A</strong><br><span class="muted">000725</span></td><td>2026-06-30 17:08:11:137</td><td><strong>京东方Ａ:关于回购公司股份的进展公告</strong><br><span class="source-pill">回购进展情况</span></td><td>股份回购相关事项，重点看回购金额、价格区间、进度和资金来源。</td><td><a class="source-pill" href="announcements/AN202606301826590931.html">查看精排详情</a></td></tr>
-<tr><td><strong>东芯股份</strong><br><span class="muted">688110</span></td><td>2026-06-30 17:02:31:280</td><td><strong>东芯股份:2026年第三次临时股东会决议公告</strong><br><span class="source-pill">股东大会决议公告、高管人员任职变动</span></td><td>公司治理/股东会决议事项，重点核对议案通过情况和是否影响资本运作。</td><td><a class="source-pill" href="announcements/AN202606301826590428.html">查看精排详情</a></td></tr>
-<tr><td><strong>东芯股份</strong><br><span class="muted">688110</span></td><td>2026-06-30 17:02:31:226</td><td><strong>东芯股份:北京德恒(深圳)律师事务所关于东芯半导体股份有限公司2026年第三次临时股东会的法律意见</strong><br><span class="source-pill">法律意见书</span></td><td>公司治理/股东会决议事项，重点核对议案通过情况和是否影响资本运作。</td><td><a class="source-pill" href="announcements/AN202606301826590429.html">查看精排详情</a></td></tr>
-<tr><td><strong>中兴通讯</strong><br><span class="muted">000063</span></td><td>2026-06-29 19:05:54:718</td><td><strong>中兴通讯:关于按照《香港上市规则》公布人民币3,584百万元零息美元结算于2030年到期的H股可转换债券转股价格调整的公告</strong><br><span class="source-pill">其他</span></td><td>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</td><td><a class="source-pill" href="announcements/AN202606291826547098.html">查看精排详情</a></td></tr>
-<tr><td><strong>中兴通讯</strong><br><span class="muted">000063</span></td><td>2026-06-29 19:05:54:705</td><td><strong>中兴通讯:关于按照《香港上市规则》公布截至2025年12月31日止年度之末期股息的公告</strong><br><span class="source-pill">其他</span></td><td>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</td><td><a class="source-pill" href="announcements/AN202606291826547103.html">查看精排详情</a></td></tr>
-<tr><td><strong>中兴通讯</strong><br><span class="muted">000063</span></td><td>2026-06-29 19:05:54:697</td><td><strong>中兴通讯:关于按照《香港上市规则》公布关于派发末期股息的说明</strong><br><span class="source-pill">其他</span></td><td>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</td><td><a class="source-pill" href="announcements/AN202606291826547096.html">查看精排详情</a></td></tr>
-<tr><td><strong>中兴通讯</strong><br><span class="muted">000063</span></td><td>2026-06-29 19:03:09:661</td><td><strong>中兴通讯:关于按照《香港上市规则》公布翌日披露报表的公告</strong><br><span class="source-pill">其他</span></td><td>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</td><td><a class="source-pill" href="announcements/AN202606291826546915.html">查看精排详情</a></td></tr>
-<tr><td><strong>中芯国际</strong><br><span class="muted">688981</span></td><td>2026-06-29 18:35:57:511</td><td><strong>中芯国际:港股公告:翌日披露报表</strong><br><span class="source-pill">其他</span></td><td>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</td><td><a class="source-pill" href="announcements/AN202606291826545520.html">查看精排详情</a></td></tr>
-<tr><td><strong>中芯国际</strong><br><span class="muted">688981</span></td><td>2026-06-26 21:28:15:749</td><td><strong>中芯国际:中芯国际股东会议事规则</strong><br><span class="source-pill">议事规则/实施细则</span></td><td>公司治理/股东会决议事项，重点核对议案通过情况和是否影响资本运作。</td><td><a class="source-pill" href="announcements/AN202606261825042437.html">查看精排详情</a></td></tr></tbody>
+        <tbody><tr><td><strong>京东方A</strong><br><span class="muted">000725</span></td><td>2026-06-30 22:27:16:010</td><td><strong>京东方Ａ:029-2026年6月30日投资者关系活动记录表</strong><br><span class="source-pill">调研活动</span></td><td>投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。</td><td><a class="source-pill" href="#ann-AN202606301826610084">查看精排详情</a></td></tr>
+<tr><td><strong>东芯股份</strong><br><span class="muted">688110</span></td><td>2026-06-30 20:10:37:229</td><td><strong>东芯股份:关于股票交易风险提示的公告</strong><br><span class="source-pill">风险提示性公告</span></td><td>风险提示或交易异动类事项，需要优先核验风险原因、持续性和监管关注点。</td><td><a class="source-pill" href="#ann-AN202606301826604635">查看精排详情</a></td></tr>
+<tr><td><strong>中芯国际</strong><br><span class="muted">688981</span></td><td>2026-06-30 18:39:19:164</td><td><strong>中芯国际:港股公告:翌日披露报表</strong><br><span class="source-pill">其他</span></td><td>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</td><td><a class="source-pill" href="#ann-AN202606301826598916">查看精排详情</a></td></tr>
+<tr><td><strong>京东方A</strong><br><span class="muted">000725</span></td><td>2026-06-30 17:08:11:169</td><td><strong>京东方Ａ:关于回购公司股份的进展公告</strong><br><span class="source-pill">回购进展情况</span></td><td>股份回购相关事项，重点看回购金额、价格区间、进度和资金来源。</td><td><a class="source-pill" href="#ann-AN202606301826590931">查看精排详情</a></td></tr>
+<tr><td><strong>东芯股份</strong><br><span class="muted">688110</span></td><td>2026-06-30 17:02:31:336</td><td><strong>东芯股份:2026年第三次临时股东会决议公告</strong><br><span class="source-pill">股东大会决议公告、高管人员任职变动</span></td><td>公司治理/股东会决议事项，重点核对议案通过情况和是否影响资本运作。</td><td><a class="source-pill" href="#ann-AN202606301826590428">查看精排详情</a></td></tr>
+<tr><td><strong>东芯股份</strong><br><span class="muted">688110</span></td><td>2026-06-30 17:02:31:274</td><td><strong>东芯股份:北京德恒(深圳)律师事务所关于东芯半导体股份有限公司2026年第三次临时股东会的法律意见</strong><br><span class="source-pill">法律意见书</span></td><td>公司治理/股东会决议事项，重点核对议案通过情况和是否影响资本运作。</td><td><a class="source-pill" href="#ann-AN202606301826590429">查看精排详情</a></td></tr>
+<tr><td><strong>中兴通讯</strong><br><span class="muted">000063</span></td><td>2026-06-29 19:05:54:705</td><td><strong>中兴通讯:关于按照《香港上市规则》公布人民币3,584百万元零息美元结算于2030年到期的H股可转换债券转股价格调整的公告</strong><br><span class="source-pill">其他</span></td><td>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</td><td><a class="source-pill" href="#ann-AN202606291826547098">查看精排详情</a></td></tr>
+<tr><td><strong>中兴通讯</strong><br><span class="muted">000063</span></td><td>2026-06-29 19:05:54:705</td><td><strong>中兴通讯:关于按照《香港上市规则》公布截至2025年12月31日止年度之末期股息的公告</strong><br><span class="source-pill">其他</span></td><td>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</td><td><a class="source-pill" href="#ann-AN202606291826547103">查看精排详情</a></td></tr>
+<tr><td><strong>中兴通讯</strong><br><span class="muted">000063</span></td><td>2026-06-29 19:05:54:697</td><td><strong>中兴通讯:关于按照《香港上市规则》公布关于派发末期股息的说明</strong><br><span class="source-pill">其他</span></td><td>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</td><td><a class="source-pill" href="#ann-AN202606291826547096">查看精排详情</a></td></tr>
+<tr><td><strong>中兴通讯</strong><br><span class="muted">000063</span></td><td>2026-06-29 19:03:09:660</td><td><strong>中兴通讯:关于按照《香港上市规则》公布翌日披露报表的公告</strong><br><span class="source-pill">其他</span></td><td>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</td><td><a class="source-pill" href="#ann-AN202606291826546915">查看精排详情</a></td></tr>
+<tr><td><strong>中芯国际</strong><br><span class="muted">688981</span></td><td>2026-06-29 18:35:57:511</td><td><strong>中芯国际:港股公告:翌日披露报表</strong><br><span class="source-pill">其他</span></td><td>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</td><td><a class="source-pill" href="#ann-AN202606291826545520">查看精排详情</a></td></tr>
+<tr><td><strong>中芯国际</strong><br><span class="muted">688981</span></td><td>2026-06-26 21:28:15:749</td><td><strong>中芯国际:中芯国际股东会议事规则</strong><br><span class="source-pill">议事规则/实施细则</span></td><td>公司治理/股东会决议事项，重点核对议案通过情况和是否影响资本运作。</td><td><a class="source-pill" href="#ann-AN202606261825042437">查看精排详情</a></td></tr></tbody>
       </table>
+      <div class="announcement-details">
+        
+        <details class="announcement-detail" id="ann-AN202606301826610084">
+          <summary>
+            <div>京东方A｜京东方Ａ:029-2026年6月30日投资者关系活动记录表</div>
+            <span>2026-06-30 22:27:16:010</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>京东方Ａ:029-2026年6月30日投资者关系活动记录表</h3>
+            <p><span class="source-pill">调研活动</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202606301826610084_1.pdf?1782858405000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>提取问答中涉及价格、产能、订单、客户、产品进度的表述。</li><li>与上一期调研记录对比，判断公司表述是否发生变化。</li><li>把可验证事实和管理层判断分开记录，避免把观点写成公告事实。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202606301826604635">
+          <summary>
+            <div>东芯股份｜东芯股份:关于股票交易风险提示的公告</div>
+            <span>2026-06-30 20:10:37:229</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>东芯股份:关于股票交易风险提示的公告</h3>
+            <p><span class="source-pill">风险提示性公告</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202606301826604635_1.pdf?1782850847000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>风险提示或交易异动类事项，需要优先核验风险原因、持续性和监管关注点。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>优先核验风险提示的触发原因和监管关注点。</li><li>检查是否存在连续涨跌、概念炒作、业绩不匹配等风险。</li><li>后续跟踪公司是否补充披露或交易所是否问询。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202606301826598916">
+          <summary>
+            <div>中芯国际｜中芯国际:港股公告:翌日披露报表</div>
+            <span>2026-06-30 18:39:19:164</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>中芯国际:港股公告:翌日披露报表</h3>
+            <p><span class="source-pill">其他</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202606301826598916_1.pdf?1782845096000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。</li><li>判断是否影响公司基本面、治理结构、资金安排或市场预期。</li><li>如属于公告事实变化，加入下一次投研复盘的关注清单。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202606301826590931">
+          <summary>
+            <div>京东方A｜京东方Ａ:关于回购公司股份的进展公告</div>
+            <span>2026-06-30 17:08:11:169</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>京东方Ａ:关于回购公司股份的进展公告</h3>
+            <p><span class="source-pill">回购进展情况</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202606301826590931_1.pdf?1782839362000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>股份回购相关事项，重点看回购金额、价格区间、进度和资金来源。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。</li><li>判断是否影响公司基本面、治理结构、资金安排或市场预期。</li><li>如属于公告事实变化，加入下一次投研复盘的关注清单。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202606301826590428">
+          <summary>
+            <div>东芯股份｜东芯股份:2026年第三次临时股东会决议公告</div>
+            <span>2026-06-30 17:02:31:336</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>东芯股份:2026年第三次临时股东会决议公告</h3>
+            <p><span class="source-pill">股东大会决议公告、高管人员任职变动</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202606301826590428_1.pdf?1782839041000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>公司治理/股东会决议事项，重点核对议案通过情况和是否影响资本运作。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。</li><li>判断是否影响公司基本面、治理结构、资金安排或市场预期。</li><li>如属于公告事实变化，加入下一次投研复盘的关注清单。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202606301826590429">
+          <summary>
+            <div>东芯股份｜东芯股份:北京德恒(深圳)律师事务所关于东芯半导体股份有限公司2026年第三次临时股东会的法律意见</div>
+            <span>2026-06-30 17:02:31:274</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>东芯股份:北京德恒(深圳)律师事务所关于东芯半导体股份有限公司2026年第三次临时股东会的法律意见</h3>
+            <p><span class="source-pill">法律意见书</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202606301826590429_1.pdf?1782839041000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>公司治理/股东会决议事项，重点核对议案通过情况和是否影响资本运作。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。</li><li>判断是否影响公司基本面、治理结构、资金安排或市场预期。</li><li>如属于公告事实变化，加入下一次投研复盘的关注清单。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202606291826547098">
+          <summary>
+            <div>中兴通讯｜中兴通讯:关于按照《香港上市规则》公布人民币3,584百万元零息美元结算于2030年到期的H股可转换债券转股价格调整的公告</div>
+            <span>2026-06-29 19:05:54:705</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>中兴通讯:关于按照《香港上市规则》公布人民币3,584百万元零息美元结算于2030年到期的H股可转换债券转股价格调整的公告</h3>
+            <p><span class="source-pill">其他</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202606291826547098_1.pdf?1782759938000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。</li><li>判断是否影响公司基本面、治理结构、资金安排或市场预期。</li><li>如属于公告事实变化，加入下一次投研复盘的关注清单。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202606291826547103">
+          <summary>
+            <div>中兴通讯｜中兴通讯:关于按照《香港上市规则》公布截至2025年12月31日止年度之末期股息的公告</div>
+            <span>2026-06-29 19:05:54:705</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>中兴通讯:关于按照《香港上市规则》公布截至2025年12月31日止年度之末期股息的公告</h3>
+            <p><span class="source-pill">其他</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202606291826547103_1.pdf?1782759969000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。</li><li>判断是否影响公司基本面、治理结构、资金安排或市场预期。</li><li>如属于公告事实变化，加入下一次投研复盘的关注清单。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202606291826547096">
+          <summary>
+            <div>中兴通讯｜中兴通讯:关于按照《香港上市规则》公布关于派发末期股息的说明</div>
+            <span>2026-06-29 19:05:54:697</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>中兴通讯:关于按照《香港上市规则》公布关于派发末期股息的说明</h3>
+            <p><span class="source-pill">其他</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202606291826547096_1.pdf?1782759977000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。</li><li>判断是否影响公司基本面、治理结构、资金安排或市场预期。</li><li>如属于公告事实变化，加入下一次投研复盘的关注清单。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202606291826546915">
+          <summary>
+            <div>中兴通讯｜中兴通讯:关于按照《香港上市规则》公布翌日披露报表的公告</div>
+            <span>2026-06-29 19:03:09:660</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>中兴通讯:关于按照《香港上市规则》公布翌日披露报表的公告</h3>
+            <p><span class="source-pill">其他</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202606291826546915_1.pdf?1782759819000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。</li><li>判断是否影响公司基本面、治理结构、资金安排或市场预期。</li><li>如属于公告事实变化，加入下一次投研复盘的关注清单。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202606291826545520">
+          <summary>
+            <div>中芯国际｜中芯国际:港股公告:翌日披露报表</div>
+            <span>2026-06-29 18:35:57:511</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>中芯国际:港股公告:翌日披露报表</h3>
+            <p><span class="source-pill">其他</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202606291826545520_1.pdf?1782758346000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。</li><li>判断是否影响公司基本面、治理结构、资金安排或市场预期。</li><li>如属于公告事实变化，加入下一次投研复盘的关注清单。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202606261825042437">
+          <summary>
+            <div>中芯国际｜中芯国际:中芯国际股东会议事规则</div>
+            <span>2026-06-26 21:28:15:749</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>中芯国际:中芯国际股东会议事规则</h3>
+            <p><span class="source-pill">议事规则/实施细则</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202606261825042437_1.pdf?1782509279000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>公司治理/股东会决议事项，重点核对议案通过情况和是否影响资本运作。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。</li><li>判断是否影响公司基本面、治理结构、资金安排或市场预期。</li><li>如属于公告事实变化，加入下一次投研复盘的关注清单。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202605271822917657">
+          <summary>
+            <div>联赢激光｜联赢激光:投资者关系活动记录表2026年5月27日</div>
+            <span>2026-05-27 18:19:00:735</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>联赢激光:投资者关系活动记录表2026年5月27日</h3>
+            <p><span class="source-pill">调研活动</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H22_AN202605271822917657_1.pdf?1779905962000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>提取问答中涉及价格、产能、订单、客户、产品进度的表述。</li><li>与上一期调研记录对比，判断公司表述是否发生变化。</li><li>把可验证事实和管理层判断分开记录，避免把观点写成公告事实。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+      </div>
     </section>
 
     <section class="section" id="announcements">
@@ -260,7 +487,7 @@
           <small>688981 / 00981</small>
           <h3>中芯国际</h3>
           <ul class="list">
-            <li><span>公告</span><div><a href="announcements/AN202606301826598916.html" class="red">中芯国际:港股公告:翌日披露报表｜2026-06-30 18:39:19:164</a><br><span class="source-pill">精排公告详情</span></div></li>
+            <li><span>公告</span><div><a href="#ann-AN202606301826598916" class="red">中芯国际:港股公告:翌日披露报表｜2026-06-30 18:39:19:164</a><br><span class="source-pill">页面内精排详情</span></div></li>
             <li><span>跟踪</span><div>晶圆代工、成熟制程、资本开支、国产替代、出口管制。</div></li>
             <li><span>下一步</span><div>继续跟踪 A/H 两地公告、产能利用率、毛利率和外部限制变化。</div></li>
           </ul>
@@ -270,7 +497,7 @@
           <small>688110</small>
           <h3>东芯股份</h3>
           <ul class="list">
-            <li><span>公告</span><div><a href="announcements/AN202606301826604635.html" class="red">东芯股份:关于股票交易风险提示的公告｜2026-06-30 20:10:37:126</a><br><span class="source-pill">精排公告详情</span></div></li>
+            <li><span>公告</span><div><a href="#ann-AN202606301826604635" class="red">东芯股份:关于股票交易风险提示的公告｜2026-06-30 20:10:37:229</a><br><span class="source-pill">页面内精排详情</span></div></li>
             <li><span>跟踪</span><div>SLC NAND、NOR、DRAM、小容量存储、库存和价格周期。</div></li>
             <li><span>下一步</span><div>观察存储价格、客户导入、产品结构和费用率变化。</div></li>
           </ul>
@@ -280,7 +507,7 @@
           <small>000725</small>
           <h3>京东方A</h3>
           <ul class="list">
-            <li><span>公告</span><div><a href="announcements/AN202606301826610084.html" class="red">京东方Ａ:029-2026年6月30日投资者关系活动记录表｜2026-06-30 22:27:15:911</a><br><span class="source-pill">精排公告详情</span></div></li>
+            <li><span>公告</span><div><a href="#ann-AN202606301826610084" class="red">京东方Ａ:029-2026年6月30日投资者关系活动记录表｜2026-06-30 22:27:16:010</a><br><span class="source-pill">页面内精排详情</span></div></li>
             <li><span>跟踪</span><div>LCD/OLED 面板价格、车载显示、IoT 创新业务和折旧压力。</div></li>
             <li><span>下一步</span><div>重点看面板价格修复、OLED 良率和下游补库持续性。</div></li>
           </ul>
@@ -290,7 +517,7 @@
           <small>000063 / 00763</small>
           <h3>中兴通讯</h3>
           <ul class="list">
-            <li><span>公告</span><div><a href="announcements/AN202606291826547098.html" class="red">中兴通讯:关于按照《香港上市规则》公布人民币3,584百万元零息美元结算于2030年到期的H股可转换债券转股价格调整的公告｜2026-06-29 19:05:54:718</a><br><span class="source-pill">精排公告详情</span></div></li>
+            <li><span>公告</span><div><a href="#ann-AN202606291826547098" class="red">中兴通讯:关于按照《香港上市规则》公布人民币3,584百万元零息美元结算于2030年到期的H股可转换债券转股价格调整的公告｜2026-06-29 19:05:54:705</a><br><span class="source-pill">页面内精排详情</span></div></li>
             <li><span>跟踪</span><div>通信设备、算力网络、服务器、运营商资本开支和海外合规。</div></li>
             <li><span>下一步</span><div>继续跟踪运营商招标、AI 算力产品、毛利结构和海外监管。</div></li>
           </ul>
@@ -300,7 +527,7 @@
           <small>688518</small>
           <h3>联赢激光</h3>
           <ul class="list">
-            <li><span>公告</span><div><a href="https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&amp;art_code=AN202605271822917657" class="red">联赢激光:投资者关系活动记录表2026年5月27日｜2026-05-27 18:19:00:735</a><br><span class="source-pill">东方财富公告中心</span></div></li>
+            <li><span>公告</span><div><a href="#ann-AN202605271822917657" class="red">联赢激光:投资者关系活动记录表2026年5月27日｜2026-05-27 18:19:00:735</a><br><span class="source-pill">页面内精排详情</span></div></li>
             <li><span>跟踪</span><div>锂电激光焊接、消费电子/半导体激光设备、订单和回款。</div></li>
             <li><span>下一步</span><div>观察新能源设备资本开支、订单兑现、应收账款和毛利修复。</div></li>
           </ul>
@@ -366,26 +593,6 @@
         </article>
 
         <article class="company">
-          <small>东方财富公司资讯｜2026-06-30 19:49:00</small>
-          <h3>中芯国际</h3>
-          <ul class="list">
-            <li><span>消息</span><div><a href="http://finance.eastmoney.com/a/202606303788532948.html">机构：AI需求带动 今年一季度晶圆代工2.0市场营收同比增长23%</a></div></li>
-            <li><span>匹配</span><div>关键词匹配</div></li>
-            <li><span>口径</span><div>媒体/财经信息线索，不替代官方公告。</div></li>
-          </ul>
-        </article>
-
-        <article class="company">
-          <small>东方财富公司资讯｜2026-06-30 17:45:00</small>
-          <h3>中芯国际</h3>
-          <ul class="list">
-            <li><span>消息</span><div><a href="http://finance.eastmoney.com/a/202606303788450762.html">南向资金今日净买入约59亿港元 中芯国际获净买入目前</a></div></li>
-            <li><span>匹配</span><div>关键词匹配</div></li>
-            <li><span>口径</span><div>媒体/财经信息线索，不替代官方公告。</div></li>
-          </ul>
-        </article>
-
-        <article class="company">
           <small>东方财富公司资讯｜2026-06-30 16:52:00</small>
           <h3>中兴通讯</h3>
           <ul class="list">
@@ -426,6 +633,16 @@
         </article>
 
         <article class="company">
+          <small>东方财富公司资讯｜未披露时间</small>
+          <h3>中芯国际</h3>
+          <ul class="list">
+            <li><span>消息</span><div><span class="red">最新消息抓取失败：&#x27;utf-8&#x27; codec can&#x27;t decode byte 0x8b in position 1: invalid start byte</span></div></li>
+            <li><span>匹配</span><div>抓取失败</div></li>
+            <li><span>口径</span><div>媒体/财经信息线索，不替代官方公告。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
           <small>来源限制｜未披露时间</small>
           <h3>SpaceX</h3>
           <ul class="list">
@@ -440,7 +657,7 @@
     <section class="section" id="market">
       <div class="section-title">
         <h2>关键行情</h2>
-        <p>交易后：收盘后快照；行情接口异常，沿用上一快照：Remote end closed connection without response；只保留价格、涨跌幅、成交额和资金方向。</p>
+        <p>交易日前：最近交易日快照；行情接口异常，沿用上一快照：Remote end closed connection without response；只保留价格、涨跌幅、成交额和资金方向。</p>
       </div>
       <table>
         <thead>
@@ -554,7 +771,7 @@
     </section>
 
     <footer class="footer">
-      <div>生成时间：2026-06-30 23:59:03 CST｜更新规则：交易日 09:00-15:00 每5分钟刷新公告/行情/消息，其他时间每日20:00完整更新｜用途：个人自用投研复盘，不构成买卖建议。</div>
+      <div>生成时间：2026-07-01 00:16:18 CST｜更新规则：交易日 09:00-15:00 每5分钟刷新公告/行情/消息，其他时间每日20:00完整更新｜用途：个人自用投研复盘，不构成买卖建议。</div>
     </footer>
   </main>
   <script>
