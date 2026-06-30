@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-30 23:21:18 CST",
+  "updated_at": "2026-06-30 23:23:01 CST",
   "entries": [
     {
       "title": "客户001试验页",
@@ -9,9 +9,9 @@
       "source": "clients/client-001/archive/2026-06-26.html",
       "href": "review/client-001/2026-06-26-client-trial.html",
       "note": "最早版本，用于复盘客户页信息架构和展示节奏。",
-      "available": false,
-      "source_path": "/Users/kongqc/Library/clients/client-001/archive/2026-06-26.html",
-      "size_bytes": 0
+      "available": true,
+      "source_path": "/Users/kongqc/Documents/My_Investment/clients/client-001/archive/2026-06-26.html",
+      "size_bytes": 22580
     },
     {
       "title": "客户001公开展示页",
@@ -21,9 +21,9 @@
       "source": "clients/client-001/public.html",
       "href": "review/client-001/2026-06-27-public.html",
       "note": "当前客户版主页面，可复盘公告、行情、黄金和产品图排序。",
-      "available": false,
-      "source_path": "/Users/kongqc/Library/clients/client-001/public.html",
-      "size_bytes": 0
+      "available": true,
+      "source_path": "/Users/kongqc/Documents/My_Investment/clients/client-001/public.html",
+      "size_bytes": 8644740
     },
     {
       "title": "投研情报专栏电脑网页版",
@@ -33,9 +33,9 @@
       "source": "clients/client-001/archive/2026-06-27-投研情报专栏-电脑网页版.html",
       "href": "review/client-001/2026-06-27-desktop.html",
       "note": "适合电脑打开的完整 HTML，可复盘客户转发和网页发布效果。",
-      "available": false,
-      "source_path": "/Users/kongqc/Library/clients/client-001/archive/2026-06-27-投研情报专栏-电脑网页版.html",
-      "size_bytes": 0
+      "available": true,
+      "source_path": "/Users/kongqc/Documents/My_Investment/clients/client-001/archive/2026-06-27-投研情报专栏-电脑网页版.html",
+      "size_bytes": 8652042
     },
     {
       "title": "投研情报专栏手机阅读版",
@@ -45,9 +45,9 @@
       "source": "clients/client-001/archive/2026-06-27-投研情报专栏-手机阅读版.html",
       "href": "review/client-001/2026-06-27-mobile.html",
       "note": "适合微信/手机阅读的 HTML，可复盘移动端阅读体验。",
-      "available": false,
-      "source_path": "/Users/kongqc/Library/clients/client-001/archive/2026-06-27-投研情报专栏-手机阅读版.html",
-      "size_bytes": 0
+      "available": true,
+      "source_path": "/Users/kongqc/Documents/My_Investment/clients/client-001/archive/2026-06-27-投研情报专栏-手机阅读版.html",
+      "size_bytes": 8656649
     }
   ],
   "weekly_reviews": [
