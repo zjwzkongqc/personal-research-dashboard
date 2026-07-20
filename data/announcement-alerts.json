@@ -1,38 +1,8 @@
 {
-  "checked_at": "2026-07-19 20:04:23 CST",
+  "checked_at": "2026-07-20 09:01:28 CST",
   "first_run": false,
-  "new_count": 1,
+  "new_count": 0,
   "baseline_new_count": 0,
-  "items": [
-    {
-      "company": "京东方A",
-      "code": "000725",
-      "art_code": "AN202607181827087200",
-      "title": "京东方Ａ:032-2026年7月17日投资者关系活动记录表",
-      "display_time": "2026-07-18 14:01:09:593",
-      "notice_date": "2026-07-18 00:00:00",
-      "column_names": [
-        "调研活动"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202607181827087200",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1784354469.593,
-      "detail_anchor": "ann-AN202607181827087200",
-      "detail_url": "#ann-AN202607181827087200",
-      "detail_source": "页面内精排详情",
-      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202607181827087200_1.pdf?1784383243000.pdf",
-      "notice_eitime": "2026-07-18 14:00:33",
-      "detail_title": "京东方Ａ:032-2026年7月17日投资者关系活动记录表",
-      "detail_categories": "调研活动",
-      "detail_focus": "投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。",
-      "detail_followups": [
-        "提取问答中涉及价格、产能、订单、客户、产品进度的表述。",
-        "与上一期调研记录对比，判断公司表述是否发生变化。",
-        "把可验证事实和管理层判断分开记录，避免把观点写成公告事实。"
-      ],
-      "detail_fetch_error": ""
-    }
-  ],
-  "message": "发现 1 条新增公告，页面已更新。"
+  "items": [],
+  "message": "本次未发现相较上次检查的新增公告。"
 }
