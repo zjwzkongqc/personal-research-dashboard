@@ -1,38 +1,8 @@
 {
-  "checked_at": "2026-07-22 20:00:27 CST",
+  "checked_at": "2026-07-23 09:02:49 CST",
   "first_run": false,
-  "new_count": 1,
+  "new_count": 0,
   "baseline_new_count": 0,
-  "items": [
-    {
-      "company": "中兴通讯",
-      "code": "000063",
-      "art_code": "AN202607221827260580",
-      "title": "中兴通讯:2025年度A股权益分派实施公告",
-      "display_time": "2026-07-22 18:14:57:686",
-      "notice_date": "2026-07-23 00:00:00",
-      "column_names": [
-        "分配方案实施"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202607221827260580",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1784715297.686,
-      "detail_anchor": "ann-AN202607221827260580",
-      "detail_url": "#ann-AN202607221827260580",
-      "detail_source": "页面内精排详情",
-      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202607221827260580_1.pdf?1784744079000.pdf",
-      "notice_eitime": "2026-07-22 18:14:21",
-      "detail_title": "中兴通讯:2025年度A股权益分派实施公告",
-      "detail_categories": "分配方案实施",
-      "detail_focus": "利润分配或权益派发事项，重点看登记日、除权除息日和派发金额。",
-      "detail_followups": [
-        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
-        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
-        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
-      ],
-      "detail_fetch_error": ""
-    }
-  ],
-  "message": "发现 1 条新增公告，页面已更新。"
+  "items": [],
+  "message": "本次未发现相较上次检查的新增公告。"
 }
