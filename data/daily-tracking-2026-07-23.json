@@ -1,7 +1,7 @@
 {
   "date": "2026-07-23",
-  "run_time": "2026-07-23 14:37:04 CST",
-  "run_clock": "14:37",
+  "run_time": "2026-07-23 14:42:20 CST",
+  "run_clock": "14:42",
   "companies": [
     {
       "name": "中芯国际",
@@ -678,7 +678,7 @@
       "code": "000063",
       "art_code": "AN202607021826661538",
       "title": "中兴通讯:关于回购A股股份的进展公告",
-      "display_time": "2026-07-02 16:56:45:792",
+      "display_time": "2026-07-02 16:56:45:790",
       "notice_date": "2026-07-03 00:00:00",
       "column_names": [
         "回购进展情况"
@@ -686,7 +686,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202607021826661538",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1782982605.792,
+      "sort_ts": 1782982605.79,
       "detail_anchor": "ann-AN202607021826661538",
       "detail_url": "#ann-AN202607021826661538",
       "detail_source": "页面内精排详情",
@@ -954,7 +954,7 @@
     }
   ],
   "announcement_alert": {
-    "checked_at": "2026-07-23 14:37:04 CST",
+    "checked_at": "2026-07-23 14:42:20 CST",
     "first_run": false,
     "new_count": 0,
     "baseline_new_count": 0,
@@ -962,7 +962,7 @@
     "message": "本次未发现相较上次检查的新增公告。"
   },
   "announcement_status": "已接入",
-  "market_note": "交易时段：盘中快照",
+  "market_note": "交易时段：盘中快照；行情接口异常，沿用上一快照：Remote end closed connection without response",
   "review_entries": [
     {
       "title": "客户001试验页",
@@ -1031,7 +1031,7 @@
     [
       "行情快照",
       "东方财富行情接口",
-      "https://push2.eastmoney.com/api/qt/ulist.np/get?fltt=2&secids=1.688981,1.688110,0.000725,0.000063,1.688518,116.00981,116.00763&fields=f12,f14,f2,f3,f4,f5,f6,f15,f16,f17,f18,f20,f21,f62,f124"
+      "https://push2.eastmoney.com/api/qt/ulist.np/get"
     ],
     [
       "中芯国际公告列表",
