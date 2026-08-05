@@ -1,7 +1,7 @@
 {
   "date": "2026-08-05",
-  "run_time": "2026-08-05 12:07:12 CST",
-  "run_clock": "12:07",
+  "run_time": "2026-08-05 12:12:25 CST",
+  "run_clock": "12:12",
   "companies": [
     {
       "name": "中芯国际",
@@ -72,7 +72,7 @@
       "low": 120.36,
       "open": 121.0,
       "prev_close": 121.1,
-      "quote_time": "2026-08-05 12:07:04"
+      "quote_time": "2026-08-05 12:12:04"
     },
     {
       "label": "东芯股份",
@@ -89,7 +89,7 @@
       "low": 102.0,
       "open": 102.97,
       "prev_close": 101.78,
-      "quote_time": "2026-08-05 12:06:51"
+      "quote_time": "2026-08-05 12:12:21"
     },
     {
       "label": "京东方A",
@@ -106,7 +106,7 @@
       "low": 5.58,
       "open": 5.59,
       "prev_close": 5.63,
-      "quote_time": "2026-08-05 12:06:45"
+      "quote_time": "2026-08-05 12:11:45"
     },
     {
       "label": "中兴通讯 A",
@@ -123,7 +123,7 @@
       "low": 33.96,
       "open": 34.0,
       "prev_close": 34.37,
-      "quote_time": "2026-08-05 12:06:57"
+      "quote_time": "2026-08-05 12:11:57"
     },
     {
       "label": "联赢激光",
@@ -140,7 +140,7 @@
       "low": 18.96,
       "open": 19.0,
       "prev_close": 19.12,
-      "quote_time": "2026-08-05 12:07:09"
+      "quote_time": "2026-08-05 12:12:09"
     },
     {
       "label": "中芯国际 H",
@@ -561,7 +561,7 @@
       "code": "000063",
       "art_code": "AN202607221827260580",
       "title": "中兴通讯:2025年度A股权益分派实施公告",
-      "display_time": "2026-07-22 18:14:57:778",
+      "display_time": "2026-07-22 18:14:57:779",
       "notice_date": "2026-07-23 00:00:00",
       "column_names": [
         "分配方案实施"
@@ -569,7 +569,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202607221827260580",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1784715297.778,
+      "sort_ts": 1784715297.779,
       "detail_anchor": "ann-AN202607221827260580",
       "detail_url": "#ann-AN202607221827260580",
       "detail_source": "页面内精排详情",
@@ -706,7 +706,7 @@
       "code": "000063",
       "art_code": "AN202607201827151589",
       "title": "中兴通讯:关于回购A股股份实施结果暨股份变动的公告",
-      "display_time": "2026-07-20 18:31:54:765",
+      "display_time": "2026-07-20 18:31:54:812",
       "notice_date": "2026-07-21 00:00:00",
       "column_names": [
         "股本变动",
@@ -716,7 +716,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202607201827151589",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1784543514.765,
+      "sort_ts": 1784543514.812,
       "detail_anchor": "ann-AN202607201827151589",
       "detail_url": "#ann-AN202607201827151589",
       "detail_source": "页面内精排详情",
@@ -965,7 +965,7 @@
     }
   ],
   "announcement_alert": {
-    "checked_at": "2026-08-05 12:07:12 CST",
+    "checked_at": "2026-08-05 12:12:25 CST",
     "first_run": false,
     "new_count": 0,
     "baseline_new_count": 0,
