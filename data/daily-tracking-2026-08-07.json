@@ -1,13 +1,13 @@
 {
   "date": "2026-08-07",
-  "run_time": "2026-08-07 10:56:16 CST",
-  "run_clock": "10:56",
+  "run_time": "2026-08-07 11:01:37 CST",
+  "run_clock": "11:01",
   "companies": [
     {
       "name": "中芯国际",
       "codes": "688981 / 00981",
       "track": "晶圆代工、成熟制程、资本开支、国产替代、出口管制。",
-      "announcement": "中芯国际:港股公告:证券变动月报表｜2026-08-05 16:33:39:708",
+      "announcement": "中芯国际:港股公告:证券变动月报表｜2026-08-05 16:33:39:648",
       "follow": "继续跟踪 A/H 两地公告、产能利用率、毛利率和外部限制变化。",
       "announcement_link": "#ann-AN202608051827669697",
       "announcement_source": "页面内精排详情"
@@ -16,7 +16,7 @@
       "name": "东芯股份",
       "codes": "688110",
       "track": "SLC NAND、NOR、DRAM、小容量存储、库存和价格周期。",
-      "announcement": "东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年7月30日)｜2026-07-31 15:33:51:568",
+      "announcement": "东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年7月30日)｜2026-07-31 15:33:51:570",
       "follow": "观察存储价格、客户导入、产品结构和费用率变化。",
       "announcement_link": "#ann-AN202607311827526024",
       "announcement_source": "页面内精排详情"
@@ -241,7 +241,7 @@
       "code": "688981",
       "art_code": "AN202608051827669697",
       "title": "中芯国际:港股公告:证券变动月报表",
-      "display_time": "2026-08-05 16:33:39:708",
+      "display_time": "2026-08-05 16:33:39:648",
       "notice_date": "2026-08-06 00:00:00",
       "column_names": [
         "其他"
@@ -249,7 +249,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202608051827669697",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1785918819.708,
+      "sort_ts": 1785918819.648,
       "detail_anchor": "ann-AN202608051827669697",
       "detail_url": "#ann-AN202608051827669697",
       "detail_source": "页面内精排详情",
@@ -386,7 +386,7 @@
       "code": "688110",
       "art_code": "AN202607311827526024",
       "title": "东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年7月30日)",
-      "display_time": "2026-07-31 15:33:51:568",
+      "display_time": "2026-07-31 15:33:51:570",
       "notice_date": "2026-07-31 00:00:00",
       "column_names": [
         "调研活动"
@@ -394,7 +394,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202607311827526024",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1785483231.568,
+      "sort_ts": 1785483231.57,
       "detail_anchor": "ann-AN202607311827526024",
       "detail_url": "#ann-AN202607311827526024",
       "detail_source": "页面内精排详情",
@@ -444,7 +444,7 @@
       "code": "688110",
       "art_code": "AN202607301827492713",
       "title": "东芯股份:关于2025年年度报告的信息披露监管问询函的回复公告",
-      "display_time": "2026-07-30 17:56:27:315",
+      "display_time": "2026-07-30 17:56:27:316",
       "notice_date": "2026-07-31 00:00:00",
       "column_names": [
         "回复问询函公告"
@@ -452,7 +452,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202607301827492713",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1785405387.315,
+      "sort_ts": 1785405387.316,
       "detail_anchor": "ann-AN202607301827492713",
       "detail_url": "#ann-AN202607301827492713",
       "detail_source": "页面内精排详情",
@@ -473,7 +473,7 @@
       "code": "688110",
       "art_code": "AN202607301827492714",
       "title": "东芯股份:立信会计师事务所(特殊普通合伙)关于东芯半导体股份有限公司2025年年度报告的信息披露监管问询函的回复",
-      "display_time": "2026-07-30 17:56:27:246",
+      "display_time": "2026-07-30 17:56:27:247",
       "notice_date": "2026-07-31 00:00:00",
       "column_names": [
         "会计师事务所问询函回复公告"
@@ -481,7 +481,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202607301827492714",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1785405387.246,
+      "sort_ts": 1785405387.247,
       "detail_anchor": "ann-AN202607301827492714",
       "detail_url": "#ann-AN202607301827492714",
       "detail_source": "页面内精排详情",
@@ -502,7 +502,7 @@
       "code": "688981",
       "art_code": "AN202607301827490939",
       "title": "中芯国际:中芯国际关于召开2026年第二季度业绩说明会的预告公告",
-      "display_time": "2026-07-30 17:07:54:490",
+      "display_time": "2026-07-30 17:07:54:487",
       "notice_date": "2026-07-31 00:00:00",
       "column_names": [
         "其他"
@@ -510,7 +510,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202607301827490939",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1785402474.49,
+      "sort_ts": 1785402474.487,
       "detail_anchor": "ann-AN202607301827490939",
       "detail_url": "#ann-AN202607301827490939",
       "detail_source": "页面内精排详情",
@@ -531,7 +531,7 @@
       "code": "688981",
       "art_code": "AN202607301827490486",
       "title": "中芯国际:港股公告:董事会会议日期通知",
-      "display_time": "2026-07-30 16:56:57:581",
+      "display_time": "2026-07-30 16:56:57:476",
       "notice_date": "2026-07-31 00:00:00",
       "column_names": [
         "其他"
@@ -539,7 +539,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202607301827490486",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1785401817.581,
+      "sort_ts": 1785401817.476,
       "detail_anchor": "ann-AN202607301827490486",
       "detail_url": "#ann-AN202607301827490486",
       "detail_source": "页面内精排详情",
@@ -618,7 +618,7 @@
       "code": "688981",
       "art_code": "AN202607211827214567",
       "title": "中芯国际:上海兰迪律师事务所关于中芯国际集成电路制造有限公司2021年科创板限制性股票激励计划预留授予部分第四个归属期归属条件成就暨作废部分限制性股票的法律意见书",
-      "display_time": "2026-07-21 18:10:57:915",
+      "display_time": "2026-07-21 18:10:57:905",
       "notice_date": "2026-07-22 00:00:00",
       "column_names": [
         "法律意见书"
@@ -626,7 +626,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202607211827214567",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1784628657.915,
+      "sort_ts": 1784628657.905,
       "detail_anchor": "ann-AN202607211827214567",
       "detail_url": "#ann-AN202607211827214567",
       "detail_source": "页面内精排详情",
@@ -647,7 +647,7 @@
       "code": "688981",
       "art_code": "AN202607211827214569",
       "title": "中芯国际:中芯国际关于作废处理2021年科创板限制性股票激励计划部分限制性股票的公告",
-      "display_time": "2026-07-21 18:08:09:980",
+      "display_time": "2026-07-21 18:08:09:879",
       "notice_date": "2026-07-22 00:00:00",
       "column_names": [
         "股权激励进展公告"
@@ -655,7 +655,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202607211827214569",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1784628489.98,
+      "sort_ts": 1784628489.879,
       "detail_anchor": "ann-AN202607211827214569",
       "detail_url": "#ann-AN202607211827214569",
       "detail_source": "页面内精排详情",
@@ -964,7 +964,7 @@
     }
   ],
   "announcement_alert": {
-    "checked_at": "2026-08-07 10:56:16 CST",
+    "checked_at": "2026-08-07 11:01:37 CST",
     "first_run": false,
     "new_count": 0,
     "baseline_new_count": 0,
@@ -972,7 +972,7 @@
     "message": "本次未发现相较上次检查的新增公告。"
   },
   "announcement_status": "已接入",
-  "market_note": "交易时段：盘中快照",
+  "market_note": "交易时段：盘中快照；行情接口异常，沿用上一快照：Remote end closed connection without response",
   "review_entries": [
     {
       "title": "客户001试验页",
@@ -1041,7 +1041,7 @@
     [
       "行情快照",
       "东方财富行情接口",
-      "https://push2.eastmoney.com/api/qt/ulist.np/get?fltt=2&secids=1.688981,1.688110,0.000725,0.000063,1.688518,116.00981,116.00763&fields=f12,f14,f2,f3,f4,f5,f6,f15,f16,f17,f18,f20,f21,f62,f124"
+      "https://push2.eastmoney.com/api/qt/ulist.np/get"
     ],
     [
       "中芯国际公告列表",
