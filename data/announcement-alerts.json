@@ -1,38 +1,8 @@
 {
-  "checked_at": "2026-08-07 20:07:35 CST",
+  "checked_at": "2026-08-08 20:00:43 CST",
   "first_run": false,
-  "new_count": 1,
+  "new_count": 0,
   "baseline_new_count": 0,
-  "items": [
-    {
-      "company": "京东方A",
-      "code": "000725",
-      "art_code": "AN202608071827756054",
-      "title": "京东方Ａ:关于控股股东持股结构变更的提示性公告",
-      "display_time": "2026-08-07 18:15:08:312",
-      "notice_date": "2026-08-08 00:00:00",
-      "column_names": [
-        "公司关联方基本资料变更"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202608071827756054",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1786097708.312,
-      "detail_anchor": "ann-AN202608071827756054",
-      "detail_url": "#ann-AN202608071827756054",
-      "detail_source": "页面内精排详情",
-      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202608071827756054_1.pdf?1786126607000.pdf",
-      "notice_eitime": "2026-08-07 18:16:47",
-      "detail_title": "京东方Ａ:关于控股股东持股结构变更的提示性公告",
-      "detail_categories": "公司关联方基本资料变更",
-      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
-      "detail_followups": [
-        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
-        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
-        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
-      ],
-      "detail_fetch_error": ""
-    }
-  ],
-  "message": "发现 1 条新增公告，页面已更新。"
+  "items": [],
+  "message": "本次未发现相较上次检查的新增公告。"
 }
