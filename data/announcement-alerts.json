@@ -1,38 +1,8 @@
 {
-  "checked_at": "2026-08-11 20:01:16 CST",
+  "checked_at": "2026-08-12 09:01:53 CST",
   "first_run": false,
-  "new_count": 1,
+  "new_count": 0,
   "baseline_new_count": 0,
-  "items": [
-    {
-      "company": "中兴通讯",
-      "code": "000063",
-      "art_code": "AN202608111827859189",
-      "title": "中兴通讯:关于按照《香港上市规则》公布董事会会议通告",
-      "display_time": "2026-08-11 16:58:36:698",
-      "notice_date": "2026-08-12 00:00:00",
-      "column_names": [
-        "其他"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202608111827859189",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1786438716.698,
-      "detail_anchor": "ann-AN202608111827859189",
-      "detail_url": "#ann-AN202608111827859189",
-      "detail_source": "页面内精排详情",
-      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202608111827859189_1.pdf?1786467547000.pdf",
-      "notice_eitime": "2026-08-11 16:58:13",
-      "detail_title": "中兴通讯:关于按照《香港上市规则》公布董事会会议通告",
-      "detail_categories": "其他",
-      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
-      "detail_followups": [
-        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
-        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
-        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
-      ],
-      "detail_fetch_error": ""
-    }
-  ],
-  "message": "发现 1 条新增公告，页面已更新。"
+  "items": [],
+  "message": "本次未发现相较上次检查的新增公告。"
 }
