@@ -1,38 +1,8 @@
 {
-  "checked_at": "2026-08-14 09:02:03 CST",
+  "checked_at": "2026-08-14 09:07:17 CST",
   "first_run": false,
-  "new_count": 1,
+  "new_count": 0,
   "baseline_new_count": 0,
-  "items": [
-    {
-      "company": "中芯国际",
-      "code": "688981",
-      "art_code": "AN202608131827940432",
-      "title": "中芯国际:港股公告:中芯国际截至2026年6月30日止三个月未经审核业绩公布",
-      "display_time": "2026-08-13 16:44:30:623",
-      "notice_date": "2026-08-14 00:00:00",
-      "column_names": [
-        "其他"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202608131827940432",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1786610670.623,
-      "detail_anchor": "ann-AN202608131827940432",
-      "detail_url": "#ann-AN202608131827940432",
-      "detail_source": "页面内精排详情",
-      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202608131827940432_1.pdf?1786639747000.pdf",
-      "notice_eitime": "2026-08-13 16:43:59",
-      "detail_title": "中芯国际:港股公告:中芯国际截至2026年6月30日止三个月未经审核业绩公布",
-      "detail_categories": "其他",
-      "detail_focus": "业绩类事项，重点看收入、利润、毛利率、费用和非经常性损益变化。",
-      "detail_followups": [
-        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
-        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
-        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
-      ],
-      "detail_fetch_error": ""
-    }
-  ],
-  "message": "发现 1 条新增公告，页面已更新。"
+  "items": [],
+  "message": "本次未发现相较上次检查的新增公告。"
 }
