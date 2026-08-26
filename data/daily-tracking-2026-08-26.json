@@ -1,7 +1,7 @@
 {
   "date": "2026-08-26",
-  "run_time": "2026-08-26 10:57:02 CST",
-  "run_clock": "10:57",
+  "run_time": "2026-08-26 11:02:16 CST",
+  "run_clock": "11:02",
   "companies": [
     {
       "name": "中芯国际",
@@ -34,9 +34,9 @@
       "name": "中兴通讯",
       "codes": "000063 / 00763",
       "track": "通信设备、算力网络、服务器、运营商资本开支和海外合规。",
-      "announcement": "中兴通讯:关于“质量回报双提升”行动方案的进展公告｜2026-08-21 17:57:54:719",
+      "announcement": "中兴通讯:公司信用类债券信息披露管理制度｜2026-08-21 17:57:54:720",
       "follow": "继续跟踪运营商招标、AI 算力产品、毛利结构和海外监管。",
-      "announcement_link": "#ann-AN202608211828271794",
+      "announcement_link": "#ann-AN202608211828271743",
       "announcement_source": "页面内精排详情"
     },
     {
@@ -212,7 +212,7 @@
       "code": "688518",
       "art_code": "AN202608251828407331",
       "title": "联赢激光:深圳市联赢激光股份有限公司2026年半年度报告",
-      "display_time": "2026-08-25 16:28:06:448",
+      "display_time": "2026-08-25 16:28:06:447",
       "notice_date": "2026-08-26 00:00:00",
       "column_names": [
         "半年度报告全文"
@@ -220,7 +220,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202608251828407331",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1787646486.448,
+      "sort_ts": 1787646486.447,
       "detail_anchor": "ann-AN202608251828407331",
       "detail_url": "#ann-AN202608251828407331",
       "detail_source": "页面内精排详情",
@@ -241,7 +241,7 @@
       "code": "688518",
       "art_code": "AN202608251828407330",
       "title": "联赢激光:深圳市联赢激光股份有限公司第五届董事会第十八次会议决议公告",
-      "display_time": "2026-08-25 16:28:06:441",
+      "display_time": "2026-08-25 16:28:06:440",
       "notice_date": "2026-08-26 00:00:00",
       "column_names": [
         "分配预案",
@@ -250,7 +250,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202608251828407330",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1787646486.441,
+      "sort_ts": 1787646486.44,
       "detail_anchor": "ann-AN202608251828407330",
       "detail_url": "#ann-AN202608251828407330",
       "detail_source": "页面内精排详情",
@@ -271,7 +271,7 @@
       "code": "688518",
       "art_code": "AN202608251828407334",
       "title": "联赢激光:深圳市联赢激光股份有限公司2026年半年度报告摘要",
-      "display_time": "2026-08-25 16:28:06:434",
+      "display_time": "2026-08-25 16:28:06:433",
       "notice_date": "2026-08-26 00:00:00",
       "column_names": [
         "半年度报告摘要"
@@ -279,7 +279,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202608251828407334",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1787646486.434,
+      "sort_ts": 1787646486.433,
       "detail_anchor": "ann-AN202608251828407334",
       "detail_url": "#ann-AN202608251828407334",
       "detail_source": "页面内精排详情",
@@ -414,35 +414,6 @@
     {
       "company": "东芯股份",
       "code": "688110",
-      "art_code": "AN202608211828283328",
-      "title": "东芯股份:2026年半年度募集资金存放、管理与实际使用情况的专项报告",
-      "display_time": "2026-08-21 20:56:56:433",
-      "notice_date": "2026-08-22 00:00:00",
-      "column_names": [
-        "募集资金使用情况报告"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202608211828283328",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1787317016.433,
-      "detail_anchor": "ann-AN202608211828283328",
-      "detail_url": "#ann-AN202608211828283328",
-      "detail_source": "页面内精排详情",
-      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202608211828283328_1.pdf?1787345894000.pdf",
-      "notice_eitime": "2026-08-21 20:58:08",
-      "detail_title": "东芯股份:2026年半年度募集资金存放、管理与实际使用情况的专项报告",
-      "detail_categories": "募集资金使用情况报告",
-      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
-      "detail_followups": [
-        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
-        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
-        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
-      ],
-      "detail_fetch_error": ""
-    },
-    {
-      "company": "东芯股份",
-      "code": "688110",
       "art_code": "AN202608211828283324",
       "title": "东芯股份:2026年半年度报告摘要",
       "display_time": "2026-08-21 20:56:56:433",
@@ -461,6 +432,64 @@
       "notice_eitime": "2026-08-21 20:57:20",
       "detail_title": "东芯股份:2026年半年度报告摘要",
       "detail_categories": "半年度报告摘要",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "东芯股份",
+      "code": "688110",
+      "art_code": "AN202608211828283328",
+      "title": "东芯股份:2026年半年度募集资金存放、管理与实际使用情况的专项报告",
+      "display_time": "2026-08-21 20:56:56:432",
+      "notice_date": "2026-08-22 00:00:00",
+      "column_names": [
+        "募集资金使用情况报告"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202608211828283328",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1787317016.432,
+      "detail_anchor": "ann-AN202608211828283328",
+      "detail_url": "#ann-AN202608211828283328",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202608211828283328_1.pdf?1787345894000.pdf",
+      "notice_eitime": "2026-08-21 20:58:08",
+      "detail_title": "东芯股份:2026年半年度募集资金存放、管理与实际使用情况的专项报告",
+      "detail_categories": "募集资金使用情况报告",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "中兴通讯",
+      "code": "000063",
+      "art_code": "AN202608211828271743",
+      "title": "中兴通讯:公司信用类债券信息披露管理制度",
+      "display_time": "2026-08-21 17:57:54:720",
+      "notice_date": "2026-08-22 00:00:00",
+      "column_names": [
+        "管理办法/制度"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202608211828271743",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1787306274.72,
+      "detail_anchor": "ann-AN202608211828271743",
+      "detail_url": "#ann-AN202608211828271743",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202608211828271743_1.pdf?1787335050000.pdf",
+      "notice_eitime": "2026-08-21 17:57:18",
+      "detail_title": "中兴通讯:公司信用类债券信息披露管理制度",
+      "detail_categories": "管理办法/制度",
       "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
       "detail_followups": [
         "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
@@ -490,35 +519,6 @@
       "notice_eitime": "2026-08-21 17:57:18",
       "detail_title": "中兴通讯:关于“质量回报双提升”行动方案的进展公告",
       "detail_categories": "其他",
-      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
-      "detail_followups": [
-        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
-        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
-        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
-      ],
-      "detail_fetch_error": ""
-    },
-    {
-      "company": "中兴通讯",
-      "code": "000063",
-      "art_code": "AN202608211828271743",
-      "title": "中兴通讯:公司信用类债券信息披露管理制度",
-      "display_time": "2026-08-21 17:57:54:719",
-      "notice_date": "2026-08-22 00:00:00",
-      "column_names": [
-        "管理办法/制度"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202608211828271743",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1787306274.719,
-      "detail_anchor": "ann-AN202608211828271743",
-      "detail_url": "#ann-AN202608211828271743",
-      "detail_source": "页面内精排详情",
-      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202608211828271743_1.pdf?1787335050000.pdf",
-      "notice_eitime": "2026-08-21 17:57:18",
-      "detail_title": "中兴通讯:公司信用类债券信息披露管理制度",
-      "detail_categories": "管理办法/制度",
       "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
       "detail_followups": [
         "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
@@ -561,7 +561,7 @@
       "code": "000063",
       "art_code": "AN202608210006743766",
       "title": "中兴通讯:2026年半年度报告",
-      "display_time": "2026-08-21 17:56:57:705",
+      "display_time": "2026-08-21 17:56:57:706",
       "notice_date": "2026-08-22 00:00:00",
       "column_names": [
         "半年度报告全文"
@@ -569,7 +569,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202608210006743766",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1787306217.705,
+      "sort_ts": 1787306217.706,
       "detail_anchor": "ann-AN202608210006743766",
       "detail_url": "#ann-AN202608210006743766",
       "detail_source": "页面内精排详情",
@@ -590,7 +590,7 @@
       "code": "000063",
       "art_code": "AN202608210006743765",
       "title": "中兴通讯:2026年半年度报告摘要",
-      "display_time": "2026-08-21 17:56:51:692",
+      "display_time": "2026-08-21 17:56:51:691",
       "notice_date": "2026-08-22 00:00:00",
       "column_names": [
         "半年度报告摘要"
@@ -598,7 +598,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202608210006743765",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1787306211.692,
+      "sort_ts": 1787306211.691,
       "detail_anchor": "ann-AN202608210006743765",
       "detail_url": "#ann-AN202608210006743765",
       "detail_source": "页面内精排详情",
@@ -857,16 +857,6 @@
       "sort_ts": 1787706021.0
     },
     {
-      "company": "京东方A",
-      "title": "催化不断！华为、苹果折叠屏9月同期发布 核心增量环节价值凸显(附股)",
-      "display_time": "2026-08-26 07:50:02",
-      "source": "东方财富公司资讯",
-      "relevance": "个股页最新",
-      "url": "http://finance.eastmoney.com/a/202608263853678591.html",
-      "fetch_error": false,
-      "sort_ts": 1787701802.0
-    },
-    {
       "company": "中兴通讯",
       "title": "营收新高，利润腰斩：中兴通讯的“算力翻身仗”打得并不轻松",
       "display_time": "2026-08-25 21:59:36",
@@ -887,16 +877,6 @@
       "sort_ts": 1787635847.0
     },
     {
-      "company": "东芯股份",
-      "title": "东芯股份上半年营收同比增长336.44% “存、算、联”一体化战略稳步推进",
-      "display_time": "2026-08-24 20:16:00",
-      "source": "东方财富公司资讯",
-      "relevance": "关键词匹配",
-      "url": "http://finance.eastmoney.com/a/202608243851419372.html",
-      "fetch_error": false,
-      "sort_ts": 1787573760.0
-    },
-    {
       "company": "中兴通讯",
       "title": "花旗：中兴通讯目标价上调至25.9港元 维持“中性”评级",
       "display_time": "2026-08-24 16:35:28",
@@ -908,13 +888,23 @@
     },
     {
       "company": "东芯股份",
-      "title": "上半年扭亏为盈，688110：拟用超募资金投向智能芯片",
-      "display_time": "2026-08-23 12:07:09",
+      "title": "最新消息抓取失败：'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte",
+      "display_time": "",
       "source": "东方财富公司资讯",
-      "relevance": "关键词匹配",
-      "url": "http://finance.eastmoney.com/a/202608233850256970.html",
-      "fetch_error": false,
-      "sort_ts": 1787458029.0
+      "relevance": "抓取失败",
+      "url": "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SH688110",
+      "fetch_error": true,
+      "sort_ts": 0
+    },
+    {
+      "company": "京东方A",
+      "title": "最新消息抓取失败：'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte",
+      "display_time": "",
+      "source": "东方财富公司资讯",
+      "relevance": "抓取失败",
+      "url": "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SZ000725",
+      "fetch_error": true,
+      "sort_ts": 0
     },
     {
       "company": "SpaceX",
@@ -928,7 +918,7 @@
     }
   ],
   "announcement_alert": {
-    "checked_at": "2026-08-26 10:57:02 CST",
+    "checked_at": "2026-08-26 11:02:16 CST",
     "first_run": false,
     "new_count": 0,
     "baseline_new_count": 0,
