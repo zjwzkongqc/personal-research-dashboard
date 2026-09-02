@@ -1,16 +1,16 @@
 {
   "date": "2026-09-02",
-  "run_time": "2026-09-02 09:49:45 CST",
-  "run_clock": "09:49",
+  "run_time": "2026-09-02 10:05:00 CST",
+  "run_clock": "10:05",
   "companies": [
     {
       "name": "中芯国际",
       "codes": "688981 / 00981",
       "track": "晶圆代工、成熟制程、资本开支、国产替代、出口管制。",
-      "announcement": "中芯国际:港股公告:翌日披露报表｜2026-08-31 18:25:24:886",
+      "announcement": "公告抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
       "follow": "继续跟踪 A/H 两地公告、产能利用率、毛利率和外部限制变化。",
-      "announcement_link": "#ann-AN202608311828821835",
-      "announcement_source": "页面内精排详情"
+      "announcement_link": "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=688981",
+      "announcement_source": "东方财富公告中心"
     },
     {
       "name": "东芯股份",
@@ -181,147 +181,17 @@
     {
       "company": "中芯国际",
       "code": "688981",
-      "art_code": "AN202608311828821835",
-      "title": "中芯国际:港股公告:翌日披露报表",
-      "display_time": "2026-08-31 18:25:24:886",
-      "notice_date": "2026-09-01 00:00:00",
+      "art_code": "FETCH_ERROR_688981",
+      "title": "公告抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "display_time": "",
+      "notice_date": "",
       "column_names": [
-        "其他"
+        "抓取失败"
       ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202608311828821835",
+      "content_url": "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=688981",
       "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1788171924.886,
-      "detail_anchor": "ann-AN202608311828821835",
-      "detail_url": "#ann-AN202608311828821835",
-      "detail_source": "页面内精排详情",
-      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202608311828821835_1.pdf?1788200909000.pdf",
-      "notice_eitime": "2026-08-31 18:24:51",
-      "detail_title": "中芯国际:港股公告:翌日披露报表",
-      "detail_categories": "其他",
-      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
-      "detail_followups": [
-        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
-        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
-        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
-      ],
-      "detail_fetch_error": ""
-    },
-    {
-      "company": "中芯国际",
-      "code": "688981",
-      "art_code": "AN202608271828548647",
-      "title": "中芯国际:中芯国际2026年半年度报告摘要",
-      "display_time": "2026-08-27 18:03:57:684",
-      "notice_date": "2026-08-28 00:00:00",
-      "column_names": [
-        "半年度报告摘要"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202608271828548647",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1787825037.684,
-      "detail_anchor": "ann-AN202608271828548647",
-      "detail_url": "#ann-AN202608271828548647",
-      "detail_source": "页面内精排详情",
-      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202608271828548647_1.pdf?1787853958000.pdf",
-      "notice_eitime": "2026-08-27 18:03:20",
-      "detail_title": "中芯国际:中芯国际2026年半年度报告摘要",
-      "detail_categories": "半年度报告摘要",
-      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
-      "detail_followups": [
-        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
-        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
-        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
-      ],
-      "detail_fetch_error": ""
-    },
-    {
-      "company": "中芯国际",
-      "code": "688981",
-      "art_code": "AN202608271828548644",
-      "title": "中芯国际:中芯国际关于2026年度“提质增效重回报”行动方案的半年度评估报告",
-      "display_time": "2026-08-27 18:03:57:637",
-      "notice_date": "2026-08-28 00:00:00",
-      "column_names": [
-        "其他"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202608271828548644",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1787825037.637,
-      "detail_anchor": "ann-AN202608271828548644",
-      "detail_url": "#ann-AN202608271828548644",
-      "detail_source": "页面内精排详情",
-      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202608271828548644_1.pdf?1787853958000.pdf",
-      "notice_eitime": "2026-08-27 18:03:20",
-      "detail_title": "中芯国际:中芯国际关于2026年度“提质增效重回报”行动方案的半年度评估报告",
-      "detail_categories": "其他",
-      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
-      "detail_followups": [
-        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
-        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
-        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
-      ],
-      "detail_fetch_error": ""
-    },
-    {
-      "company": "中芯国际",
-      "code": "688981",
-      "art_code": "AN202608271828548643",
-      "title": "中芯国际:港股公告:2026年中期业绩公告",
-      "display_time": "2026-08-27 18:03:36:809",
-      "notice_date": "2026-08-28 00:00:00",
-      "column_names": [
-        "其他"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202608271828548643",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1787825016.809,
-      "detail_anchor": "ann-AN202608271828548643",
-      "detail_url": "#ann-AN202608271828548643",
-      "detail_source": "页面内精排详情",
-      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202608271828548643_1.pdf?1787853950000.pdf",
-      "notice_eitime": "2026-08-27 18:03:05",
-      "detail_title": "中芯国际:港股公告:2026年中期业绩公告",
-      "detail_categories": "其他",
-      "detail_focus": "业绩类事项，重点看收入、利润、毛利率、费用和非经常性损益变化。",
-      "detail_followups": [
-        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
-        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
-        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
-      ],
-      "detail_fetch_error": ""
-    },
-    {
-      "company": "中芯国际",
-      "code": "688981",
-      "art_code": "AN202608271828548646",
-      "title": "中芯国际:中芯国际2026年半年度报告",
-      "display_time": "2026-08-27 18:03:21:658",
-      "notice_date": "2026-08-28 00:00:00",
-      "column_names": [
-        "半年度报告全文"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202608271828548646",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1787825001.658,
-      "detail_anchor": "ann-AN202608271828548646",
-      "detail_url": "#ann-AN202608271828548646",
-      "detail_source": "页面内精排详情",
-      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202608271828548646_1.pdf?1787853942000.pdf",
-      "notice_eitime": "2026-08-27 18:02:49",
-      "detail_title": "中芯国际:中芯国际2026年半年度报告",
-      "detail_categories": "半年度报告全文",
-      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
-      "detail_followups": [
-        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
-        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
-        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
-      ],
-      "detail_fetch_error": ""
+      "fetch_error": true,
+      "sort_ts": 0
     },
     {
       "company": "东芯股份",
@@ -386,94 +256,54 @@
   ],
   "company_news": [
     {
-      "company": "中兴通讯",
-      "title": "字节新一代AI手机豆包手机即将上市",
-      "display_time": "2026-09-02 07:12:36",
-      "source": "东方财富公司资讯",
-      "relevance": "关键词匹配",
-      "url": "http://finance.eastmoney.com/a/202609023861927667.html",
-      "fetch_error": false,
-      "sort_ts": 1788304356.0
-    },
-    {
-      "company": "中兴通讯",
-      "title": "“豆包手机”努比亚NaviX Ultra本月上市；AI 3D公司VAST半年内融资约50亿元｜未来商业早参",
-      "display_time": "2026-09-02 07:00:30",
-      "source": "东方财富公司资讯",
-      "relevance": "关键词匹配",
-      "url": "http://finance.eastmoney.com/a/202609023861923694.html",
-      "fetch_error": false,
-      "sort_ts": 1788303630.0
-    },
-    {
-      "company": "联赢激光",
-      "title": "动力电池储能双轮驱动 锂电激光焊接设备商业绩持续修复",
-      "display_time": "2026-09-01 19:48:00",
-      "source": "东方财富公司资讯",
-      "relevance": "关键词匹配",
-      "url": "http://finance.eastmoney.com/a/202609013861654553.html",
-      "fetch_error": false,
-      "sort_ts": 1788263280.0
-    },
-    {
-      "company": "东芯股份",
-      "title": "海量财经 | 存储行业半年报收官：AI驱动超级周期，业绩分化谁主沉浮？",
-      "display_time": "2026-09-01 17:28:00",
-      "source": "东方财富公司资讯",
-      "relevance": "关键词匹配",
-      "url": "http://finance.eastmoney.com/a/202609013861573026.html",
-      "fetch_error": false,
-      "sort_ts": 1788254880.0
-    },
-    {
       "company": "中芯国际",
-      "title": "港股收评：恒指、恒科齐跌；银行、建材上涨；半导体、房地产下跌；科网股普跌，蔚来大跌超6%，阿里、京东、腾讯集体下挫",
-      "display_time": "2026-09-01 16:14:19",
+      "title": "最新消息抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "display_time": "",
       "source": "东方财富公司资讯",
-      "relevance": "关键词匹配",
-      "url": "http://finance.eastmoney.com/a/202609013861485682.html",
-      "fetch_error": false,
-      "sort_ts": 1788250459.0
+      "relevance": "抓取失败",
+      "url": "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SH688981",
+      "fetch_error": true,
+      "sort_ts": 0
     },
     {
       "company": "东芯股份",
-      "title": "存储站上高盈利时刻：成本考验下 囤货与技术突围同步上演",
-      "display_time": "2026-09-01 00:13:00",
+      "title": "最新消息抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "display_time": "",
       "source": "东方财富公司资讯",
-      "relevance": "关键词匹配",
-      "url": "http://finance.eastmoney.com/a/202608313860416776.html",
-      "fetch_error": false,
-      "sort_ts": 1788192780.0
+      "relevance": "抓取失败",
+      "url": "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SH688110",
+      "fetch_error": true,
+      "sort_ts": 0
     },
     {
       "company": "京东方A",
-      "title": "京东方A：公司累计回购股份85892600股",
-      "display_time": "2026-08-31 21:47:00",
+      "title": "最新消息抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "display_time": "",
       "source": "东方财富公司资讯",
-      "relevance": "关键词匹配",
-      "url": "http://finance.eastmoney.com/a/202608313860404160.html",
-      "fetch_error": false,
-      "sort_ts": 1788184020.0
+      "relevance": "抓取失败",
+      "url": "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SZ000725",
+      "fetch_error": true,
+      "sort_ts": 0
     },
     {
-      "company": "京东方A",
-      "title": "V观财报｜A股回购潮升温！中际旭创抛出最高80亿回购计划 科大讯飞、京东方A等披露进展",
-      "display_time": "2026-08-31 21:38:06",
+      "company": "中兴通讯",
+      "title": "最新消息抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "display_time": "",
       "source": "东方财富公司资讯",
-      "relevance": "关键词匹配",
-      "url": "http://finance.eastmoney.com/a/202608313860378486.html",
-      "fetch_error": false,
-      "sort_ts": 1788183486.0
+      "relevance": "抓取失败",
+      "url": "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SZ000063",
+      "fetch_error": true,
+      "sort_ts": 0
     },
     {
       "company": "联赢激光",
-      "title": "【调研快报】联赢激光接待中信证券股份有限公司等58家机构调研",
-      "display_time": "2026-08-27 16:45:47",
+      "title": "最新消息抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "display_time": "",
       "source": "东方财富公司资讯",
-      "relevance": "关键词匹配",
-      "url": "http://stock.eastmoney.com/a/202608273856408958.html",
-      "fetch_error": false,
-      "sort_ts": 1787820347.0
+      "relevance": "抓取失败",
+      "url": "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SH688518",
+      "fetch_error": true,
+      "sort_ts": 0
     },
     {
       "company": "SpaceX",
@@ -487,7 +317,7 @@
     }
   ],
   "announcement_alert": {
-    "checked_at": "2026-09-02 09:49:45 CST",
+    "checked_at": "2026-09-02 10:05:00 CST",
     "first_run": false,
     "new_count": 0,
     "baseline_new_count": 0,
@@ -495,7 +325,7 @@
     "message": "本次未发现相较上次检查的新增公告。"
   },
   "announcement_status": "已接入",
-  "market_note": "交易时段：盘中快照；行情接口异常，沿用上一快照：Remote end closed connection without response",
+  "market_note": "交易时段：盘中快照；行情接口异常，沿用上一快照：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
   "review_entries": [
     {
       "title": "客户001试验页",
