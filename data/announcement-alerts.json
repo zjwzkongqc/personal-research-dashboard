@@ -1,8 +1,67 @@
 {
-  "checked_at": "2026-09-03 15:00:06 CST",
+  "checked_at": "2026-09-03 20:01:28 CST",
   "first_run": false,
-  "new_count": 0,
+  "new_count": 2,
   "baseline_new_count": 0,
-  "items": [],
-  "message": "本次未发现相较上次检查的新增公告。"
+  "items": [
+    {
+      "company": "中芯国际",
+      "code": "688981",
+      "art_code": "AN202609031828965553",
+      "title": "中芯国际:港股公告:2026中期报告",
+      "display_time": "2026-09-03 18:23:03:409",
+      "notice_date": "2026-09-04 00:00:00",
+      "column_names": [
+        "其他"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202609031828965553",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1788430983.409,
+      "detail_anchor": "ann-AN202609031828965553",
+      "detail_url": "#ann-AN202609031828965553",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202609031828965553_1.pdf?1788464015000.pdf",
+      "notice_eitime": "2026-09-03 18:22:36",
+      "detail_title": "中芯国际:港股公告:2026中期报告",
+      "detail_categories": "其他",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "联赢激光",
+      "code": "688518",
+      "art_code": "AN202609031828959025",
+      "title": "联赢激光:深圳市联赢激光股份有限公司2026年第一次临时股东会会议资料",
+      "display_time": "2026-09-03 15:40:35:357",
+      "notice_date": "2026-09-04 00:00:00",
+      "column_names": [
+        "股东大会资料"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202609031828959025",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1788421235.357,
+      "detail_anchor": "ann-AN202609031828959025",
+      "detail_url": "#ann-AN202609031828959025",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202609031828959025_1.pdf?1788450310000.pdf",
+      "notice_eitime": "2026-09-03 15:41:33",
+      "detail_title": "联赢激光:深圳市联赢激光股份有限公司2026年第一次临时股东会会议资料",
+      "detail_categories": "股东大会资料",
+      "detail_focus": "公司治理/股东会决议事项，重点核对议案通过情况和是否影响资本运作。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    }
+  ],
+  "message": "发现 2 条新增公告，页面已更新。"
 }
