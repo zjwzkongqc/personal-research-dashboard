@@ -1,0 +1,530 @@
+{
+  "date": "2026-08-26",
+  "run_time": "2026-08-26 20:02:22 CST",
+  "run_clock": "20:02",
+  "companies": [
+    {
+      "name": "中芯国际",
+      "codes": "688981 / 00981",
+      "track": "晶圆代工、成熟制程、资本开支、国产替代、出口管制。",
+      "announcement": "公告抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "follow": "继续跟踪 A/H 两地公告、产能利用率、毛利率和外部限制变化。",
+      "announcement_link": "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=688981",
+      "announcement_source": "东方财富公告中心"
+    },
+    {
+      "name": "东芯股份",
+      "codes": "688110",
+      "track": "SLC NAND、NOR、DRAM、小容量存储、库存和价格周期。",
+      "announcement": "公告抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "follow": "观察存储价格、客户导入、产品结构和费用率变化。",
+      "announcement_link": "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=688110",
+      "announcement_source": "东方财富公告中心"
+    },
+    {
+      "name": "京东方A",
+      "codes": "000725",
+      "track": "LCD/OLED 面板价格、车载显示、IoT 创新业务和折旧压力。",
+      "announcement": "公告抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "follow": "重点看面板价格修复、OLED 良率和下游补库持续性。",
+      "announcement_link": "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=000725",
+      "announcement_source": "东方财富公告中心"
+    },
+    {
+      "name": "中兴通讯",
+      "codes": "000063 / 00763",
+      "track": "通信设备、算力网络、服务器、运营商资本开支和海外合规。",
+      "announcement": "公告抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "follow": "继续跟踪运营商招标、AI 算力产品、毛利结构和海外监管。",
+      "announcement_link": "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=000063",
+      "announcement_source": "东方财富公告中心"
+    },
+    {
+      "name": "联赢激光",
+      "codes": "688518",
+      "track": "锂电激光焊接、消费电子/半导体激光设备、订单和回款。",
+      "announcement": "公告抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "follow": "观察新能源设备资本开支、订单兑现、应收账款和毛利修复。",
+      "announcement_link": "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=688518",
+      "announcement_source": "东方财富公告中心"
+    },
+    {
+      "name": "SpaceX",
+      "codes": "Private / Starlink",
+      "track": "Starlink、Starship、发射节奏、监管许可、政府合同和融资估值。",
+      "announcement": "非上市公司，无交易所公告口径",
+      "follow": "只跟踪官方、监管、政府合同和可靠媒体，不写成可直接交易股票。"
+    }
+  ],
+  "market_quotes": [
+    {
+      "label": "中芯国际 A",
+      "name": "中芯国际",
+      "code": "688981",
+      "price": 124.18,
+      "pct": 3.48,
+      "change": 4.18,
+      "amount_yuan": 4901446996.0,
+      "turnover_display": "49.01 亿",
+      "main_net_yuan": 312192256.0,
+      "main_net_display": "3.12 亿",
+      "high": 124.6,
+      "low": 120.22,
+      "open": 120.5,
+      "prev_close": 120.0,
+      "quote_time": "2026-08-26 14:58:54"
+    },
+    {
+      "label": "东芯股份",
+      "name": "东芯股份",
+      "code": "688110",
+      "price": 113.43,
+      "pct": -0.47,
+      "change": -0.54,
+      "amount_yuan": 1587682142.0,
+      "turnover_display": "15.88 亿",
+      "main_net_yuan": -112755734.0,
+      "main_net_display": "-1.13 亿",
+      "high": 115.0,
+      "low": 110.67,
+      "open": 114.1,
+      "prev_close": 113.97,
+      "quote_time": "2026-08-26 14:58:53"
+    },
+    {
+      "label": "京东方A",
+      "name": "京东方Ａ",
+      "code": "000725",
+      "price": 5.72,
+      "pct": -0.35,
+      "change": -0.02,
+      "amount_yuan": 4554846321.32,
+      "turnover_display": "45.55 亿",
+      "main_net_yuan": -279490320.0,
+      "main_net_display": "-2.79 亿",
+      "high": 5.78,
+      "low": 5.69,
+      "open": 5.75,
+      "prev_close": 5.74,
+      "quote_time": "2026-08-26 14:58:48"
+    },
+    {
+      "label": "中兴通讯 A",
+      "name": "中兴通讯",
+      "code": "000063",
+      "price": 33.55,
+      "pct": 0.39,
+      "change": 0.13,
+      "amount_yuan": 1336388066.45,
+      "turnover_display": "13.36 亿",
+      "main_net_yuan": -48521743.0,
+      "main_net_display": "-4852.17 万",
+      "high": 33.69,
+      "low": 33.34,
+      "open": 33.42,
+      "prev_close": 33.42,
+      "quote_time": "2026-08-26 14:58:48"
+    },
+    {
+      "label": "联赢激光",
+      "name": "联赢激光",
+      "code": "688518",
+      "price": 20.35,
+      "pct": 1.29,
+      "change": 0.26,
+      "amount_yuan": 311520638.0,
+      "turnover_display": "3.12 亿",
+      "main_net_yuan": -20894373.0,
+      "main_net_display": "-2089.44 万",
+      "high": 21.0,
+      "low": 20.28,
+      "open": 20.78,
+      "prev_close": 20.09,
+      "quote_time": "2026-08-26 14:58:53"
+    },
+    {
+      "label": "中芯国际 H",
+      "name": "中芯国际",
+      "code": "00981",
+      "price": 70.2,
+      "pct": 3.46,
+      "change": 2.35,
+      "amount_yuan": 4271350704.0,
+      "turnover_display": "42.71 亿",
+      "main_net_yuan": 350862165.0,
+      "main_net_display": "3.51 亿",
+      "high": 71.5,
+      "low": 68.15,
+      "open": 68.15,
+      "prev_close": 67.85,
+      "quote_time": "2026-08-26 14:58:53"
+    },
+    {
+      "label": "中兴通讯 H",
+      "name": "中兴通讯",
+      "code": "00763",
+      "price": 23.74,
+      "pct": 0.59,
+      "change": 0.14,
+      "amount_yuan": 120984848.0,
+      "turnover_display": "1.21 亿",
+      "main_net_yuan": -5814924.0,
+      "main_net_display": "-581.49 万",
+      "high": 23.9,
+      "low": 23.56,
+      "open": 23.6,
+      "prev_close": 23.6,
+      "quote_time": "2026-08-26 14:58:54"
+    }
+  ],
+  "announcements": [
+    {
+      "company": "中芯国际",
+      "code": "688981",
+      "art_code": "FETCH_ERROR_688981",
+      "title": "公告抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "display_time": "",
+      "notice_date": "",
+      "column_names": [
+        "抓取失败"
+      ],
+      "content_url": "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=688981",
+      "source": "东方财富公告中心",
+      "fetch_error": true,
+      "sort_ts": 0
+    },
+    {
+      "company": "东芯股份",
+      "code": "688110",
+      "art_code": "FETCH_ERROR_688110",
+      "title": "公告抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "display_time": "",
+      "notice_date": "",
+      "column_names": [
+        "抓取失败"
+      ],
+      "content_url": "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=688110",
+      "source": "东方财富公告中心",
+      "fetch_error": true,
+      "sort_ts": 0
+    },
+    {
+      "company": "京东方A",
+      "code": "000725",
+      "art_code": "FETCH_ERROR_000725",
+      "title": "公告抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "display_time": "",
+      "notice_date": "",
+      "column_names": [
+        "抓取失败"
+      ],
+      "content_url": "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=000725",
+      "source": "东方财富公告中心",
+      "fetch_error": true,
+      "sort_ts": 0
+    },
+    {
+      "company": "中兴通讯",
+      "code": "000063",
+      "art_code": "FETCH_ERROR_000063",
+      "title": "公告抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "display_time": "",
+      "notice_date": "",
+      "column_names": [
+        "抓取失败"
+      ],
+      "content_url": "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=000063",
+      "source": "东方财富公告中心",
+      "fetch_error": true,
+      "sort_ts": 0
+    },
+    {
+      "company": "联赢激光",
+      "code": "688518",
+      "art_code": "FETCH_ERROR_688518",
+      "title": "公告抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "display_time": "",
+      "notice_date": "",
+      "column_names": [
+        "抓取失败"
+      ],
+      "content_url": "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=688518",
+      "source": "东方财富公告中心",
+      "fetch_error": true,
+      "sort_ts": 0
+    }
+  ],
+  "company_news": [
+    {
+      "company": "联赢激光",
+      "title": "联赢激光(688518.SH)：2026年中报净利润为9838.24万元",
+      "display_time": "2026-08-26 09:23:02",
+      "source": "东方财富公司资讯",
+      "relevance": "关键词匹配",
+      "url": "http://finance.eastmoney.com/a/202608263854219571.html",
+      "fetch_error": false,
+      "sort_ts": 1787707382.0
+    },
+    {
+      "company": "联赢激光",
+      "title": "机构风向标 | 联赢激光(688518)2026年二季度已披露前十大机构累计持仓占比12.29%",
+      "display_time": "2026-08-26 09:00:21",
+      "source": "东方财富公司资讯",
+      "relevance": "关键词匹配",
+      "url": "http://finance.eastmoney.com/a/202608263853930167.html",
+      "fetch_error": false,
+      "sort_ts": 1787706021.0
+    },
+    {
+      "company": "京东方A",
+      "title": "催化不断！华为、苹果折叠屏9月同期发布 核心增量环节价值凸显(附股)",
+      "display_time": "2026-08-26 07:50:02",
+      "source": "东方财富公司资讯",
+      "relevance": "个股页最新",
+      "url": "http://finance.eastmoney.com/a/202608263853678591.html",
+      "fetch_error": false,
+      "sort_ts": 1787701802.0
+    },
+    {
+      "company": "中兴通讯",
+      "title": "营收新高，利润腰斩：中兴通讯的“算力翻身仗”打得并不轻松",
+      "display_time": "2026-08-25 21:59:36",
+      "source": "东方财富公司资讯",
+      "relevance": "关键词匹配",
+      "url": "http://finance.eastmoney.com/a/202608253853344656.html",
+      "fetch_error": false,
+      "sort_ts": 1787666376.0
+    },
+    {
+      "company": "东芯股份",
+      "title": "东芯股份上半年营收同比增长336.44% “存、算、联”一体化战略稳步推进",
+      "display_time": "2026-08-24 20:16:00",
+      "source": "东方财富公司资讯",
+      "relevance": "关键词匹配",
+      "url": "http://finance.eastmoney.com/a/202608243851419372.html",
+      "fetch_error": false,
+      "sort_ts": 1787573760.0
+    },
+    {
+      "company": "中兴通讯",
+      "title": "花旗：中兴通讯目标价上调至25.9港元 维持“中性”评级",
+      "display_time": "2026-08-24 16:35:28",
+      "source": "东方财富公司资讯",
+      "relevance": "关键词匹配",
+      "url": "http://finance.eastmoney.com/a/202608243851118452.html",
+      "fetch_error": false,
+      "sort_ts": 1787560528.0
+    },
+    {
+      "company": "东芯股份",
+      "title": "上半年扭亏为盈，688110：拟用超募资金投向智能芯片",
+      "display_time": "2026-08-23 12:07:09",
+      "source": "东方财富公司资讯",
+      "relevance": "关键词匹配",
+      "url": "http://finance.eastmoney.com/a/202608233850256970.html",
+      "fetch_error": false,
+      "sort_ts": 1787458029.0
+    },
+    {
+      "company": "中芯国际",
+      "title": "最新消息抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "display_time": "",
+      "source": "东方财富公司资讯",
+      "relevance": "抓取失败",
+      "url": "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SH688981",
+      "fetch_error": true,
+      "sort_ts": 0
+    },
+    {
+      "company": "SpaceX",
+      "title": "同花顺/东方财富暂无对应个股资讯页；该公司继续按官方、监管和政府来源跟踪。",
+      "display_time": "",
+      "source": "来源限制",
+      "relevance": "非上市公司",
+      "url": "https://www.spacex.com/",
+      "fetch_error": false,
+      "sort_ts": 0
+    }
+  ],
+  "announcement_alert": {
+    "checked_at": "2026-08-26 20:02:22 CST",
+    "first_run": false,
+    "new_count": 0,
+    "baseline_new_count": 0,
+    "items": [],
+    "message": "本次未发现相较上次检查的新增公告。"
+  },
+  "announcement_status": "已接入",
+  "market_note": "交易后：收盘后快照；行情接口异常，沿用上一快照：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+  "review_entries": [
+    {
+      "title": "客户001试验页",
+      "date": "2026-06-26",
+      "week": "2026-W26",
+      "type": "客户专属页",
+      "source": "clients/client-001/archive/2026-06-26.html",
+      "href": "review/client-001/2026-06-26-client-trial.html",
+      "note": "最早版本，用于复盘客户页信息架构和展示节奏。",
+      "available": true,
+      "source_path": "/Users/kongqc/Documents/My_Investment/clients/client-001/archive/2026-06-26.html",
+      "original_size_bytes": 22580,
+      "size_bytes": 3197
+    },
+    {
+      "title": "客户001公开展示页",
+      "date": "2026-06-27",
+      "week": "2026-W26",
+      "type": "对外展示页",
+      "source": "clients/client-001/public.html",
+      "href": "review/client-001/2026-06-27-public.html",
+      "note": "当前客户版主页面，可复盘公告、行情、黄金和产品图排序。",
+      "available": true,
+      "source_path": "/Users/kongqc/Documents/My_Investment/clients/client-001/public.html",
+      "original_size_bytes": 8651507,
+      "size_bytes": 3212
+    },
+    {
+      "title": "投研情报专栏电脑网页版",
+      "date": "2026-06-27",
+      "week": "2026-W26",
+      "type": "电脑网页",
+      "source": "clients/client-001/archive/2026-06-27-投研情报专栏-电脑网页版.html",
+      "href": "review/client-001/2026-06-27-desktop.html",
+      "note": "适合电脑打开的完整 HTML，可复盘客户转发和网页发布效果。",
+      "available": true,
+      "source_path": "/Users/kongqc/Documents/My_Investment/clients/client-001/archive/2026-06-27-投研情报专栏-电脑网页版.html",
+      "original_size_bytes": 8652042,
+      "size_bytes": 3273
+    },
+    {
+      "title": "投研情报专栏手机阅读版",
+      "date": "2026-06-27",
+      "week": "2026-W26",
+      "type": "手机阅读",
+      "source": "clients/client-001/archive/2026-06-27-投研情报专栏-手机阅读版.html",
+      "href": "review/client-001/2026-06-27-mobile.html",
+      "note": "适合微信/手机阅读的 HTML，可复盘移动端阅读体验。",
+      "available": true,
+      "source_path": "/Users/kongqc/Documents/My_Investment/clients/client-001/archive/2026-06-27-投研情报专栏-手机阅读版.html",
+      "original_size_bytes": 8656649,
+      "size_bytes": 3262
+    }
+  ],
+  "weekly_reviews": [
+    {
+      "week": "2026-W26",
+      "title": "2026年第26周客户内容复盘",
+      "period": "2026-06-22 至 2026-06-28",
+      "href": "review/weekly/2026-W26.html",
+      "count": 4,
+      "focus": "客户001页面从试验版到投研情报专栏的结构、转发场景和移动端体验复盘。"
+    }
+  ],
+  "sources": [
+    [
+      "行情快照",
+      "东方财富行情接口",
+      "https://push2.eastmoney.com/api/qt/ulist.np/get"
+    ],
+    [
+      "中芯国际公告列表",
+      "东方财富公告中心",
+      "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=688981"
+    ],
+    [
+      "东芯股份公告列表",
+      "东方财富公告中心",
+      "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=688110"
+    ],
+    [
+      "京东方A公告列表",
+      "东方财富公告中心",
+      "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=000725"
+    ],
+    [
+      "中兴通讯公告列表",
+      "东方财富公告中心",
+      "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=000063"
+    ],
+    [
+      "联赢激光公告列表",
+      "东方财富公告中心",
+      "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=688518"
+    ],
+    [
+      "中芯国际最新消息",
+      "东方财富公司资讯",
+      "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SH688981"
+    ],
+    [
+      "东芯股份最新消息",
+      "东方财富公司资讯",
+      "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SH688110"
+    ],
+    [
+      "京东方A最新消息",
+      "东方财富公司资讯",
+      "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SZ000725"
+    ],
+    [
+      "中兴通讯最新消息",
+      "东方财富公司资讯",
+      "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SZ000063"
+    ],
+    [
+      "联赢激光最新消息",
+      "东方财富公司资讯",
+      "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SH688518"
+    ],
+    [
+      "中芯国际公告",
+      "上交所",
+      "https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688981"
+    ],
+    [
+      "东芯股份公告",
+      "上交所",
+      "https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688110"
+    ],
+    [
+      "联赢激光公告",
+      "上交所",
+      "https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688518"
+    ],
+    [
+      "京东方A公告",
+      "巨潮资讯",
+      "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=000725"
+    ],
+    [
+      "中兴通讯公告",
+      "巨潮资讯",
+      "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=000063"
+    ],
+    [
+      "中芯国际H公告",
+      "HKEX披露易",
+      "https://www.hkexnews.hk/index.htm"
+    ],
+    [
+      "中兴通讯H公告",
+      "HKEX披露易",
+      "https://www.hkexnews.hk/index.htm"
+    ],
+    [
+      "SpaceX官方",
+      "SpaceX",
+      "https://www.spacex.com/"
+    ],
+    [
+      "Starlink官方",
+      "Starlink",
+      "https://www.starlink.com/"
+    ],
+    [
+      "FAA商业航天",
+      "FAA",
+      "https://www.faa.gov/space"
+    ]
+  ]
+}
