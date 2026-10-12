@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="dashboard-version" content="2026-10-12 10:55:31 CST">
+  <title>个人投研核心监控台｜2026-10-12</title>
+  <style>
+    :root {
+      --bg: #07090d;
+      --panel: rgba(17, 22, 30, 0.86);
+      --panel-2: rgba(28, 34, 45, 0.76);
+      --ink: #fff7ed;
+      --muted: #a9a39a;
+      --line: rgba(255, 247, 237, 0.13);
+      --red: #ff3b30;
+      --gold: #d8a24a;
+      --cyan: #74d7ef;
+      --green: #42d392;
+      --shadow: 0 30px 90px rgba(0, 0, 0, 0.46);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, rgba(255,59,48,.24), transparent 28%),
+        radial-gradient(circle at 92% 4%, rgba(116,215,239,.16), transparent 24%),
+        linear-gradient(180deg, #080a0f 0%, #10141c 52%, #06070a 100%);
+      font-family: "Avenir Next", "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.65;
+    }
+    a { color: var(--cyan); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .page { max-width: 1280px; margin: 0 auto; padding: 20px 22px 64px; }
+    .top {
+      position: sticky; top: 0; z-index: 20;
+      display: flex; justify-content: space-between; align-items: center; gap: 18px;
+      padding: 13px 0; border-bottom: 1px solid var(--line);
+      background: rgba(7,9,13,.8); backdrop-filter: blur(18px);
+    }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .mark {
+      width: 42px; height: 42px; border-radius: 14px; display: grid; place-items: center;
+      background: linear-gradient(135deg, var(--red), #6b1111); font-weight: 900;
+    }
+    .brand strong { display: block; font-size: 15px; }
+    .brand span, .nav, .muted { color: var(--muted); }
+    .brand span { display: block; margin-top: 2px; font-size: 12px; }
+    .nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px 16px; font-size: 12px; }
+    .hero {
+      position: relative; overflow: hidden; margin-top: 22px; padding: 62px 42px 40px;
+      border: 1px solid var(--line); border-radius: 34px; background: linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.02)), var(--panel);
+      box-shadow: var(--shadow);
+    }
+    .hero:after {
+      content: ""; position: absolute; right: -72px; top: -84px; width: 280px; height: 280px;
+      border: 1px solid rgba(255,247,237,.13); border-radius: 999px;
+      box-shadow: 0 0 0 42px rgba(255,247,237,.035);
+    }
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px; }
+    .tag {
+      padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px;
+      background: rgba(255,255,255,.045); color: var(--muted); font-size: 12px; font-weight: 800;
+    }
+    h1 { max-width: 930px; margin: 0; font-size: clamp(42px, 6vw, 82px); line-height: .98; letter-spacing: -.065em; }
+    .lead { max-width: 920px; margin: 22px 0 0; color: var(--muted); font-size: clamp(16px, 1.8vw, 22px); font-weight: 650; }
+    .red { color: var(--red); font-weight: 900; }
+    .quick { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: 30px; }
+    .quick-card, .panel, .company, .review-card, .warning, .alert-banner {
+      border: 1px solid var(--line); border-radius: 26px; background: var(--panel); box-shadow: var(--shadow);
+    }
+    .quick-card { min-height: 112px; padding: 18px; }
+    .quick-card span, .label { display: block; color: var(--muted); font-size: 12px; font-weight: 850; }
+    .quick-card strong { display: block; margin-top: 9px; font-size: 26px; line-height: 1.12; }
+    .section { margin-top: 30px; }
+    .section-title { display: flex; align-items: end; justify-content: space-between; gap: 18px; margin-bottom: 14px; padding: 0 8px; }
+    h2 { margin: 0; font-size: clamp(30px, 4vw, 52px); line-height: 1.02; letter-spacing: -.055em; }
+    .section-title p { max-width: 560px; margin: 0; color: var(--muted); font-size: 13px; text-align: right; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .company-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .news-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .review-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .panel, .company { padding: 22px; }
+    .panel h3, .company h3 { margin: 0 0 12px; font-size: 24px; }
+    .company small { color: var(--muted); font-weight: 800; }
+    .review-card { position: relative; overflow: hidden; display: flex; flex-direction: column; min-height: 210px; padding: 20px; }
+    .review-card:before {
+      content: ""; position: absolute; inset: 0 0 auto 0; height: 4px;
+      background: linear-gradient(90deg, var(--red), var(--gold), transparent);
+    }
+    .review-card small { color: var(--muted); font-weight: 850; }
+    .review-card h3 { margin: 12px 0 10px; font-size: 21px; line-height: 1.18; }
+    .review-card p { margin: 0 0 18px; color: var(--muted); font-size: 13px; }
+    .review-card a {
+      display: inline-flex; align-items: center; gap: 8px; margin-top: auto;
+      padding: 9px 12px; border: 1px solid rgba(116,215,239,.32); border-radius: 999px;
+      background: rgba(116,215,239,.08); font-size: 13px; font-weight: 850;
+    }
+    .panel > .review-grid { grid-template-columns: 1fr; }
+    .list { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+    .list li { display: grid; grid-template-columns: 86px 1fr; gap: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
+    .list span { color: var(--muted); font-size: 12px; font-weight: 850; }
+    table { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 22px; background: var(--panel); box-shadow: var(--shadow); }
+    th, td { padding: 14px 14px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; font-size: 14px; }
+    th { color: var(--muted); font-size: 12px; letter-spacing: .04em; text-transform: uppercase; background: rgba(255,255,255,.04); }
+    tr:last-child td { border-bottom: 0; }
+    .up { color: var(--red); font-weight: 900; }
+    .down { color: var(--green); font-weight: 900; }
+    .flat { color: var(--muted); font-weight: 900; }
+    .warn { color: var(--gold); font-weight: 900; }
+    .warning { padding: 20px 22px; color: var(--muted); }
+    .alert-banner {
+      display: grid; grid-template-columns: 180px 1fr; gap: 18px;
+      padding: 20px 22px; margin-bottom: 16px;
+      background: linear-gradient(135deg, rgba(255,59,48,.16), rgba(116,215,239,.06)), var(--panel);
+    }
+    .alert-banner strong { display: block; font-size: 26px; line-height: 1; }
+    .alert-banner p { margin: 4px 0 0; color: var(--muted); }
+    .source-pill {
+      display: inline-flex; margin-top: 8px; padding: 6px 10px; border-radius: 999px;
+      border: 1px solid rgba(116,215,239,.28); background: rgba(116,215,239,.08);
+      color: var(--cyan); font-size: 12px; font-weight: 850;
+    }
+    .announcement-details { display: grid; gap: 12px; margin-top: 16px; }
+    .announcement-detail summary {
+      cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 12px;
+      padding: 18px 20px; border: 1px solid var(--line); border-radius: 22px; background: var(--panel);
+      box-shadow: var(--shadow); font-weight: 900;
+    }
+    .announcement-detail summary::-webkit-details-marker { display: none; }
+    .announcement-detail summary span { color: var(--muted); font-size: 12px; font-weight: 850; }
+    .announcement-detail[open] summary { border-radius: 22px 22px 0 0; border-bottom-color: rgba(255,247,237,.08); }
+    .announcement-detail-body {
+      padding: 20px; border: 1px solid var(--line); border-top: 0; border-radius: 0 0 22px 22px;
+      background: rgba(17,22,30,.72);
+    }
+    .announcement-detail-body h3 { margin: 0 0 10px; font-size: 24px; }
+    .announcement-detail-body p { margin: 8px 0; }
+    .announcement-detail-body ul { margin: 8px 0 0; padding-left: 20px; }
+    .source-table td:nth-child(1) { width: 26%; }
+    .footer { margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+    .live-status {
+      position: fixed; left: 50%; bottom: 18px; z-index: 50; transform: translateX(-50%);
+      display: flex; align-items: center; gap: 10px; max-width: calc(100vw - 28px);
+      padding: 10px 12px; border: 1px solid rgba(116,215,239,.28); border-radius: 999px;
+      background: rgba(7,9,13,.78); color: var(--ink); box-shadow: 0 18px 58px rgba(0,0,0,.38);
+      backdrop-filter: blur(18px); font-size: 12px; font-weight: 850;
+    }
+    .live-status.is-update { border-color: rgba(255,59,48,.58); background: rgba(54,9,12,.86); }
+    .live-dot {
+      width: 9px; height: 9px; flex: 0 0 auto; border-radius: 999px;
+      background: var(--green); box-shadow: 0 0 0 0 rgba(66,211,146,.52);
+      animation: livePulse 1.9s infinite;
+    }
+    .live-status.is-update .live-dot { background: var(--red); box-shadow: 0 0 0 0 rgba(255,59,48,.56); }
+    .live-status button {
+      appearance: none; border: 1px solid rgba(255,247,237,.18); border-radius: 999px;
+      background: rgba(255,255,255,.07); color: var(--ink); cursor: pointer;
+      padding: 6px 9px; font: inherit; font-size: 11px;
+    }
+    .live-status button:hover { background: rgba(255,255,255,.12); }
+    @keyframes livePulse {
+      0% { box-shadow: 0 0 0 0 rgba(66,211,146,.52); }
+      70% { box-shadow: 0 0 0 9px rgba(66,211,146,0); }
+      100% { box-shadow: 0 0 0 0 rgba(66,211,146,0); }
+    }
+    @media (max-width: 860px) {
+      .page { padding: 14px 14px 40px; }
+      .top { align-items: flex-start; flex-direction: column; }
+      .nav { justify-content: flex-start; }
+      .hero { padding: 42px 20px 26px; border-radius: 26px; }
+      .quick, .company-grid, .news-grid, .grid-2, .review-grid { grid-template-columns: 1fr; }
+      .alert-banner { grid-template-columns: 1fr; }
+      .section-title { display: block; }
+      .section-title p { margin-top: 8px; text-align: left; }
+      table { display: block; overflow-x: auto; white-space: nowrap; }
+      .list li { grid-template-columns: 70px 1fr; }
+      .live-status {
+        right: 12px; left: 12px; bottom: 12px; transform: none;
+        justify-content: space-between; border-radius: 18px;
+      }
+      .live-status span:nth-child(2) { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    }
+  </style>
+</head>
+<body>
+  <div class="live-status" id="liveStatus" role="status" aria-live="polite">
+    <span class="live-dot" aria-hidden="true"></span>
+    <span id="liveStatusText">动态更新已开启｜自动检查最新版本</span>
+    <button id="liveRefreshButton" type="button">立即检查</button>
+  </div>
+  <main class="page">
+    <header class="top">
+      <div class="brand">
+        <div class="mark">研</div>
+        <div><strong>个人投研情报中枢</strong><span>自用｜公告雷达｜核心监控｜不构成买卖建议</span></div>
+      </div>
+      <nav class="nav">
+        <a href="#monitor">公告雷达</a>
+        <a href="#announcements">公司状态</a>
+        <a href="#news">最新消息</a>
+        <a href="#market">行情</a>
+        <a href="#review">复盘</a>
+        <a href="#sources">来源</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="tags">
+        <span class="tag">2026-10-12 更新</span>
+        <span class="tag">北京时间 2026-10-12 10:55:31 CST</span>
+        <span class="tag">交易时段：盘中快照</span>
+        <span class="tag">官方公告优先</span>
+      </div>
+      <h1>核心监控台</h1>
+      <p class="lead">首屏只看需要处理的信息：<span class="red">新增公告、关键行情、公司状态、复盘入口</span>。减少背景噪音，不把媒体报道写成公告事实。</p>
+      <div class="quick">
+        <div class="quick-card"><span>公告雷达</span><strong>已接入</strong></div>
+        <div class="quick-card"><span>最新公告</span><strong>25 条</strong></div>
+        <div class="quick-card"><span>更新时间</span><strong>10:55</strong></div>
+        <div class="quick-card"><span>更新规则</span><strong>盘中5分钟 / 晚20点</strong></div>
+      </div>
+    </section>
+
+    <section class="section" id="monitor">
+      <div class="section-title">
+        <h2>公告雷达</h2>
+        <p>已接入东方财富公告中心。每次运行会比对公告代码，发现新增公告时更新页面并生成提醒。</p>
+      </div>
+      
+      <div class="alert-banner">
+        <div>
+          <span class="label">公告提醒</span>
+          <strong>无新增</strong>
+          <span class="source-pill">持续监控</span>
+        </div>
+        <div>
+          <p>本次未发现相较上次检查的新增公告。</p>
+          <p>检查时间：2026-10-12 10:55:31 CST</p>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>公司</th>
+            <th>披露时间</th>
+            <th>公告事实</th>
+            <th>关注点</th>
+            <th>入口</th>
+          </tr>
+        </thead>
+        <tbody><tr><td><strong>联赢激光</strong><br><span class="muted">688518</span></td><td>2026-10-09 15:32:10:600</td><td><strong>联赢激光:深圳市联赢激光股份有限公司关于召开2026年半年度业绩说明会的公告</strong><br><span class="source-pill">其他</span></td><td>业绩类事项，重点看收入、利润、毛利率、费用和非经常性损益变化。</td><td><a class="source-pill" href="#ann-AN202610091830259645">查看精排详情</a></td></tr>
+<tr><td><strong>中芯国际</strong><br><span class="muted">688981</span></td><td>2026-10-07 16:36:12:352</td><td><strong>中芯国际:港股公告:证券变动月报表</strong><br><span class="source-pill">其他</span></td><td>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</td><td><a class="source-pill" href="#ann-AN202610071830186208">查看精排详情</a></td></tr>
+<tr><td><strong>中兴通讯</strong><br><span class="muted">000063</span></td><td>2026-10-07 15:33:24:267</td><td><strong>中兴通讯:关于按照《香港上市规则》公布2026年9月份证券变动月报表的公告</strong><br><span class="source-pill">其他</span></td><td>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</td><td><a class="source-pill" href="#ann-AN202610071830185138">查看精排详情</a></td></tr>
+<tr><td><strong>京东方A</strong><br><span class="muted">000725</span></td><td>2026-10-07 15:32:16:029</td><td><strong>京东方Ａ:关于回购公司股份的进展公告</strong><br><span class="source-pill">回购进展情况</span></td><td>股份回购相关事项，重点看回购金额、价格区间、进度和资金来源。</td><td><a class="source-pill" href="#ann-AN202610071830185202">查看精排详情</a></td></tr>
+<tr><td><strong>东芯股份</strong><br><span class="muted">688110</span></td><td>2026-09-30 15:34:24:651</td><td><strong>东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年9月30日)</strong><br><span class="source-pill">调研活动</span></td><td>投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。</td><td><a class="source-pill" href="#ann-AN202609301830039476">查看精排详情</a></td></tr>
+<tr><td><strong>中芯国际</strong><br><span class="muted">688981</span></td><td>2026-09-28 19:51:30:683</td><td><strong>中芯国际:港股公告:翌日披露报表</strong><br><span class="source-pill">其他</span></td><td>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</td><td><a class="source-pill" href="#ann-AN202609281829964976">查看精排详情</a></td></tr>
+<tr><td><strong>东芯股份</strong><br><span class="muted">688110</span></td><td>2026-09-28 18:59:01:874</td><td><strong>东芯股份:北京德恒(深圳)律师事务所关于东芯半导体股份有限公司差异化权益分派方案的法律意见</strong><br><span class="source-pill">法律意见书</span></td><td>利润分配或权益派发事项，重点看登记日、除权除息日和派发金额。</td><td><a class="source-pill" href="#ann-AN202609281829963926">查看精排详情</a></td></tr>
+<tr><td><strong>东芯股份</strong><br><span class="muted">688110</span></td><td>2026-09-28 18:59:01:776</td><td><strong>东芯股份:2026年半年度权益分派实施公告</strong><br><span class="source-pill">分配方案实施</span></td><td>利润分配或权益派发事项，重点看登记日、除权除息日和派发金额。</td><td><a class="source-pill" href="#ann-AN202609281829963925">查看精排详情</a></td></tr>
+<tr><td><strong>京东方A</strong><br><span class="muted">000725</span></td><td>2026-09-22 20:55:51:733</td><td><strong>京东方Ａ:045-2026年9月22日投资者关系活动记录表</strong><br><span class="source-pill">调研活动</span></td><td>投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。</td><td><a class="source-pill" href="#ann-AN202609221829766629">查看精排详情</a></td></tr>
+<tr><td><strong>京东方A</strong><br><span class="muted">000725</span></td><td>2026-09-22 18:13:03:741</td><td><strong>京东方Ａ:044-2026年9月18日投资者关系活动记录表</strong><br><span class="source-pill">调研活动</span></td><td>投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。</td><td><a class="source-pill" href="#ann-AN202609221829762562">查看精排详情</a></td></tr>
+<tr><td><strong>东芯股份</strong><br><span class="muted">688110</span></td><td>2026-09-17 19:01:36:224</td><td><strong>东芯股份:关于开设募集资金专项账户并签订募集资金专户存储三方监管协议的公告</strong><br><span class="source-pill">签订协议</span></td><td>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</td><td><a class="source-pill" href="#ann-AN202609171829526277">查看精排详情</a></td></tr>
+<tr><td><strong>京东方A</strong><br><span class="muted">000725</span></td><td>2026-09-17 17:48:05:365</td><td><strong>京东方Ａ:关于京东方科技集团股份有限公司2026年第一次临时股东会的法律意见书</strong><br><span class="source-pill">法律意见书</span></td><td>公司治理/股东会决议事项，重点核对议案通过情况和是否影响资本运作。</td><td><a class="source-pill" href="#ann-AN202609171829520417">查看精排详情</a></td></tr></tbody>
+      </table>
+      <div class="announcement-details">
+        
+        <details class="announcement-detail" id="ann-AN202610091830259645">
+          <summary>
+            <div>联赢激光｜联赢激光:深圳市联赢激光股份有限公司关于召开2026年半年度业绩说明会的公告</div>
+            <span>2026-10-09 15:32:10:600</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>联赢激光:深圳市联赢激光股份有限公司关于召开2026年半年度业绩说明会的公告</h3>
+            <p><span class="source-pill">其他</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202610091830259645_1.pdf?1791560010000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>业绩类事项，重点看收入、利润、毛利率、费用和非经常性损益变化。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。</li><li>判断是否影响公司基本面、治理结构、资金安排或市场预期。</li><li>如属于公告事实变化，加入下一次投研复盘的关注清单。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202610071830186208">
+          <summary>
+            <div>中芯国际｜中芯国际:港股公告:证券变动月报表</div>
+            <span>2026-10-07 16:36:12:352</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>中芯国际:港股公告:证券变动月报表</h3>
+            <p><span class="source-pill">其他</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202610071830186208_1.pdf?1791390951000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。</li><li>判断是否影响公司基本面、治理结构、资金安排或市场预期。</li><li>如属于公告事实变化，加入下一次投研复盘的关注清单。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202610071830185138">
+          <summary>
+            <div>中兴通讯｜中兴通讯:关于按照《香港上市规则》公布2026年9月份证券变动月报表的公告</div>
+            <span>2026-10-07 15:33:24:267</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>中兴通讯:关于按照《香港上市规则》公布2026年9月份证券变动月报表的公告</h3>
+            <p><span class="source-pill">其他</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202610071830185138_1.pdf?1791387730000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。</li><li>判断是否影响公司基本面、治理结构、资金安排或市场预期。</li><li>如属于公告事实变化，加入下一次投研复盘的关注清单。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202610071830185202">
+          <summary>
+            <div>京东方A｜京东方Ａ:关于回购公司股份的进展公告</div>
+            <span>2026-10-07 15:32:16:029</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>京东方Ａ:关于回购公司股份的进展公告</h3>
+            <p><span class="source-pill">回购进展情况</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202610071830185202_1.pdf?1791387237000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>股份回购相关事项，重点看回购金额、价格区间、进度和资金来源。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。</li><li>判断是否影响公司基本面、治理结构、资金安排或市场预期。</li><li>如属于公告事实变化，加入下一次投研复盘的关注清单。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202609301830039476">
+          <summary>
+            <div>东芯股份｜东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年9月30日)</div>
+            <span>2026-09-30 15:34:24:651</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年9月30日)</h3>
+            <p><span class="source-pill">调研活动</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202609301830039476_1.pdf?1790782407000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>提取问答中涉及价格、产能、订单、客户、产品进度的表述。</li><li>与上一期调研记录对比，判断公司表述是否发生变化。</li><li>把可验证事实和管理层判断分开记录，避免把观点写成公告事实。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202609281829964976">
+          <summary>
+            <div>中芯国际｜中芯国际:港股公告:翌日披露报表</div>
+            <span>2026-09-28 19:51:30:683</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>中芯国际:港股公告:翌日披露报表</h3>
+            <p><span class="source-pill">其他</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202609281829964976_1.pdf?1790625123000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。</li><li>判断是否影响公司基本面、治理结构、资金安排或市场预期。</li><li>如属于公告事实变化，加入下一次投研复盘的关注清单。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202609281829963926">
+          <summary>
+            <div>东芯股份｜东芯股份:北京德恒(深圳)律师事务所关于东芯半导体股份有限公司差异化权益分派方案的法律意见</div>
+            <span>2026-09-28 18:59:01:874</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>东芯股份:北京德恒(深圳)律师事务所关于东芯半导体股份有限公司差异化权益分派方案的法律意见</h3>
+            <p><span class="source-pill">法律意见书</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202609281829963926_1.pdf?1790621983000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>利润分配或权益派发事项，重点看登记日、除权除息日和派发金额。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。</li><li>判断是否影响公司基本面、治理结构、资金安排或市场预期。</li><li>如属于公告事实变化，加入下一次投研复盘的关注清单。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202609281829963925">
+          <summary>
+            <div>东芯股份｜东芯股份:2026年半年度权益分派实施公告</div>
+            <span>2026-09-28 18:59:01:776</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>东芯股份:2026年半年度权益分派实施公告</h3>
+            <p><span class="source-pill">分配方案实施</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202609281829963925_1.pdf?1790621983000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>利润分配或权益派发事项，重点看登记日、除权除息日和派发金额。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。</li><li>判断是否影响公司基本面、治理结构、资金安排或市场预期。</li><li>如属于公告事实变化，加入下一次投研复盘的关注清单。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202609221829766629">
+          <summary>
+            <div>京东方A｜京东方Ａ:045-2026年9月22日投资者关系活动记录表</div>
+            <span>2026-09-22 20:55:51:733</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>京东方Ａ:045-2026年9月22日投资者关系活动记录表</h3>
+            <p><span class="source-pill">调研活动</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202609221829766629_1.pdf?1790110535000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>提取问答中涉及价格、产能、订单、客户、产品进度的表述。</li><li>与上一期调研记录对比，判断公司表述是否发生变化。</li><li>把可验证事实和管理层判断分开记录，避免把观点写成公告事实。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202609221829762562">
+          <summary>
+            <div>京东方A｜京东方Ａ:044-2026年9月18日投资者关系活动记录表</div>
+            <span>2026-09-22 18:13:03:741</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>京东方Ａ:044-2026年9月18日投资者关系活动记录表</h3>
+            <p><span class="source-pill">调研活动</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202609221829762562_1.pdf?1790100750000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>提取问答中涉及价格、产能、订单、客户、产品进度的表述。</li><li>与上一期调研记录对比，判断公司表述是否发生变化。</li><li>把可验证事实和管理层判断分开记录，避免把观点写成公告事实。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202609171829526277">
+          <summary>
+            <div>东芯股份｜东芯股份:关于开设募集资金专项账户并签订募集资金专户存储三方监管协议的公告</div>
+            <span>2026-09-17 19:01:36:224</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>东芯股份:关于开设募集资金专项账户并签订募集资金专户存储三方监管协议的公告</h3>
+            <p><span class="source-pill">签订协议</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202609171829526277_1.pdf?1789671768000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。</li><li>判断是否影响公司基本面、治理结构、资金安排或市场预期。</li><li>如属于公告事实变化，加入下一次投研复盘的关注清单。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+
+        <details class="announcement-detail" id="ann-AN202609171829520417">
+          <summary>
+            <div>京东方A｜京东方Ａ:关于京东方科技集团股份有限公司2026年第一次临时股东会的法律意见书</div>
+            <span>2026-09-17 17:48:05:365</span>
+          </summary>
+          <div class="announcement-detail-body">
+            <h3>京东方Ａ:关于京东方科技集团股份有限公司2026年第一次临时股东会的法律意见书</h3>
+            <p><span class="source-pill">法律意见书</span> <a class="source-pill" href="https://pdf.dfcfw.com/pdf/H2_AN202609171829520417_1.pdf?1789667335000.pdf">打开公告 PDF</a></p>
+            <p><span class="red">直观结论：</span>公司治理/股东会决议事项，重点核对议案通过情况和是否影响资本运作。</p>
+            
+            <p><strong>后续动作</strong></p>
+            <ul><li>核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。</li><li>判断是否影响公司基本面、治理结构、资金安排或市场预期。</li><li>如属于公告事实变化，加入下一次投研复盘的关注清单。</li></ul>
+            <p class="muted">本详情页只做直观摘要与跟进提示；完整内容请打开公告 PDF 原文核验。</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section" id="announcements">
+      <div class="section-title">
+        <h2>公司核心状态</h2>
+        <p>每家公司只展示最新公告、当前跟踪重点和下一步动作；更详细信息放入来源和复盘。</p>
+      </div>
+      <div class="company-grid">
+        
+        <article class="company">
+          <small>688981 / 00981</small>
+          <h3>中芯国际</h3>
+          <ul class="list">
+            <li><span>公告</span><div><a href="#ann-AN202610071830186208" class="red">中芯国际:港股公告:证券变动月报表｜2026-10-07 16:36:12:352</a><br><span class="source-pill">页面内精排详情</span></div></li>
+            <li><span>跟踪</span><div>晶圆代工、成熟制程、资本开支、国产替代、出口管制。</div></li>
+            <li><span>下一步</span><div>继续跟踪 A/H 两地公告、产能利用率、毛利率和外部限制变化。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <small>688110</small>
+          <h3>东芯股份</h3>
+          <ul class="list">
+            <li><span>公告</span><div><a href="#ann-AN202609301830039476" class="red">东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年9月30日)｜2026-09-30 15:34:24:651</a><br><span class="source-pill">页面内精排详情</span></div></li>
+            <li><span>跟踪</span><div>SLC NAND、NOR、DRAM、小容量存储、库存和价格周期。</div></li>
+            <li><span>下一步</span><div>观察存储价格、客户导入、产品结构和费用率变化。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <small>000725</small>
+          <h3>京东方A</h3>
+          <ul class="list">
+            <li><span>公告</span><div><a href="#ann-AN202610071830185202" class="red">京东方Ａ:关于回购公司股份的进展公告｜2026-10-07 15:32:16:029</a><br><span class="source-pill">页面内精排详情</span></div></li>
+            <li><span>跟踪</span><div>LCD/OLED 面板价格、车载显示、IoT 创新业务和折旧压力。</div></li>
+            <li><span>下一步</span><div>重点看面板价格修复、OLED 良率和下游补库持续性。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <small>000063 / 00763</small>
+          <h3>中兴通讯</h3>
+          <ul class="list">
+            <li><span>公告</span><div><a href="#ann-AN202610071830185138" class="red">中兴通讯:关于按照《香港上市规则》公布2026年9月份证券变动月报表的公告｜2026-10-07 15:33:24:267</a><br><span class="source-pill">页面内精排详情</span></div></li>
+            <li><span>跟踪</span><div>通信设备、算力网络、服务器、运营商资本开支和海外合规。</div></li>
+            <li><span>下一步</span><div>继续跟踪运营商招标、AI 算力产品、毛利结构和海外监管。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <small>688518</small>
+          <h3>联赢激光</h3>
+          <ul class="list">
+            <li><span>公告</span><div><a href="#ann-AN202610091830259645" class="red">联赢激光:深圳市联赢激光股份有限公司关于召开2026年半年度业绩说明会的公告｜2026-10-09 15:32:10:600</a><br><span class="source-pill">页面内精排详情</span></div></li>
+            <li><span>跟踪</span><div>锂电激光焊接、消费电子/半导体激光设备、订单和回款。</div></li>
+            <li><span>下一步</span><div>观察新能源设备资本开支、订单兑现、应收账款和毛利修复。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <small>Private / Starlink</small>
+          <h3>SpaceX</h3>
+          <ul class="list">
+            <li><span>公告</span><div><span class="red">非上市公司，无交易所公告口径</span></div></li>
+            <li><span>跟踪</span><div>Starlink、Starship、发射节奏、监管许可、政府合同和融资估值。</div></li>
+            <li><span>下一步</span><div>只跟踪官方、监管、政府合同和可靠媒体，不写成可直接交易股票。</div></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="section-title">
+        <h2>公司最新消息</h2>
+        <p>来源为东方财富公司资讯，属于媒体/财经信息线索；不替代交易所公告和公司官方披露。</p>
+      </div>
+      <div class="news-grid">
+        
+        <article class="company">
+          <small>东方财富公司资讯｜2026-10-12 07:47:08</small>
+          <h3>东芯股份</h3>
+          <ul class="list">
+            <li><span>消息</span><div><a href="http://finance.eastmoney.com/a/202610123892161368.html">长鑫取得重要突破！海外大厂业绩共振 这9只超跌存储股频获机构调研(名单)</a></div></li>
+            <li><span>匹配</span><div>关键词匹配</div></li>
+            <li><span>口径</span><div>媒体/财经信息线索，不替代官方公告。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <small>东方财富公司资讯｜2026-10-11 21:52:31</small>
+          <h3>中兴通讯</h3>
+          <ul class="list">
+            <li><span>消息</span><div><a href="http://finance.eastmoney.com/a/202610113892116488.html">下周资本市场大事提醒： 中国9月CPI和PPI数据将公布 阿斯麦和台积电财报验证AI基础设施投资的增长势头能否延续</a></div></li>
+            <li><span>匹配</span><div>关键词匹配</div></li>
+            <li><span>口径</span><div>媒体/财经信息线索，不替代官方公告。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <small>东方财富公司资讯｜2026-10-10 21:00:48</small>
+          <h3>京东方A</h3>
+          <ul class="list">
+            <li><span>消息</span><div><a href="http://finance.eastmoney.com/a/202610103891971259.html">京东方A回应玻璃基封装载板量产是否需新增产线相关提问</a></div></li>
+            <li><span>匹配</span><div>关键词匹配</div></li>
+            <li><span>口径</span><div>媒体/财经信息线索，不替代官方公告。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <small>东方财富公司资讯｜2026-10-10 18:06:34</small>
+          <h3>京东方A</h3>
+          <ul class="list">
+            <li><span>消息</span><div><a href="http://finance.eastmoney.com/a/202610103891947816.html">京东方携手一加手机发布第四代东方屏</a></div></li>
+            <li><span>匹配</span><div>关键词匹配</div></li>
+            <li><span>口径</span><div>媒体/财经信息线索，不替代官方公告。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <small>东方财富公司资讯｜2026-10-10 15:24:45</small>
+          <h3>中兴通讯</h3>
+          <ul class="list">
+            <li><span>消息</span><div><a href="http://insurance.eastmoney.com/a/202610103891914143.html">关于6G，中兴通讯董事长最新发声</a></div></li>
+            <li><span>匹配</span><div>关键词匹配</div></li>
+            <li><span>口径</span><div>媒体/财经信息线索，不替代官方公告。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <small>东方财富公司资讯｜2026-10-09 19:46:00</small>
+          <h3>联赢激光</h3>
+          <ul class="list">
+            <li><span>消息</span><div><a href="http://finance.eastmoney.com/a/202610093891419573.html">联赢激光：公司将于10月19日召开2026年半年度业绩说明会</a></div></li>
+            <li><span>匹配</span><div>关键词匹配</div></li>
+            <li><span>口径</span><div>媒体/财经信息线索，不替代官方公告。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <small>东方财富公司资讯｜2026-10-09 17:12:27</small>
+          <h3>中芯国际</h3>
+          <ul class="list">
+            <li><span>消息</span><div><a href="http://finance.eastmoney.com/a/202610093891318544.html">从光芯片到覆铜板 A股AI硬件板块因何轮番走低？</a></div></li>
+            <li><span>匹配</span><div>关键词匹配</div></li>
+            <li><span>口径</span><div>媒体/财经信息线索，不替代官方公告。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <small>东方财富公司资讯｜2026-10-08 07:11:11</small>
+          <h3>东芯股份</h3>
+          <ul class="list">
+            <li><span>消息</span><div><a href="http://finance.eastmoney.com/a/202610083889044930.html">上证早知道｜002244，机构净买入5105.55万元；688110，预计利基存储涨价周期有望延续</a></div></li>
+            <li><span>匹配</span><div>关键词匹配</div></li>
+            <li><span>口径</span><div>媒体/财经信息线索，不替代官方公告。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <small>东方财富公司资讯｜2026-10-08 05:04:26</small>
+          <h3>中芯国际</h3>
+          <ul class="list">
+            <li><span>消息</span><div><a href="http://finance.eastmoney.com/a/202610083889031433.html">A股盘前速览：美股盘初半导体、光通信齐跌，存储芯片低开拉升；黄金大跳水；国庆档总票房破11亿；粤芯半导体网上投资者弃购468976股</a></div></li>
+            <li><span>匹配</span><div>关键词匹配</div></li>
+            <li><span>口径</span><div>媒体/财经信息线索，不替代官方公告。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <small>东方财富公司资讯｜2026-09-17 20:09:00</small>
+          <h3>联赢激光</h3>
+          <ul class="list">
+            <li><span>消息</span><div><a href="http://finance.eastmoney.com/a/202609173877510445.html">联赢激光：2026年半年度权益分派实施公告</a></div></li>
+            <li><span>匹配</span><div>关键词匹配</div></li>
+            <li><span>口径</span><div>媒体/财经信息线索，不替代官方公告。</div></li>
+          </ul>
+        </article>
+
+        <article class="company">
+          <small>来源限制｜未披露时间</small>
+          <h3>SpaceX</h3>
+          <ul class="list">
+            <li><span>消息</span><div><a href="https://www.spacex.com/">同花顺/东方财富暂无对应个股资讯页；该公司继续按官方、监管和政府来源跟踪。</a></div></li>
+            <li><span>匹配</span><div>非上市公司</div></li>
+            <li><span>口径</span><div>媒体/财经信息线索，不替代官方公告。</div></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="market">
+      <div class="section-title">
+        <h2>关键行情</h2>
+        <p>交易时段：盘中快照；只保留价格、涨跌幅、成交额和资金方向。</p>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>证券</th>
+            <th>代码</th>
+            <th>最新价</th>
+            <th>涨跌幅</th>
+            <th>成交额</th>
+            <th>主力净流入</th>
+            <th>快照时间</th>
+          </tr>
+        </thead>
+        <tbody><tr><td>中芯国际 A</td><td>688981</td><td>107.04</td><td class="down">-1.27%</td><td>13.69 亿</td><td>-6367.49 万</td><td>2026-10-12 10:55:29</td></tr>
+<tr><td>东芯股份</td><td>688110</td><td>66.47</td><td class="down">-4.57%</td><td>7.25 亿</td><td>5183.54 万</td><td>2026-10-12 10:55:31</td></tr>
+<tr><td>京东方A</td><td>000725</td><td>5.39</td><td class="down">-2.00%</td><td>17.29 亿</td><td>-2013.25 万</td><td>2026-10-12 10:55:30</td></tr>
+<tr><td>中兴通讯 A</td><td>000063</td><td>28.53</td><td class="down">-1.72%</td><td>8.92 亿</td><td>-1.05 亿</td><td>2026-10-12 10:55:30</td></tr>
+<tr><td>联赢激光</td><td>688518</td><td>19.2</td><td class="down">-0.62%</td><td>6423.41 万</td><td>408.48 万</td><td>2026-10-12 10:55:30</td></tr>
+<tr><td>中芯国际 H</td><td>00981</td><td>56.4</td><td class="down">-2.17%</td><td>7.38 亿</td><td>1216.53 万</td><td>2026-10-12 10:55:29</td></tr>
+<tr><td>中兴通讯 H</td><td>00763</td><td>20.64</td><td class="down">-0.58%</td><td>2926.30 万</td><td>27.06 万</td><td>2026-10-12 10:54:58</td></tr></tbody>
+      </table>
+    </section>
+
+    <section class="section" id="review">
+      <div class="section-title">
+        <h2>复盘</h2>
+        <p>将之前为客户提供的 HTML 页面纳入个人复盘入口，按周沉淀内容结构、阅读体验和下一轮优化事项。</p>
+      </div>
+      <div class="grid-2" style="margin-bottom:16px;">
+        <article class="panel">
+          <h3>客户 HTML 入口</h3>
+          <ul class="list">
+            <li><span>用途</span><div>快速打开客户001历史页面，复查客户看到的真实页面效果。</div></li>
+            <li><span>方法</span><div>每次客户页交付后复制快照到个人站点 `review/`，避免原文件移动后入口失效。</div></li>
+            <li><span>边界</span><div>这里是个人复盘入口，不替代客户正式展示页。</div></li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3>按周复盘</h3>
+          <div class="review-grid">
+        <article class="review-card">
+          <small>2026-06-22 至 2026-06-28</small>
+          <h3>2026年第26周客户内容复盘</h3>
+          <p>客户001页面从试验版到投研情报专栏的结构、转发场景和移动端体验复盘。</p>
+          <a href="review/weekly/2026-W26.html">进入周复盘</a>
+        </article></div>
+        </article>
+      </div>
+      <div class="review-grid">
+        <article class="review-card">
+          <small>2026-06-26｜客户专属页｜已收录</small>
+          <h3>客户001试验页</h3>
+          <p>最早版本，用于复盘客户页信息架构和展示节奏。</p>
+          <a href="review/client-001/2026-06-26-client-trial.html">打开页面</a>
+        </article>
+
+        <article class="review-card">
+          <small>2026-06-27｜对外展示页｜已收录</small>
+          <h3>客户001公开展示页</h3>
+          <p>当前客户版主页面，可复盘公告、行情、黄金和产品图排序。</p>
+          <a href="review/client-001/2026-06-27-public.html">打开页面</a>
+        </article>
+
+        <article class="review-card">
+          <small>2026-06-27｜电脑网页｜已收录</small>
+          <h3>投研情报专栏电脑网页版</h3>
+          <p>适合电脑打开的完整 HTML，可复盘客户转发和网页发布效果。</p>
+          <a href="review/client-001/2026-06-27-desktop.html">打开页面</a>
+        </article>
+
+        <article class="review-card">
+          <small>2026-06-27｜手机阅读｜已收录</small>
+          <h3>投研情报专栏手机阅读版</h3>
+          <p>适合微信/手机阅读的 HTML，可复盘移动端阅读体验。</p>
+          <a href="review/client-001/2026-06-27-mobile.html">打开页面</a>
+        </article></div>
+    </section>
+
+    <section class="section" id="sources">
+      <div class="section-title">
+        <h2>来源索引与限制</h2>
+        <p>只保留核验路径和限制说明，用于快速追溯事实来源。</p>
+      </div>
+      <table class="source-table">
+        <thead><tr><th>项目</th><th>来源</th><th>链接</th></tr></thead>
+        <tbody><tr><td>行情快照</td><td>东方财富行情接口</td><td><a href="https://push2.eastmoney.com/api/qt/ulist.np/get?fltt=2&amp;secids=1.688981,1.688110,0.000725,0.000063,1.688518,116.00981,116.00763&amp;fields=f12,f14,f2,f3,f4,f5,f6,f15,f16,f17,f18,f20,f21,f62,f124">打开来源</a></td></tr>
+<tr><td>中芯国际公告列表</td><td>东方财富公告中心</td><td><a href="https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&amp;page_size=5&amp;page_index=1&amp;ann_type=A&amp;client_source=web&amp;stock_list=688981">打开来源</a></td></tr>
+<tr><td>东芯股份公告列表</td><td>东方财富公告中心</td><td><a href="https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&amp;page_size=5&amp;page_index=1&amp;ann_type=A&amp;client_source=web&amp;stock_list=688110">打开来源</a></td></tr>
+<tr><td>京东方A公告列表</td><td>东方财富公告中心</td><td><a href="https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&amp;page_size=5&amp;page_index=1&amp;ann_type=A&amp;client_source=web&amp;stock_list=000725">打开来源</a></td></tr>
+<tr><td>中兴通讯公告列表</td><td>东方财富公告中心</td><td><a href="https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&amp;page_size=5&amp;page_index=1&amp;ann_type=A&amp;client_source=web&amp;stock_list=000063">打开来源</a></td></tr>
+<tr><td>联赢激光公告列表</td><td>东方财富公告中心</td><td><a href="https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&amp;page_size=5&amp;page_index=1&amp;ann_type=A&amp;client_source=web&amp;stock_list=688518">打开来源</a></td></tr>
+<tr><td>中芯国际最新消息</td><td>东方财富公司资讯</td><td><a href="https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SH688981">打开来源</a></td></tr>
+<tr><td>东芯股份最新消息</td><td>东方财富公司资讯</td><td><a href="https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SH688110">打开来源</a></td></tr>
+<tr><td>京东方A最新消息</td><td>东方财富公司资讯</td><td><a href="https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SZ000725">打开来源</a></td></tr>
+<tr><td>中兴通讯最新消息</td><td>东方财富公司资讯</td><td><a href="https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SZ000063">打开来源</a></td></tr>
+<tr><td>联赢激光最新消息</td><td>东方财富公司资讯</td><td><a href="https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SH688518">打开来源</a></td></tr>
+<tr><td>中芯国际公告</td><td>上交所</td><td><a href="https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688981">打开来源</a></td></tr>
+<tr><td>东芯股份公告</td><td>上交所</td><td><a href="https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688110">打开来源</a></td></tr>
+<tr><td>联赢激光公告</td><td>上交所</td><td><a href="https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688518">打开来源</a></td></tr>
+<tr><td>京东方A公告</td><td>巨潮资讯</td><td><a href="https://www.cninfo.com.cn/new/disclosure/stock?stockCode=000725">打开来源</a></td></tr>
+<tr><td>中兴通讯公告</td><td>巨潮资讯</td><td><a href="https://www.cninfo.com.cn/new/disclosure/stock?stockCode=000063">打开来源</a></td></tr>
+<tr><td>中芯国际H公告</td><td>HKEX披露易</td><td><a href="https://www.hkexnews.hk/index.htm">打开来源</a></td></tr>
+<tr><td>中兴通讯H公告</td><td>HKEX披露易</td><td><a href="https://www.hkexnews.hk/index.htm">打开来源</a></td></tr>
+<tr><td>SpaceX官方</td><td>SpaceX</td><td><a href="https://www.spacex.com/">打开来源</a></td></tr>
+<tr><td>Starlink官方</td><td>Starlink</td><td><a href="https://www.starlink.com/">打开来源</a></td></tr>
+<tr><td>FAA商业航天</td><td>FAA</td><td><a href="https://www.faa.gov/space">打开来源</a></td></tr></tbody>
+      </table>
+      <div class="warning" style="margin-top:16px;">
+        <strong>核验限制：</strong>本次已抓取行情快照并建立公告核验口径；巨潮接口在本次窗口未返回新增公告。HKEX 与 SpaceX 动态页面可能存在动态加载，正式外发前应补充人工复核或专门接口。
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>生成时间：2026-10-12 10:55:31 CST｜更新规则：交易日 09:00-15:00 每5分钟刷新公告/行情/消息，其他时间每日20:00完整更新｜用途：个人自用投研复盘，不构成买卖建议。</div>
+    </footer>
+  </main>
+  <script>
+    (() => {
+      const currentVersion = document.querySelector('meta[name="dashboard-version"]')?.content || "";
+      const status = document.getElementById("liveStatus");
+      const statusText = document.getElementById("liveStatusText");
+      const refreshButton = document.getElementById("liveRefreshButton");
+      const pageUrl = window.location.href.split("#")[0].split("?")[0];
+      const isLocalFile = window.location.protocol === "file:";
+      const checkIntervalMs = 60 * 1000;
+      const localReloadMs = 5 * 60 * 1000;
+
+      function shortTime() {
+        return new Intl.DateTimeFormat("zh-CN", {
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false,
+          timeZone: "Asia/Shanghai",
+        }).format(new Date());
+      }
+
+      function setStatus(message, isUpdate = false) {
+        statusText.textContent = message;
+        status.classList.toggle("is-update", isUpdate);
+      }
+
+      async function checkForUpdate() {
+        if (isLocalFile) {
+          setStatus(`本地预览动态刷新｜${shortTime()}｜每5分钟自动重载`);
+          return;
+        }
+
+        try {
+          setStatus(`正在检查更新｜${shortTime()}`);
+          const response = await fetch(`${pageUrl}?live_check=${Date.now()}`, { cache: "no-store" });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const nextHtml = await response.text();
+          const versionMatch = nextHtml.match(/<meta\s+name=["']dashboard-version["']\s+content=["']([^"']+)["']/i);
+          const nextVersion = versionMatch ? versionMatch[1] : "";
+          if (nextVersion && currentVersion && nextVersion !== currentVersion) {
+            setStatus("发现新版本，正在自动刷新", true);
+            window.setTimeout(() => window.location.reload(), 900);
+            return;
+          }
+          setStatus(`已是最新｜${shortTime()}`);
+        } catch (error) {
+          setStatus(`更新检查受限｜${shortTime()}｜可手动刷新`);
+        }
+      }
+
+      refreshButton.addEventListener("click", () => {
+        if (isLocalFile) {
+          window.location.reload();
+          return;
+        }
+        checkForUpdate();
+      });
+
+      document.addEventListener("visibilitychange", () => {
+        if (!document.hidden) checkForUpdate();
+      });
+
+      if (isLocalFile) {
+        window.setInterval(() => window.location.reload(), localReloadMs);
+      }
+      window.setTimeout(checkForUpdate, 1800);
+      window.setInterval(checkForUpdate, checkIntervalMs);
+    })();
+  </script>
+</body>
+</html>
