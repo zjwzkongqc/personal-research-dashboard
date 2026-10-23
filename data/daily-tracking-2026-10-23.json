@@ -1,0 +1,1221 @@
+{
+  "date": "2026-10-23",
+  "run_time": "2026-10-23 09:00:09 CST",
+  "run_clock": "09:00",
+  "companies": [
+    {
+      "name": "中芯国际",
+      "codes": "688981 / 00981",
+      "track": "晶圆代工、成熟制程、资本开支、国产替代、出口管制。",
+      "announcement": "中芯国际:港股公告:翌日披露报表｜2026-10-13 18:55:03:537",
+      "follow": "继续跟踪 A/H 两地公告、产能利用率、毛利率和外部限制变化。",
+      "announcement_link": "#ann-AN202610131830414263",
+      "announcement_source": "页面内精排详情"
+    },
+    {
+      "name": "东芯股份",
+      "codes": "688110",
+      "track": "SLC NAND、NOR、DRAM、小容量存储、库存和价格周期。",
+      "announcement": "东芯股份:关于变更注册资本并完成工商变更登记的公告｜2026-10-22 16:14:31:282",
+      "follow": "观察存储价格、客户导入、产品结构和费用率变化。",
+      "announcement_link": "#ann-AN202610221830798395",
+      "announcement_source": "页面内精排详情"
+    },
+    {
+      "name": "京东方A",
+      "codes": "000725",
+      "track": "LCD/OLED 面板价格、车载显示、IoT 创新业务和折旧压力。",
+      "announcement": "京东方Ａ:050-2026年10月22日投资者关系活动记录表｜2026-10-23 08:49:15:686",
+      "follow": "重点看面板价格修复、OLED 良率和下游补库持续性。",
+      "announcement_link": "#ann-AN202610231830820497",
+      "announcement_source": "页面内精排详情"
+    },
+    {
+      "name": "中兴通讯",
+      "codes": "000063 / 00763",
+      "track": "通信设备、算力网络、服务器、运营商资本开支和海外合规。",
+      "announcement": "中兴通讯:关于向专业投资者公开发行公司债券获得中国证监会注册批复的公告｜2026-10-14 16:38:33:653",
+      "follow": "继续跟踪运营商招标、AI 算力产品、毛利结构和海外监管。",
+      "announcement_link": "#ann-AN202610141830461677",
+      "announcement_source": "页面内精排详情"
+    },
+    {
+      "name": "联赢激光",
+      "codes": "688518",
+      "track": "锂电激光焊接、消费电子/半导体激光设备、订单和回款。",
+      "announcement": "联赢激光:投资者关系活动记录表2026年10月19日｜2026-10-20 16:59:03:750",
+      "follow": "观察新能源设备资本开支、订单兑现、应收账款和毛利修复。",
+      "announcement_link": "#ann-AN202610201830719277",
+      "announcement_source": "页面内精排详情"
+    },
+    {
+      "name": "SpaceX",
+      "codes": "Private / Starlink",
+      "track": "Starlink、Starship、发射节奏、监管许可、政府合同和融资估值。",
+      "announcement": "非上市公司，无交易所公告口径",
+      "follow": "只跟踪官方、监管、政府合同和可靠媒体，不写成可直接交易股票。"
+    }
+  ],
+  "market_quotes": [
+    {
+      "label": "中芯国际 A",
+      "name": "中芯国际",
+      "code": "688981",
+      "price": 0.0,
+      "pct": 0.0,
+      "change": 0.0,
+      "amount_yuan": 0.0,
+      "turnover_display": "0",
+      "main_net_yuan": 0.0,
+      "main_net_display": "0",
+      "high": 0.0,
+      "low": 0.0,
+      "open": 0.0,
+      "prev_close": 100.09,
+      "quote_time": "2026-10-23 08:30:31"
+    },
+    {
+      "label": "东芯股份",
+      "name": "东芯股份",
+      "code": "688110",
+      "price": 0.0,
+      "pct": 0.0,
+      "change": 0.0,
+      "amount_yuan": 0.0,
+      "turnover_display": "0",
+      "main_net_yuan": 0.0,
+      "main_net_display": "0",
+      "high": 0.0,
+      "low": 0.0,
+      "open": 0.0,
+      "prev_close": 56.6,
+      "quote_time": "2026-10-23 08:30:16"
+    },
+    {
+      "label": "京东方A",
+      "name": "京东方Ａ",
+      "code": "000725",
+      "price": 0.0,
+      "pct": 0.0,
+      "change": 0.0,
+      "amount_yuan": 0.0,
+      "turnover_display": "0",
+      "main_net_yuan": 0.0,
+      "main_net_display": "0",
+      "high": 0.0,
+      "low": 0.0,
+      "open": 0.0,
+      "prev_close": 4.86,
+      "quote_time": "2026-10-23 08:59:24"
+    },
+    {
+      "label": "中兴通讯 A",
+      "name": "中兴通讯",
+      "code": "000063",
+      "price": 0.0,
+      "pct": 0.0,
+      "change": 0.0,
+      "amount_yuan": 0.0,
+      "turnover_display": "0",
+      "main_net_yuan": 0.0,
+      "main_net_display": "0",
+      "high": 0.0,
+      "low": 0.0,
+      "open": 0.0,
+      "prev_close": 27.28,
+      "quote_time": "2026-10-23 09:00:03"
+    },
+    {
+      "label": "联赢激光",
+      "name": "联赢激光",
+      "code": "688518",
+      "price": 0.0,
+      "pct": 0.0,
+      "change": 0.0,
+      "amount_yuan": 0.0,
+      "turnover_display": "0",
+      "main_net_yuan": 0.0,
+      "main_net_display": "0",
+      "high": 0.0,
+      "low": 0.0,
+      "open": 0.0,
+      "prev_close": 17.05,
+      "quote_time": "2026-10-23 08:30:04"
+    },
+    {
+      "label": "中芯国际 H",
+      "name": "中芯国际",
+      "code": "00981",
+      "price": 46.84,
+      "pct": 0.0,
+      "change": 0.0,
+      "amount_yuan": 0.0,
+      "turnover_display": "0",
+      "main_net_yuan": 0.0,
+      "main_net_display": "0",
+      "high": 46.84,
+      "low": 46.84,
+      "open": 46.84,
+      "prev_close": 46.84,
+      "quote_time": "2026-10-23 09:00:07"
+    },
+    {
+      "label": "中兴通讯 H",
+      "name": "中兴通讯",
+      "code": "00763",
+      "price": 18.85,
+      "pct": 0.0,
+      "change": 0.0,
+      "amount_yuan": 0.0,
+      "turnover_display": "0",
+      "main_net_yuan": 0.0,
+      "main_net_display": "0",
+      "high": 18.85,
+      "low": 18.85,
+      "open": 18.85,
+      "prev_close": 18.85,
+      "quote_time": "2026-10-23 09:00:00"
+    }
+  ],
+  "announcements": [
+    {
+      "company": "京东方A",
+      "code": "000725",
+      "art_code": "AN202610231830820497",
+      "title": "京东方Ａ:050-2026年10月22日投资者关系活动记录表",
+      "display_time": "2026-10-23 08:49:15:686",
+      "notice_date": "2026-10-23 00:00:00",
+      "column_names": [
+        "调研活动"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610231830820497",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1792716555.686,
+      "detail_anchor": "ann-AN202610231830820497",
+      "detail_url": "#ann-AN202610231830820497",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610231830820497_1.pdf?1792745319000.pdf",
+      "notice_eitime": "2026-10-23 08:48:38",
+      "detail_title": "京东方Ａ:050-2026年10月22日投资者关系活动记录表",
+      "detail_categories": "调研活动",
+      "detail_focus": "投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。",
+      "detail_followups": [
+        "提取问答中涉及价格、产能、订单、客户、产品进度的表述。",
+        "与上一期调研记录对比，判断公司表述是否发生变化。",
+        "把可验证事实和管理层判断分开记录，避免把观点写成公告事实。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "京东方A",
+      "code": "000725",
+      "art_code": "AN202610221830800553",
+      "title": "京东方Ａ:京东方科技集团股份有限公司公司债券临时受托管理事务报告",
+      "display_time": "2026-10-22 16:43:07:387",
+      "notice_date": "2026-10-23 00:00:00",
+      "column_names": [
+        "其他",
+        "受托管理事务临时报告"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610221830800553",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1792658587.387,
+      "detail_anchor": "ann-AN202610221830800553",
+      "detail_url": "#ann-AN202610221830800553",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610221830800553_1.pdf?1792688104000.pdf",
+      "notice_eitime": "2026-10-22 16:44:08",
+      "detail_title": "京东方Ａ:京东方科技集团股份有限公司公司债券临时受托管理事务报告",
+      "detail_categories": "其他、受托管理事务临时报告",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "东芯股份",
+      "code": "688110",
+      "art_code": "AN202610221830798395",
+      "title": "东芯股份:关于变更注册资本并完成工商变更登记的公告",
+      "display_time": "2026-10-22 16:14:31:282",
+      "notice_date": "2026-10-23 00:00:00",
+      "column_names": [
+        "公司注册资本变更"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610221830798395",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1792656871.282,
+      "detail_anchor": "ann-AN202610221830798395",
+      "detail_url": "#ann-AN202610221830798395",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610221830798395_1.pdf?1792685734000.pdf",
+      "notice_eitime": "2026-10-22 16:15:30",
+      "detail_title": "东芯股份:关于变更注册资本并完成工商变更登记的公告",
+      "detail_categories": "公司注册资本变更",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "联赢激光",
+      "code": "688518",
+      "art_code": "AN202610201830719277",
+      "title": "联赢激光:投资者关系活动记录表2026年10月19日",
+      "display_time": "2026-10-20 16:59:03:750",
+      "notice_date": "2026-10-20 00:00:00",
+      "column_names": [
+        "调研活动"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610201830719277",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1792486743.75,
+      "detail_anchor": "ann-AN202610201830719277",
+      "detail_url": "#ann-AN202610201830719277",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H22_AN202610201830719277_1.pdf?1792515887000.pdf",
+      "notice_eitime": "2026-10-20 16:58:28",
+      "detail_title": "联赢激光:投资者关系活动记录表2026年10月19日",
+      "detail_categories": "调研活动",
+      "detail_focus": "投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。",
+      "detail_followups": [
+        "提取问答中涉及价格、产能、订单、客户、产品进度的表述。",
+        "与上一期调研记录对比，判断公司表述是否发生变化。",
+        "把可验证事实和管理层判断分开记录，避免把观点写成公告事实。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "京东方A",
+      "code": "000725",
+      "art_code": "AN202610191830667660",
+      "title": "京东方Ａ:049-2026年10月16日投资者关系活动记录表",
+      "display_time": "2026-10-19 08:47:45:370",
+      "notice_date": "2026-10-19 00:00:00",
+      "column_names": [
+        "调研活动"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610191830667660",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1792370865.37,
+      "detail_anchor": "ann-AN202610191830667660",
+      "detail_url": "#ann-AN202610191830667660",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610191830667660_1.pdf?1792399664000.pdf",
+      "notice_eitime": "2026-10-19 08:47:28",
+      "detail_title": "京东方Ａ:049-2026年10月16日投资者关系活动记录表",
+      "detail_categories": "调研活动",
+      "detail_focus": "投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。",
+      "detail_followups": [
+        "提取问答中涉及价格、产能、订单、客户、产品进度的表述。",
+        "与上一期调研记录对比，判断公司表述是否发生变化。",
+        "把可验证事实和管理层判断分开记录，避免把观点写成公告事实。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "京东方A",
+      "code": "000725",
+      "art_code": "AN202610161830622316",
+      "title": "京东方Ａ:关于股东股权无偿划转的提示性公告",
+      "display_time": "2026-10-16 19:49:19:337",
+      "notice_date": "2026-10-17 00:00:00",
+      "column_names": [
+        "股权转让"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610161830622316",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1792151359.337,
+      "detail_anchor": "ann-AN202610161830622316",
+      "detail_url": "#ann-AN202610161830622316",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610161830622316_1.pdf?1792180226000.pdf",
+      "notice_eitime": "2026-10-16 19:50:24",
+      "detail_title": "京东方Ａ:关于股东股权无偿划转的提示性公告",
+      "detail_categories": "股权转让",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "京东方A",
+      "code": "000725",
+      "art_code": "AN202610161830578805",
+      "title": "京东方Ａ:048-2026年10月15日投资者关系活动记录表",
+      "display_time": "2026-10-16 08:58:06:941",
+      "notice_date": "2026-10-16 00:00:00",
+      "column_names": [
+        "调研活动"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610161830578805",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1792112286.941,
+      "detail_anchor": "ann-AN202610161830578805",
+      "detail_url": "#ann-AN202610161830578805",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610161830578805_1.pdf?1792141065000.pdf",
+      "notice_eitime": "2026-10-16 08:57:31",
+      "detail_title": "京东方Ａ:048-2026年10月15日投资者关系活动记录表",
+      "detail_categories": "调研活动",
+      "detail_focus": "投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。",
+      "detail_followups": [
+        "提取问答中涉及价格、产能、订单、客户、产品进度的表述。",
+        "与上一期调研记录对比，判断公司表述是否发生变化。",
+        "把可验证事实和管理层判断分开记录，避免把观点写成公告事实。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "东芯股份",
+      "code": "688110",
+      "art_code": "AN202610151830523571",
+      "title": "东芯股份:关于向2026年限制性股票激励计划激励对象授予预留部分限制性股票的公告",
+      "display_time": "2026-10-15 18:50:53:282",
+      "notice_date": "2026-10-16 00:00:00",
+      "column_names": [
+        "股权激励进展公告"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610151830523571",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1792061453.282,
+      "detail_anchor": "ann-AN202610151830523571",
+      "detail_url": "#ann-AN202610151830523571",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610151830523571_1.pdf?1792090354000.pdf",
+      "notice_eitime": "2026-10-15 18:52:34",
+      "detail_title": "东芯股份:关于向2026年限制性股票激励计划激励对象授予预留部分限制性股票的公告",
+      "detail_categories": "股权激励进展公告",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "东芯股份",
+      "code": "688110",
+      "art_code": "AN202610151830523569",
+      "title": "东芯股份:东芯半导体股份有限公司章程",
+      "display_time": "2026-10-15 18:50:51:253",
+      "notice_date": "2026-10-16 00:00:00",
+      "column_names": [
+        "公司章程"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610151830523569",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1792061451.253,
+      "detail_anchor": "ann-AN202610151830523569",
+      "detail_url": "#ann-AN202610151830523569",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610151830523569_1.pdf?1792090354000.pdf",
+      "notice_eitime": "2026-10-15 18:51:18",
+      "detail_title": "东芯股份:东芯半导体股份有限公司章程",
+      "detail_categories": "公司章程",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "东芯股份",
+      "code": "688110",
+      "art_code": "AN202610151830523563",
+      "title": "东芯股份:关于作废部分限制性股票的公告",
+      "display_time": "2026-10-15 18:50:50:637",
+      "notice_date": "2026-10-16 00:00:00",
+      "column_names": [
+        "股权激励进展公告"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610151830523563",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1792061450.637,
+      "detail_anchor": "ann-AN202610151830523563",
+      "detail_url": "#ann-AN202610151830523563",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610151830523563_1.pdf?1792090354000.pdf",
+      "notice_eitime": "2026-10-15 18:52:34",
+      "detail_title": "东芯股份:关于作废部分限制性股票的公告",
+      "detail_categories": "股权激励进展公告",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "东芯股份",
+      "code": "688110",
+      "art_code": "AN202610151830523564",
+      "title": "东芯股份:北京德恒(深圳)律师事务所关于东芯半导体股份有限公司2026年限制性股票激励计划调整、授予预留部分限制性股票及作废部分限制性股票相关事项的法律意见",
+      "display_time": "2026-10-15 18:50:50:636",
+      "notice_date": "2026-10-16 00:00:00",
+      "column_names": [
+        "法律意见书"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610151830523564",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1792061450.636,
+      "detail_anchor": "ann-AN202610151830523564",
+      "detail_url": "#ann-AN202610151830523564",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610151830523564_1.pdf?1792090354000.pdf",
+      "notice_eitime": "2026-10-15 18:51:18",
+      "detail_title": "东芯股份:北京德恒(深圳)律师事务所关于东芯半导体股份有限公司2026年限制性股票激励计划调整、授予预留部分限制性股票及作废部分限制性股票相关事项的法律意见",
+      "detail_categories": "法律意见书",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "中兴通讯",
+      "code": "000063",
+      "art_code": "AN202610141830461677",
+      "title": "中兴通讯:关于向专业投资者公开发行公司债券获得中国证监会注册批复的公告",
+      "display_time": "2026-10-14 16:38:33:653",
+      "notice_date": "2026-10-15 00:00:00",
+      "column_names": [
+        "其他"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610141830461677",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1791967113.653,
+      "detail_anchor": "ann-AN202610141830461677",
+      "detail_url": "#ann-AN202610141830461677",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610141830461677_1.pdf?1791995912000.pdf",
+      "notice_eitime": "2026-10-14 16:38:10",
+      "detail_title": "中兴通讯:关于向专业投资者公开发行公司债券获得中国证监会注册批复的公告",
+      "detail_categories": "其他",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "中兴通讯",
+      "code": "000063",
+      "art_code": "AN202610131830415069",
+      "title": "中兴通讯:关于按照《香港上市规则》公布董事会会议通告",
+      "display_time": "2026-10-13 19:19:12:732",
+      "notice_date": "2026-10-14 00:00:00",
+      "column_names": [
+        "其他"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610131830415069",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1791890352.732,
+      "detail_anchor": "ann-AN202610131830415069",
+      "detail_url": "#ann-AN202610131830415069",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610131830415069_1.pdf?1791919166000.pdf",
+      "notice_eitime": "2026-10-13 19:18:45",
+      "detail_title": "中兴通讯:关于按照《香港上市规则》公布董事会会议通告",
+      "detail_categories": "其他",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "中芯国际",
+      "code": "688981",
+      "art_code": "AN202610131830414263",
+      "title": "中芯国际:港股公告:翌日披露报表",
+      "display_time": "2026-10-13 18:55:03:537",
+      "notice_date": "2026-10-14 00:00:00",
+      "column_names": [
+        "其他"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610131830414263",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1791888903.537,
+      "detail_anchor": "ann-AN202610131830414263",
+      "detail_url": "#ann-AN202610131830414263",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610131830414263_1.pdf?1791917686000.pdf",
+      "notice_eitime": "2026-10-13 18:54:38",
+      "detail_title": "中芯国际:港股公告:翌日披露报表",
+      "detail_categories": "其他",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "联赢激光",
+      "code": "688518",
+      "art_code": "AN202610091830259645",
+      "title": "联赢激光:深圳市联赢激光股份有限公司关于召开2026年半年度业绩说明会的公告",
+      "display_time": "2026-10-09 15:32:10:585",
+      "notice_date": "2026-10-10 00:00:00",
+      "column_names": [
+        "其他"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610091830259645",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1791531130.585,
+      "detail_anchor": "ann-AN202610091830259645",
+      "detail_url": "#ann-AN202610091830259645",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610091830259645_1.pdf?1791560010000.pdf",
+      "notice_eitime": "2026-10-09 15:33:06",
+      "detail_title": "联赢激光:深圳市联赢激光股份有限公司关于召开2026年半年度业绩说明会的公告",
+      "detail_categories": "其他",
+      "detail_focus": "业绩类事项，重点看收入、利润、毛利率、费用和非经常性损益变化。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "中芯国际",
+      "code": "688981",
+      "art_code": "AN202610071830186208",
+      "title": "中芯国际:港股公告:证券变动月报表",
+      "display_time": "2026-10-07 16:36:12:298",
+      "notice_date": "2026-10-08 00:00:00",
+      "column_names": [
+        "其他"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610071830186208",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1791362172.298,
+      "detail_anchor": "ann-AN202610071830186208",
+      "detail_url": "#ann-AN202610071830186208",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610071830186208_1.pdf?1791390951000.pdf",
+      "notice_eitime": "2026-10-07 16:35:48",
+      "detail_title": "中芯国际:港股公告:证券变动月报表",
+      "detail_categories": "其他",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "中兴通讯",
+      "code": "000063",
+      "art_code": "AN202610071830185138",
+      "title": "中兴通讯:关于按照《香港上市规则》公布2026年9月份证券变动月报表的公告",
+      "display_time": "2026-10-07 15:33:24:306",
+      "notice_date": "2026-10-08 00:00:00",
+      "column_names": [
+        "其他"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610071830185138",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1791358404.306,
+      "detail_anchor": "ann-AN202610071830185138",
+      "detail_url": "#ann-AN202610071830185138",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610071830185138_1.pdf?1791387730000.pdf",
+      "notice_eitime": "2026-10-07 15:32:46",
+      "detail_title": "中兴通讯:关于按照《香港上市规则》公布2026年9月份证券变动月报表的公告",
+      "detail_categories": "其他",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "中芯国际",
+      "code": "688981",
+      "art_code": "AN202609281829964976",
+      "title": "中芯国际:港股公告:翌日披露报表",
+      "display_time": "2026-09-28 19:51:30:581",
+      "notice_date": "2026-09-29 00:00:00",
+      "column_names": [
+        "其他"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202609281829964976",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1790596290.581,
+      "detail_anchor": "ann-AN202609281829964976",
+      "detail_url": "#ann-AN202609281829964976",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202609281829964976_1.pdf?1790625123000.pdf",
+      "notice_eitime": "2026-09-28 19:51:10",
+      "detail_title": "中芯国际:港股公告:翌日披露报表",
+      "detail_categories": "其他",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "联赢激光",
+      "code": "688518",
+      "art_code": "AN202609171829511847",
+      "title": "联赢激光:深圳市联赢激光股份有限公司2026年半年度权益分派实施公告",
+      "display_time": "2026-09-17 16:26:11:199",
+      "notice_date": "2026-09-18 00:00:00",
+      "column_names": [
+        "分配方案实施"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202609171829511847",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1789633571.199,
+      "detail_anchor": "ann-AN202609171829511847",
+      "detail_url": "#ann-AN202609171829511847",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202609171829511847_1.pdf?1789662446000.pdf",
+      "notice_eitime": "2026-09-17 16:27:14",
+      "detail_title": "联赢激光:深圳市联赢激光股份有限公司2026年半年度权益分派实施公告",
+      "detail_categories": "分配方案实施",
+      "detail_focus": "利润分配或权益派发事项，重点看登记日、除权除息日和派发金额。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "联赢激光",
+      "code": "688518",
+      "art_code": "AN202609101829231904",
+      "title": "联赢激光:深圳市联赢激光股份有限公司2026年第一次临时股东会决议公告",
+      "display_time": "2026-09-10 18:03:38:476",
+      "notice_date": "2026-09-11 00:00:00",
+      "column_names": [
+        "分配方案决议公告",
+        "股东大会决议公告"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202609101829231904",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1789034618.476,
+      "detail_anchor": "ann-AN202609101829231904",
+      "detail_url": "#ann-AN202609101829231904",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202609101829231904_1.pdf?1789080825000.pdf",
+      "notice_eitime": "2026-09-10 18:04:41",
+      "detail_title": "联赢激光:深圳市联赢激光股份有限公司2026年第一次临时股东会决议公告",
+      "detail_categories": "分配方案决议公告、股东大会决议公告",
+      "detail_focus": "公司治理/股东会决议事项，重点核对议案通过情况和是否影响资本运作。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "联赢激光",
+      "code": "688518",
+      "art_code": "AN202609101829231905",
+      "title": "联赢激光:北京市天元律师事务所关于深圳市联赢激光股份有限公司2026年第一次临时股东会的法律意见",
+      "display_time": "2026-09-10 18:03:38:329",
+      "notice_date": "2026-09-11 00:00:00",
+      "column_names": [
+        "法律意见书"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202609101829231905",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1789034618.329
+    },
+    {
+      "company": "中芯国际",
+      "code": "688981",
+      "art_code": "AN202609091829179210",
+      "title": "中芯国际:港股公告:翌日披露报表",
+      "display_time": "2026-09-09 18:35:21:535",
+      "notice_date": "2026-09-10 00:00:00",
+      "column_names": [
+        "其他"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202609091829179210",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1788950121.535
+    },
+    {
+      "company": "中芯国际",
+      "code": "688981",
+      "art_code": "AN202609071829103601",
+      "title": "中芯国际:港股公告:翌日披露报表",
+      "display_time": "2026-09-07 18:45:36:428",
+      "notice_date": "2026-09-08 00:00:00",
+      "column_names": [
+        "其他"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202609071829103601",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1788777936.428
+    },
+    {
+      "company": "中兴通讯",
+      "code": "000063",
+      "art_code": "AN202609011828882518",
+      "title": "中兴通讯:关于按照《香港上市规则》公布2026年8月份证券变动月报表的公告",
+      "display_time": "2026-09-01 16:56:00:824",
+      "notice_date": "2026-09-02 00:00:00",
+      "column_names": [
+        "其他"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202609011828882518",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1788252960.824
+    },
+    {
+      "company": "中兴通讯",
+      "code": "000063",
+      "art_code": "AN202608211828271769",
+      "title": "中兴通讯:第十届董事会第三十三次会议决议公告",
+      "display_time": "2026-08-21 17:57:54:717",
+      "notice_date": "2026-08-22 00:00:00",
+      "column_names": [
+        "董事会决议公告"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202608211828271769",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1787306274.717
+    }
+  ],
+  "company_news": [
+    {
+      "company": "京东方A",
+      "title": "京东方Ａ：试验线已实现全自动化设备通线 已有24层玻璃基封装载板产出并送样",
+      "display_time": "2026-10-23 08:54:00",
+      "source": "东方财富公司资讯",
+      "relevance": "关键词匹配",
+      "url": "http://finance.eastmoney.com/a/202610233904962353.html",
+      "fetch_error": false,
+      "sort_ts": 1792716840.0
+    },
+    {
+      "company": "京东方A",
+      "title": "【调研快报】京东方A接待富国基金等2家机构调研",
+      "display_time": "2026-10-23 08:52:43",
+      "source": "东方财富公司资讯",
+      "relevance": "关键词匹配",
+      "url": "http://stock.eastmoney.com/a/202610233904923220.html",
+      "fetch_error": false,
+      "sort_ts": 1792716763.0
+    },
+    {
+      "company": "东芯股份",
+      "title": "产能不足！力积电预计明年逻辑代工再涨价10%至20%，有A股存储企业称四季度售价或继续上调",
+      "display_time": "2026-10-23 00:02:52",
+      "source": "东方财富公司资讯",
+      "relevance": "关键词匹配",
+      "url": "http://finance.eastmoney.com/a/202610233904618534.html",
+      "fetch_error": false,
+      "sort_ts": 1792684972.0
+    },
+    {
+      "company": "东芯股份",
+      "title": "东芯股份增资至6.6亿元 增幅约49%",
+      "display_time": "2026-10-22 20:12:09",
+      "source": "东方财富公司资讯",
+      "relevance": "关键词匹配",
+      "url": "http://finance.eastmoney.com/a/202610223904355015.html",
+      "fetch_error": false,
+      "sort_ts": 1792671129.0
+    },
+    {
+      "company": "中芯国际",
+      "title": "港股半导体板块抛压加重 俩热门标的遭南向资金加速卖出",
+      "display_time": "2026-10-22 16:08:53",
+      "source": "东方财富公司资讯",
+      "relevance": "关键词匹配",
+      "url": "http://finance.eastmoney.com/a/202610223904119994.html",
+      "fetch_error": false,
+      "sort_ts": 1792656533.0
+    },
+    {
+      "company": "中芯国际",
+      "title": "芯片人才市场“两头难”： 百万年薪一将难求，毕业生入行不易",
+      "display_time": "2026-10-22 10:47:24",
+      "source": "东方财富公司资讯",
+      "relevance": "关键词匹配",
+      "url": "http://finance.eastmoney.com/a/202610223903824235.html",
+      "fetch_error": false,
+      "sort_ts": 1792637244.0
+    },
+    {
+      "company": "中兴通讯",
+      "title": "聚力开源“芯”生态 国产算力谋破局",
+      "display_time": "2026-10-22 07:47:00",
+      "source": "东方财富公司资讯",
+      "relevance": "关键词匹配",
+      "url": "http://finance.eastmoney.com/a/202610223903054072.html",
+      "fetch_error": false,
+      "sort_ts": 1792626420.0
+    },
+    {
+      "company": "中兴通讯",
+      "title": "贝莱德在中兴通讯H股的持股比例于10月16日从6.36%升至7.27%",
+      "display_time": "2026-10-21 17:06:09",
+      "source": "东方财富公司资讯",
+      "relevance": "关键词匹配",
+      "url": "http://finance.eastmoney.com/a/202610213902699890.html",
+      "fetch_error": false,
+      "sort_ts": 1792573569.0
+    },
+    {
+      "company": "联赢激光",
+      "title": "【调研快报】联赢激光接待参加公司在上海证券交易所上证路演中心召开的2026年半年度业绩说明会的广大投资者调研",
+      "display_time": "2026-10-20 17:16:35",
+      "source": "东方财富公司资讯",
+      "relevance": "关键词匹配",
+      "url": "http://stock.eastmoney.com/a/202610203901372656.html",
+      "fetch_error": false,
+      "sort_ts": 1792487795.0
+    },
+    {
+      "company": "联赢激光",
+      "title": "联赢激光：目前液冷相关产品收入占比较小",
+      "display_time": "2026-10-19 16:17:27",
+      "source": "东方财富公司资讯",
+      "relevance": "关键词匹配",
+      "url": "http://finance.eastmoney.com/a/202610193899914716.html",
+      "fetch_error": false,
+      "sort_ts": 1792397847.0
+    },
+    {
+      "company": "SpaceX",
+      "title": "同花顺/东方财富暂无对应个股资讯页；该公司继续按官方、监管和政府来源跟踪。",
+      "display_time": "",
+      "source": "来源限制",
+      "relevance": "非上市公司",
+      "url": "https://www.spacex.com/",
+      "fetch_error": false,
+      "sort_ts": 0
+    }
+  ],
+  "announcement_alert": {
+    "checked_at": "2026-10-23 09:00:09 CST",
+    "first_run": false,
+    "new_count": 3,
+    "baseline_new_count": 0,
+    "items": [
+      {
+        "company": "京东方A",
+        "code": "000725",
+        "art_code": "AN202610231830820497",
+        "title": "京东方Ａ:050-2026年10月22日投资者关系活动记录表",
+        "display_time": "2026-10-23 08:49:15:686",
+        "notice_date": "2026-10-23 00:00:00",
+        "column_names": [
+          "调研活动"
+        ],
+        "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610231830820497",
+        "source": "东方财富公告中心",
+        "fetch_error": false,
+        "sort_ts": 1792716555.686,
+        "detail_anchor": "ann-AN202610231830820497",
+        "detail_url": "#ann-AN202610231830820497",
+        "detail_source": "页面内精排详情",
+        "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610231830820497_1.pdf?1792745319000.pdf",
+        "notice_eitime": "2026-10-23 08:48:38",
+        "detail_title": "京东方Ａ:050-2026年10月22日投资者关系活动记录表",
+        "detail_categories": "调研活动",
+        "detail_focus": "投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。",
+        "detail_followups": [
+          "提取问答中涉及价格、产能、订单、客户、产品进度的表述。",
+          "与上一期调研记录对比，判断公司表述是否发生变化。",
+          "把可验证事实和管理层判断分开记录，避免把观点写成公告事实。"
+        ],
+        "detail_fetch_error": ""
+      },
+      {
+        "company": "京东方A",
+        "code": "000725",
+        "art_code": "AN202610221830800553",
+        "title": "京东方Ａ:京东方科技集团股份有限公司公司债券临时受托管理事务报告",
+        "display_time": "2026-10-22 16:43:07:387",
+        "notice_date": "2026-10-23 00:00:00",
+        "column_names": [
+          "其他",
+          "受托管理事务临时报告"
+        ],
+        "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610221830800553",
+        "source": "东方财富公告中心",
+        "fetch_error": false,
+        "sort_ts": 1792658587.387,
+        "detail_anchor": "ann-AN202610221830800553",
+        "detail_url": "#ann-AN202610221830800553",
+        "detail_source": "页面内精排详情",
+        "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610221830800553_1.pdf?1792688104000.pdf",
+        "notice_eitime": "2026-10-22 16:44:08",
+        "detail_title": "京东方Ａ:京东方科技集团股份有限公司公司债券临时受托管理事务报告",
+        "detail_categories": "其他、受托管理事务临时报告",
+        "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+        "detail_followups": [
+          "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+          "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+          "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+        ],
+        "detail_fetch_error": ""
+      },
+      {
+        "company": "东芯股份",
+        "code": "688110",
+        "art_code": "AN202610221830798395",
+        "title": "东芯股份:关于变更注册资本并完成工商变更登记的公告",
+        "display_time": "2026-10-22 16:14:31:282",
+        "notice_date": "2026-10-23 00:00:00",
+        "column_names": [
+          "公司注册资本变更"
+        ],
+        "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610221830798395",
+        "source": "东方财富公告中心",
+        "fetch_error": false,
+        "sort_ts": 1792656871.282,
+        "detail_anchor": "ann-AN202610221830798395",
+        "detail_url": "#ann-AN202610221830798395",
+        "detail_source": "页面内精排详情",
+        "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610221830798395_1.pdf?1792685734000.pdf",
+        "notice_eitime": "2026-10-22 16:15:30",
+        "detail_title": "东芯股份:关于变更注册资本并完成工商变更登记的公告",
+        "detail_categories": "公司注册资本变更",
+        "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+        "detail_followups": [
+          "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+          "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+          "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+        ],
+        "detail_fetch_error": ""
+      }
+    ],
+    "message": "发现 3 条新增公告，页面已更新。"
+  },
+  "announcement_status": "新增 3",
+  "market_note": "交易时段：盘中快照",
+  "review_entries": [
+    {
+      "title": "客户001试验页",
+      "date": "2026-06-26",
+      "week": "2026-W26",
+      "type": "客户专属页",
+      "source": "clients/client-001/archive/2026-06-26.html",
+      "href": "review/client-001/2026-06-26-client-trial.html",
+      "note": "最早版本，用于复盘客户页信息架构和展示节奏。",
+      "available": true,
+      "source_path": "/Users/kongqc/Documents/My_Investment/clients/client-001/archive/2026-06-26.html",
+      "original_size_bytes": 22580,
+      "size_bytes": 3197
+    },
+    {
+      "title": "客户001公开展示页",
+      "date": "2026-06-27",
+      "week": "2026-W26",
+      "type": "对外展示页",
+      "source": "clients/client-001/public.html",
+      "href": "review/client-001/2026-06-27-public.html",
+      "note": "当前客户版主页面，可复盘公告、行情、黄金和产品图排序。",
+      "available": true,
+      "source_path": "/Users/kongqc/Documents/My_Investment/clients/client-001/public.html",
+      "original_size_bytes": 8651507,
+      "size_bytes": 3212
+    },
+    {
+      "title": "投研情报专栏电脑网页版",
+      "date": "2026-06-27",
+      "week": "2026-W26",
+      "type": "电脑网页",
+      "source": "clients/client-001/archive/2026-06-27-投研情报专栏-电脑网页版.html",
+      "href": "review/client-001/2026-06-27-desktop.html",
+      "note": "适合电脑打开的完整 HTML，可复盘客户转发和网页发布效果。",
+      "available": true,
+      "source_path": "/Users/kongqc/Documents/My_Investment/clients/client-001/archive/2026-06-27-投研情报专栏-电脑网页版.html",
+      "original_size_bytes": 8652042,
+      "size_bytes": 3273
+    },
+    {
+      "title": "投研情报专栏手机阅读版",
+      "date": "2026-06-27",
+      "week": "2026-W26",
+      "type": "手机阅读",
+      "source": "clients/client-001/archive/2026-06-27-投研情报专栏-手机阅读版.html",
+      "href": "review/client-001/2026-06-27-mobile.html",
+      "note": "适合微信/手机阅读的 HTML，可复盘移动端阅读体验。",
+      "available": true,
+      "source_path": "/Users/kongqc/Documents/My_Investment/clients/client-001/archive/2026-06-27-投研情报专栏-手机阅读版.html",
+      "original_size_bytes": 8656649,
+      "size_bytes": 3262
+    }
+  ],
+  "weekly_reviews": [
+    {
+      "week": "2026-W26",
+      "title": "2026年第26周客户内容复盘",
+      "period": "2026-06-22 至 2026-06-28",
+      "href": "review/weekly/2026-W26.html",
+      "count": 4,
+      "focus": "客户001页面从试验版到投研情报专栏的结构、转发场景和移动端体验复盘。"
+    }
+  ],
+  "sources": [
+    [
+      "行情快照",
+      "东方财富行情接口",
+      "https://push2.eastmoney.com/api/qt/ulist.np/get?fltt=2&secids=1.688981,1.688110,0.000725,0.000063,1.688518,116.00981,116.00763&fields=f12,f14,f2,f3,f4,f5,f6,f15,f16,f17,f18,f20,f21,f62,f124"
+    ],
+    [
+      "中芯国际公告列表",
+      "东方财富公告中心",
+      "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=688981"
+    ],
+    [
+      "东芯股份公告列表",
+      "东方财富公告中心",
+      "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=688110"
+    ],
+    [
+      "京东方A公告列表",
+      "东方财富公告中心",
+      "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=000725"
+    ],
+    [
+      "中兴通讯公告列表",
+      "东方财富公告中心",
+      "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=000063"
+    ],
+    [
+      "联赢激光公告列表",
+      "东方财富公告中心",
+      "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=688518"
+    ],
+    [
+      "中芯国际最新消息",
+      "东方财富公司资讯",
+      "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SH688981"
+    ],
+    [
+      "东芯股份最新消息",
+      "东方财富公司资讯",
+      "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SH688110"
+    ],
+    [
+      "京东方A最新消息",
+      "东方财富公司资讯",
+      "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SZ000725"
+    ],
+    [
+      "中兴通讯最新消息",
+      "东方财富公司资讯",
+      "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SZ000063"
+    ],
+    [
+      "联赢激光最新消息",
+      "东方财富公司资讯",
+      "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SH688518"
+    ],
+    [
+      "中芯国际公告",
+      "上交所",
+      "https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688981"
+    ],
+    [
+      "东芯股份公告",
+      "上交所",
+      "https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688110"
+    ],
+    [
+      "联赢激光公告",
+      "上交所",
+      "https://www.sse.com.cn/assortment/stock/list/info/announcement/index.shtml?productId=688518"
+    ],
+    [
+      "京东方A公告",
+      "巨潮资讯",
+      "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=000725"
+    ],
+    [
+      "中兴通讯公告",
+      "巨潮资讯",
+      "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=000063"
+    ],
+    [
+      "中芯国际H公告",
+      "HKEX披露易",
+      "https://www.hkexnews.hk/index.htm"
+    ],
+    [
+      "中兴通讯H公告",
+      "HKEX披露易",
+      "https://www.hkexnews.hk/index.htm"
+    ],
+    [
+      "SpaceX官方",
+      "SpaceX",
+      "https://www.spacex.com/"
+    ],
+    [
+      "Starlink官方",
+      "Starlink",
+      "https://www.starlink.com/"
+    ],
+    [
+      "FAA商业航天",
+      "FAA",
+      "https://www.faa.gov/space"
+    ]
+  ]
+}
