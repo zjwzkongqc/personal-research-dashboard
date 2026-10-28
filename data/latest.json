@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-27",
-  "run_time": "2026-10-27 14:19:45 CST",
-  "run_clock": "14:19",
+  "date": "2026-10-28",
+  "run_time": "2026-10-28 11:03:41 CST",
+  "run_clock": "11:03",
   "companies": [
     {
       "name": "中芯国际",
@@ -43,7 +43,7 @@
       "name": "联赢激光",
       "codes": "688518",
       "track": "锂电激光焊接、消费电子/半导体激光设备、订单和回款。",
-      "announcement": "公告抓取失败：<urlopen error _ssl.c:1112: The handshake operation timed out>",
+      "announcement": "公告抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
       "follow": "观察新能源设备资本开支、订单兑现、应收账款和毛利修复。",
       "announcement_link": "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=688518",
       "announcement_source": "东方财富公告中心"
@@ -242,7 +242,7 @@
       "company": "联赢激光",
       "code": "688518",
       "art_code": "FETCH_ERROR_688518",
-      "title": "公告抓取失败：<urlopen error _ssl.c:1112: The handshake operation timed out>",
+      "title": "公告抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
       "display_time": "",
       "notice_date": "",
       "column_names": [
@@ -317,7 +317,7 @@
     }
   ],
   "announcement_alert": {
-    "checked_at": "2026-10-27 14:19:45 CST",
+    "checked_at": "2026-10-28 11:03:41 CST",
     "first_run": false,
     "new_count": 0,
     "baseline_new_count": 0,
