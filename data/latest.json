@@ -1,13 +1,13 @@
 {
   "date": "2026-10-29",
-  "run_time": "2026-10-29 09:40:40 CST",
-  "run_clock": "09:40",
+  "run_time": "2026-10-29 09:45:46 CST",
+  "run_clock": "09:45",
   "companies": [
     {
       "name": "中芯国际",
       "codes": "688981 / 00981",
       "track": "晶圆代工、成熟制程、资本开支、国产替代、出口管制。",
-      "announcement": "公告抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "announcement": "公告抓取失败：<urlopen error [Errno 61] Connection refused>",
       "follow": "继续跟踪 A/H 两地公告、产能利用率、毛利率和外部限制变化。",
       "announcement_link": "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=688981",
       "announcement_source": "东方财富公告中心"
@@ -182,7 +182,7 @@
       "company": "中芯国际",
       "code": "688981",
       "art_code": "FETCH_ERROR_688981",
-      "title": "公告抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "title": "公告抓取失败：<urlopen error [Errno 61] Connection refused>",
       "display_time": "",
       "notice_date": "",
       "column_names": [
@@ -317,7 +317,7 @@
     }
   ],
   "announcement_alert": {
-    "checked_at": "2026-10-29 09:40:40 CST",
+    "checked_at": "2026-10-29 09:45:46 CST",
     "first_run": false,
     "new_count": 0,
     "baseline_new_count": 0,
@@ -325,7 +325,7 @@
     "message": "本次未发现相较上次检查的新增公告。"
   },
   "announcement_status": "已接入",
-  "market_note": "交易时段：盘中快照；行情接口异常，沿用上一快照：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+  "market_note": "交易时段：盘中快照；行情接口异常，沿用上一快照：<urlopen error [Errno 61] Connection refused>",
   "review_entries": [
     {
       "title": "客户001试验页",
