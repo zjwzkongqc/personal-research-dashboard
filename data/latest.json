@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-29",
-  "run_time": "2026-10-29 20:13:07 CST",
-  "run_clock": "20:13",
+  "date": "2026-10-30",
+  "run_time": "2026-10-30 09:02:45 CST",
+  "run_clock": "09:02",
   "companies": [
     {
       "name": "中芯国际",
@@ -317,7 +317,7 @@
     }
   ],
   "announcement_alert": {
-    "checked_at": "2026-10-29 20:13:07 CST",
+    "checked_at": "2026-10-30 09:02:45 CST",
     "first_run": false,
     "new_count": 0,
     "baseline_new_count": 0,
@@ -325,7 +325,7 @@
     "message": "本次未发现相较上次检查的新增公告。"
   },
   "announcement_status": "已接入",
-  "market_note": "交易后：收盘后快照；行情接口异常，沿用上一快照：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+  "market_note": "交易时段：盘中快照；行情接口异常，沿用上一快照：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
   "review_entries": [
     {
       "title": "客户001试验页",
