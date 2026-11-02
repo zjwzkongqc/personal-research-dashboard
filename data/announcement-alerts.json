@@ -1,8 +1,328 @@
 {
-  "checked_at": "2026-10-30 14:56:18 CST",
+  "checked_at": "2026-11-02 10:35:08 CST",
   "first_run": false,
-  "new_count": 0,
+  "new_count": 11,
   "baseline_new_count": 0,
-  "items": [],
-  "message": "本次未发现相较上次检查的新增公告。"
+  "items": [
+    {
+      "company": "京东方A",
+      "code": "000725",
+      "art_code": "AN202611021831303139",
+      "title": "京东方Ａ:051-2026年11月1日投资者关系活动记录表",
+      "display_time": "2026-11-02 08:28:48:347",
+      "notice_date": "2026-11-02 00:00:00",
+      "column_names": [
+        "调研活动"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611021831303139",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1793579328.347,
+      "detail_anchor": "ann-AN202611021831303139",
+      "detail_url": "#ann-AN202611021831303139",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202611021831303139_1.pdf?1793608126000.pdf",
+      "notice_eitime": "2026-11-02 08:28:36",
+      "detail_title": "京东方Ａ:051-2026年11月1日投资者关系活动记录表",
+      "detail_categories": "调研活动",
+      "detail_focus": "投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。",
+      "detail_followups": [
+        "提取问答中涉及价格、产能、订单、客户、产品进度的表述。",
+        "与上一期调研记录对比，判断公司表述是否发生变化。",
+        "把可验证事实和管理层判断分开记录，避免把观点写成公告事实。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "东芯股份",
+      "code": "688110",
+      "art_code": "AN202610301831248556",
+      "title": "关于对东芯半导体股份有限公司及有关责任人予以监管警示的决定",
+      "display_time": "2026-10-30 19:36:33:522",
+      "notice_date": "2026-10-30 00:00:00",
+      "column_names": [
+        "上交所股票监管关注"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610301831248556",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1793360193.522,
+      "detail_anchor": "ann-AN202610301831248556",
+      "detail_url": "#ann-AN202610301831248556",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610301831248556_1.pdf?1793388971000.pdf",
+      "notice_eitime": "2026-10-30 19:36:03",
+      "detail_title": "关于对东芯半导体股份有限公司及有关责任人予以监管警示的决定",
+      "detail_categories": "上交所股票监管关注",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "京东方A",
+      "code": "000725",
+      "art_code": "AN202610301831248345",
+      "title": "京东方Ｂ:2026年三季度报告(英文版)",
+      "display_time": "2026-10-30 19:30:09:612",
+      "notice_date": "2026-10-31 00:00:00",
+      "column_names": [
+        "三季度报告全文（英文）"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610301831248345",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1793359809.612,
+      "detail_anchor": "ann-AN202610301831248345",
+      "detail_url": "#ann-AN202610301831248345",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610301831248345_1.pdf?1793404196000.pdf",
+      "notice_eitime": "2026-10-30 19:29:35",
+      "detail_title": "京东方Ｂ:2026年三季度报告(英文版)",
+      "detail_categories": "三季度报告全文（英文）",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "京东方A",
+      "code": "000725",
+      "art_code": "AN202610301831248346",
+      "title": "京东方Ａ:2026年三季度报告",
+      "display_time": "2026-10-30 19:29:09:335",
+      "notice_date": "2026-10-31 00:00:00",
+      "column_names": [
+        "三季度报告全文"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610301831248346",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1793359749.335,
+      "detail_anchor": "ann-AN202610301831248346",
+      "detail_url": "#ann-AN202610301831248346",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610301831248346_1.pdf?1793404226000.pdf",
+      "notice_eitime": "2026-10-30 19:29:35",
+      "detail_title": "京东方Ａ:2026年三季度报告",
+      "detail_categories": "三季度报告全文",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "京东方A",
+      "code": "000725",
+      "art_code": "AN202610301831248339",
+      "title": "京东方Ａ:2026年前三季度计提资产减值准备的公告",
+      "display_time": "2026-10-30 19:29:09:334",
+      "notice_date": "2026-10-31 00:00:00",
+      "column_names": [
+        "其他"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610301831248339",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1793359749.334,
+      "detail_anchor": "ann-AN202610301831248339",
+      "detail_url": "#ann-AN202610301831248339",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610301831248339_1.pdf?1793388622000.pdf",
+      "notice_eitime": "2026-10-30 19:30:07",
+      "detail_title": "京东方Ａ:2026年前三季度计提资产减值准备的公告",
+      "detail_categories": "其他",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "东芯股份",
+      "code": "688110",
+      "art_code": "AN202610301831247525",
+      "title": "东芯股份:关于独立董事聘请第三方中介机构的公告",
+      "display_time": "2026-10-30 19:06:43:179",
+      "notice_date": "2026-10-31 00:00:00",
+      "column_names": [
+        "审计机构变更"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610301831247525",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1793358403.179,
+      "detail_anchor": "ann-AN202610301831247525",
+      "detail_url": "#ann-AN202610301831247525",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610301831247525_1.pdf?1793387286000.pdf",
+      "notice_eitime": "2026-10-30 19:07:47",
+      "detail_title": "东芯股份:关于独立董事聘请第三方中介机构的公告",
+      "detail_categories": "审计机构变更",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "东芯股份",
+      "code": "688110",
+      "art_code": "AN202610301831247527",
+      "title": "东芯股份:关于收到行政监管措施决定书的公告",
+      "display_time": "2026-10-30 19:06:43:176",
+      "notice_date": "2026-10-31 00:00:00",
+      "column_names": [
+        "其他"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610301831247527",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1793358403.176,
+      "detail_anchor": "ann-AN202610301831247527",
+      "detail_url": "#ann-AN202610301831247527",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610301831247527_1.pdf?1793387286000.pdf",
+      "notice_eitime": "2026-10-30 19:07:47",
+      "detail_title": "东芯股份:关于收到行政监管措施决定书的公告",
+      "detail_categories": "其他",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "东芯股份",
+      "code": "688110",
+      "art_code": "AN202610301831247526",
+      "title": "东芯股份:关于控股股东增持公司股份计划的公告",
+      "display_time": "2026-10-30 19:06:43:146",
+      "notice_date": "2026-10-31 00:00:00",
+      "column_names": [
+        "股东/实际控制人股份增持"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610301831247526",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1793358403.146,
+      "detail_anchor": "ann-AN202610301831247526",
+      "detail_url": "#ann-AN202610301831247526",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610301831247526_1.pdf?1793404001000.pdf",
+      "notice_eitime": "2026-10-30 19:07:47",
+      "detail_title": "东芯股份:关于控股股东增持公司股份计划的公告",
+      "detail_categories": "股东/实际控制人股份增持",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "中芯国际",
+      "code": "688981",
+      "art_code": "AN202610301831236746",
+      "title": "中芯国际:中芯国际关于召开2026年第三季度业绩说明会的预告公告",
+      "display_time": "2026-10-30 17:19:03:486",
+      "notice_date": "2026-10-31 00:00:00",
+      "column_names": [
+        "其他"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610301831236746",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1793351943.486,
+      "detail_anchor": "ann-AN202610301831236746",
+      "detail_url": "#ann-AN202610301831236746",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610301831236746_1.pdf?1793380737000.pdf",
+      "notice_eitime": "2026-10-30 17:18:45",
+      "detail_title": "中芯国际:中芯国际关于召开2026年第三季度业绩说明会的预告公告",
+      "detail_categories": "其他",
+      "detail_focus": "业绩类事项，重点看收入、利润、毛利率、费用和非经常性损益变化。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "联赢激光",
+      "code": "688518",
+      "art_code": "AN202610301831233329",
+      "title": "联赢激光:深圳市联赢激光股份有限公司2026年第三季度报告",
+      "display_time": "2026-10-30 17:00:24:492",
+      "notice_date": "2026-10-31 00:00:00",
+      "column_names": [
+        "三季度报告全文"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610301831233329",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1793350824.492,
+      "detail_anchor": "ann-AN202610301831233329",
+      "detail_url": "#ann-AN202610301831233329",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610301831233329_1.pdf?1793379749000.pdf",
+      "notice_eitime": "2026-10-30 17:00:46",
+      "detail_title": "联赢激光:深圳市联赢激光股份有限公司2026年第三季度报告",
+      "detail_categories": "三季度报告全文",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "中芯国际",
+      "code": "688981",
+      "art_code": "AN202610301831233073",
+      "title": "中芯国际:港股公告:董事会会议日期通知",
+      "display_time": "2026-10-30 16:58:45:556",
+      "notice_date": "2026-10-31 00:00:00",
+      "column_names": [
+        "其他"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610301831233073",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1793350725.556,
+      "detail_anchor": "ann-AN202610301831233073",
+      "detail_url": "#ann-AN202610301831233073",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202610301831233073_1.pdf?1793379514000.pdf",
+      "notice_eitime": "2026-10-30 16:58:17",
+      "detail_title": "中芯国际:港股公告:董事会会议日期通知",
+      "detail_categories": "其他",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    }
+  ],
+  "message": "发现 11 条新增公告，页面已更新。"
 }
