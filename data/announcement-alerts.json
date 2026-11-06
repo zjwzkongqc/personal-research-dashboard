@@ -1,155 +1,67 @@
 {
-  "checked_at": "2026-11-05 20:04:51 CST",
+  "checked_at": "2026-11-06 09:02:19 CST",
   "first_run": false,
-  "new_count": 5,
+  "new_count": 2,
   "baseline_new_count": 0,
   "items": [
     {
-      "company": "中芯国际",
-      "code": "688981",
-      "art_code": "AN202611051831459964",
-      "title": "中芯国际:港股公告:证券变动月报表",
-      "display_time": "2026-11-05 18:47:24:751",
+      "company": "京东方A",
+      "code": "000725",
+      "art_code": "AN202611061831477422",
+      "title": "京东方Ａ:054-2026年11月5日投资者关系活动记录表-2",
+      "display_time": "2026-11-06 08:56:03:749",
       "notice_date": "2026-11-06 00:00:00",
       "column_names": [
-        "其他"
+        "调研活动"
       ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611051831459964",
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611061831477422",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1793875644.751,
-      "detail_anchor": "ann-AN202611051831459964",
-      "detail_url": "#ann-AN202611051831459964",
+      "sort_ts": 1793926563.749,
+      "detail_anchor": "ann-AN202611061831477422",
+      "detail_url": "#ann-AN202611061831477422",
       "detail_source": "页面内精排详情",
-      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202611051831459964_1.pdf?1793904443000.pdf",
-      "notice_eitime": "2026-11-05 18:47:05",
-      "detail_title": "中芯国际:港股公告:证券变动月报表",
-      "detail_categories": "其他",
-      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202611061831477422_1.pdf?1793955343000.pdf",
+      "notice_eitime": "2026-11-06 08:55:28",
+      "detail_title": "京东方Ａ:054-2026年11月5日投资者关系活动记录表-2",
+      "detail_categories": "调研活动",
+      "detail_focus": "投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。",
       "detail_followups": [
-        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
-        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
-        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+        "提取问答中涉及价格、产能、订单、客户、产品进度的表述。",
+        "与上一期调研记录对比，判断公司表述是否发生变化。",
+        "把可验证事实和管理层判断分开记录，避免把观点写成公告事实。"
       ],
       "detail_fetch_error": ""
     },
     {
-      "company": "中兴通讯",
-      "code": "000063",
-      "art_code": "AN202611051831450814",
-      "title": "中兴通讯:中兴通讯股份有限公司2026年面向专业投资者公开发行公司债券更名公告",
-      "display_time": "2026-11-05 16:14:45:705",
-      "notice_date": "2026-11-05 00:00:00",
+      "company": "京东方A",
+      "code": "000725",
+      "art_code": "AN202611061831477398",
+      "title": "京东方Ａ:053-2026年11月5日投资者关系活动记录表-1",
+      "display_time": "2026-11-06 08:55:09:782",
+      "notice_date": "2026-11-06 00:00:00",
       "column_names": [
-        "其他"
+        "调研活动"
       ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611051831450814",
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611061831477398",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1793866485.705,
-      "detail_anchor": "ann-AN202611051831450814",
-      "detail_url": "#ann-AN202611051831450814",
+      "sort_ts": 1793926509.782,
+      "detail_anchor": "ann-AN202611061831477398",
+      "detail_url": "#ann-AN202611061831477398",
       "detail_source": "页面内精排详情",
-      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202611051831450814_1.pdf?1793895277000.pdf",
-      "notice_eitime": "2026-11-05 16:14:11",
-      "detail_title": "中兴通讯:中兴通讯股份有限公司2026年面向专业投资者公开发行公司债券更名公告",
-      "detail_categories": "其他",
-      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202611061831477398_1.pdf?1793955281000.pdf",
+      "notice_eitime": "2026-11-06 08:54:32",
+      "detail_title": "京东方Ａ:053-2026年11月5日投资者关系活动记录表-1",
+      "detail_categories": "调研活动",
+      "detail_focus": "投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。",
       "detail_followups": [
-        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
-        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
-        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
-      ],
-      "detail_fetch_error": ""
-    },
-    {
-      "company": "中兴通讯",
-      "code": "000063",
-      "art_code": "AN202611051831450818",
-      "title": "中兴通讯:中兴通讯股份有限公司2026年面向专业投资者公开发行科技创新可续期公司债券(第一期)发行公告",
-      "display_time": "2026-11-05 16:14:16:187",
-      "notice_date": "2026-11-05 00:00:00",
-      "column_names": [
-        "其他",
-        "一般债券发行公告"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611051831450818",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1793866456.187,
-      "detail_anchor": "ann-AN202611051831450818",
-      "detail_url": "#ann-AN202611051831450818",
-      "detail_source": "页面内精排详情",
-      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202611051831450818_1.pdf?1793895321000.pdf",
-      "notice_eitime": "2026-11-05 16:13:43",
-      "detail_title": "中兴通讯:中兴通讯股份有限公司2026年面向专业投资者公开发行科技创新可续期公司债券(第一期)发行公告",
-      "detail_categories": "其他、一般债券发行公告",
-      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
-      "detail_followups": [
-        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
-        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
-        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
-      ],
-      "detail_fetch_error": ""
-    },
-    {
-      "company": "中兴通讯",
-      "code": "000063",
-      "art_code": "AN202611051831450815",
-      "title": "中兴通讯:中兴通讯股份有限公司2026年面向专业投资者公开发行科技创新可续期公司债券(第一期)募集说明书",
-      "display_time": "2026-11-05 16:14:16:111",
-      "notice_date": "2026-11-05 00:00:00",
-      "column_names": [
-        "其他"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611051831450815",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1793866456.111,
-      "detail_anchor": "ann-AN202611051831450815",
-      "detail_url": "#ann-AN202611051831450815",
-      "detail_source": "页面内精排详情",
-      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202611051831450815_1.pdf?1793895237000.pdf",
-      "notice_eitime": "2026-11-05 16:13:43",
-      "detail_title": "中兴通讯:中兴通讯股份有限公司2026年面向专业投资者公开发行科技创新可续期公司债券(第一期)募集说明书",
-      "detail_categories": "其他",
-      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
-      "detail_followups": [
-        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
-        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
-        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
-      ],
-      "detail_fetch_error": ""
-    },
-    {
-      "company": "中兴通讯",
-      "code": "000063",
-      "art_code": "AN202611051831450813",
-      "title": "中兴通讯:中兴通讯股份有限公司2026年面向专业投资者公开发行科技创新可续期公司债券(第一期)信用评级报告",
-      "display_time": "2026-11-05 16:14:16:088",
-      "notice_date": "2026-11-05 00:00:00",
-      "column_names": [
-        "其他"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611051831450813",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1793866456.088,
-      "detail_anchor": "ann-AN202611051831450813",
-      "detail_url": "#ann-AN202611051831450813",
-      "detail_source": "页面内精排详情",
-      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202611051831450813_1.pdf?1793895227000.pdf",
-      "notice_eitime": "2026-11-05 16:13:43",
-      "detail_title": "中兴通讯:中兴通讯股份有限公司2026年面向专业投资者公开发行科技创新可续期公司债券(第一期)信用评级报告",
-      "detail_categories": "其他",
-      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
-      "detail_followups": [
-        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
-        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
-        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+        "提取问答中涉及价格、产能、订单、客户、产品进度的表述。",
+        "与上一期调研记录对比，判断公司表述是否发生变化。",
+        "把可验证事实和管理层判断分开记录，避免把观点写成公告事实。"
       ],
       "detail_fetch_error": ""
     }
   ],
-  "message": "发现 5 条新增公告，页面已更新。"
+  "message": "发现 2 条新增公告，页面已更新。"
 }
