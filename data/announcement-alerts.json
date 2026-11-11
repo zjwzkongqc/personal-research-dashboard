@@ -1,8 +1,96 @@
 {
-  "checked_at": "2026-11-11 14:58:46 CST",
+  "checked_at": "2026-11-11 20:13:31 CST",
   "first_run": false,
-  "new_count": 0,
+  "new_count": 3,
   "baseline_new_count": 0,
-  "items": [],
-  "message": "本次未发现相较上次检查的新增公告。"
+  "items": [
+    {
+      "company": "中芯国际",
+      "code": "688981",
+      "art_code": "AN202611111831632515",
+      "title": "中芯国际:港股公告:翌日披露报表",
+      "display_time": "2026-11-11 18:45:00:794",
+      "notice_date": "2026-11-12 00:00:00",
+      "column_names": [
+        "其他"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611111831632515",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1794393900.794,
+      "detail_anchor": "ann-AN202611111831632515",
+      "detail_url": "#ann-AN202611111831632515",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202611111831632515_1.pdf?1794422684000.pdf",
+      "notice_eitime": "2026-11-11 18:44:43",
+      "detail_title": "中芯国际:港股公告:翌日披露报表",
+      "detail_categories": "其他",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "东芯股份",
+      "code": "688110",
+      "art_code": "AN202611111831631690",
+      "title": "东芯股份:关于控股股东及其一致行动人权益变动触及1%刻度的提示性公告",
+      "display_time": "2026-11-11 18:13:09:453",
+      "notice_date": "2026-11-12 00:00:00",
+      "column_names": [
+        "权益变动报告书"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611111831631690",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1794391989.453,
+      "detail_anchor": "ann-AN202611111831631690",
+      "detail_url": "#ann-AN202611111831631690",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202611111831631690_1.pdf?1794420825000.pdf",
+      "notice_eitime": "2026-11-11 18:13:38",
+      "detail_title": "东芯股份:关于控股股东及其一致行动人权益变动触及1%刻度的提示性公告",
+      "detail_categories": "权益变动报告书",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "京东方A",
+      "code": "000725",
+      "art_code": "AN202611111831628625",
+      "title": "京东方Ａ:“25BOEK3“2026年付息公告",
+      "display_time": "2026-11-11 16:55:05:488",
+      "notice_date": "2026-11-12 00:00:00",
+      "column_names": [
+        "其他"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611111831628625",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1794387305.488,
+      "detail_anchor": "ann-AN202611111831628625",
+      "detail_url": "#ann-AN202611111831628625",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202611111831628625_1.pdf?1794416177000.pdf",
+      "notice_eitime": "2026-11-11 16:56:14",
+      "detail_title": "京东方Ａ:“25BOEK3“2026年付息公告",
+      "detail_categories": "其他",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    }
+  ],
+  "message": "发现 3 条新增公告，页面已更新。"
 }
