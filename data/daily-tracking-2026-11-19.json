@@ -1,13 +1,13 @@
 {
   "date": "2026-11-19",
-  "run_time": "2026-11-19 14:29:47 CST",
-  "run_clock": "14:29",
+  "run_time": "2026-11-19 14:35:07 CST",
+  "run_clock": "14:35",
   "companies": [
     {
       "name": "中芯国际",
       "codes": "688981 / 00981",
       "track": "晶圆代工、成熟制程、资本开支、国产替代、出口管制。",
-      "announcement": "中芯国际:2026Q3投资者关系活动记录表｜2026-11-17 17:39:03:745",
+      "announcement": "中芯国际:2026Q3投资者关系活动记录表｜2026-11-17 17:39:03:676",
       "follow": "继续跟踪 A/H 两地公告、产能利用率、毛利率和外部限制变化。",
       "announcement_link": "#ann-AN202611171831790424",
       "announcement_source": "页面内精排详情"
@@ -16,7 +16,7 @@
       "name": "东芯股份",
       "codes": "688110",
       "track": "SLC NAND、NOR、DRAM、小容量存储、库存和价格周期。",
-      "announcement": "东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年11月12日业绩说明会)｜2026-11-13 15:34:09:764",
+      "announcement": "东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年11月12日业绩说明会)｜2026-11-13 15:34:09:755",
       "follow": "观察存储价格、客户导入、产品结构和费用率变化。",
       "announcement_link": "#ann-AN202611131831689954",
       "announcement_source": "页面内精排详情"
@@ -25,7 +25,7 @@
       "name": "京东方A",
       "codes": "000725",
       "track": "LCD/OLED 面板价格、车载显示、IoT 创新业务和折旧压力。",
-      "announcement": "京东方Ａ:京东方科技集团股份有限公司公司债券临时受托管理事务报告｜2026-11-17 15:57:05:359",
+      "announcement": "京东方Ａ:京东方科技集团股份有限公司公司债券临时受托管理事务报告｜2026-11-17 15:57:05:461",
       "follow": "重点看面板价格修复、OLED 良率和下游补库持续性。",
       "announcement_link": "#ann-AN202611171831784458",
       "announcement_source": "页面内精排详情"
@@ -34,7 +34,7 @@
       "name": "中兴通讯",
       "codes": "000063 / 00763",
       "track": "通信设备、算力网络、服务器、运营商资本开支和海外合规。",
-      "announcement": "中兴通讯:中兴通讯股份有限公司2026年面向专业投资者公开发行科技创新可续期公司债券(第一期)在深圳证券交易所上市的公告｜2026-11-18 17:24:36:737",
+      "announcement": "中兴通讯:中兴通讯股份有限公司2026年面向专业投资者公开发行科技创新可续期公司债券(第一期)在深圳证券交易所上市的公告｜2026-11-18 17:24:36:639",
       "follow": "继续跟踪运营商招标、AI 算力产品、毛利结构和海外监管。",
       "announcement_link": "#ann-AN202611181831830669",
       "announcement_source": "页面内精排详情"
@@ -43,7 +43,7 @@
       "name": "联赢激光",
       "codes": "688518",
       "track": "锂电激光焊接、消费电子/半导体激光设备、订单和回款。",
-      "announcement": "联赢激光:投资者关系活动记录表2026年11月2日｜2026-11-03 18:08:42:612",
+      "announcement": "联赢激光:投资者关系活动记录表2026年11月2日｜2026-11-03 18:08:42:703",
       "follow": "观察新能源设备资本开支、订单兑现、应收账款和毛利修复。",
       "announcement_link": "#ann-AN202611031831375601",
       "announcement_source": "页面内精排详情"
@@ -183,7 +183,7 @@
       "code": "000063",
       "art_code": "AN202611181831830669",
       "title": "中兴通讯:中兴通讯股份有限公司2026年面向专业投资者公开发行科技创新可续期公司债券(第一期)在深圳证券交易所上市的公告",
-      "display_time": "2026-11-18 17:24:36:737",
+      "display_time": "2026-11-18 17:24:36:639",
       "notice_date": "2026-11-18 00:00:00",
       "column_names": [
         "其他",
@@ -192,7 +192,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611181831830669",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1794993876.737,
+      "sort_ts": 1794993876.639,
       "detail_anchor": "ann-AN202611181831830669",
       "detail_url": "#ann-AN202611181831830669",
       "detail_source": "页面内精排详情",
@@ -211,7 +211,7 @@
       "code": "688981",
       "art_code": "AN202611171831790424",
       "title": "中芯国际:2026Q3投资者关系活动记录表",
-      "display_time": "2026-11-17 17:39:03:745",
+      "display_time": "2026-11-17 17:39:03:676",
       "notice_date": "2026-11-17 00:00:00",
       "column_names": [
         "调研活动"
@@ -219,7 +219,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611171831790424",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1794908343.745,
+      "sort_ts": 1794908343.676,
       "detail_anchor": "ann-AN202611171831790424",
       "detail_url": "#ann-AN202611171831790424",
       "detail_source": "页面内精排详情",
@@ -238,7 +238,7 @@
       "code": "000725",
       "art_code": "AN202611171831784458",
       "title": "京东方Ａ:京东方科技集团股份有限公司公司债券临时受托管理事务报告",
-      "display_time": "2026-11-17 15:57:05:359",
+      "display_time": "2026-11-17 15:57:05:461",
       "notice_date": "2026-11-18 00:00:00",
       "column_names": [
         "其他",
@@ -247,7 +247,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611171831784458",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1794902225.359,
+      "sort_ts": 1794902225.461,
       "detail_anchor": "ann-AN202611171831784458",
       "detail_url": "#ann-AN202611171831784458",
       "detail_source": "页面内精排详情",
@@ -266,7 +266,7 @@
       "code": "688110",
       "art_code": "AN202611131831689954",
       "title": "东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年11月12日业绩说明会)",
-      "display_time": "2026-11-13 15:34:09:764",
+      "display_time": "2026-11-13 15:34:09:755",
       "notice_date": "2026-11-13 00:00:00",
       "column_names": [
         "调研活动"
@@ -274,7 +274,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611131831689954",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1794555249.764,
+      "sort_ts": 1794555249.755,
       "detail_anchor": "ann-AN202611131831689954",
       "detail_url": "#ann-AN202611131831689954",
       "detail_source": "页面内精排详情",
@@ -293,7 +293,7 @@
       "code": "688981",
       "art_code": "AN202611121831660506",
       "title": "中芯国际:港股公告:中芯国际截至2026年9月30日止三个月未经审核业绩公布",
-      "display_time": "2026-11-12 17:39:00:889",
+      "display_time": "2026-11-12 17:39:00:890",
       "notice_date": "2026-11-13 00:00:00",
       "column_names": [
         "其他"
@@ -301,10 +301,12 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611121831660506",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1794476340.889,
+      "sort_ts": 1794476340.89,
       "detail_anchor": "ann-AN202611121831660506",
       "detail_url": "#ann-AN202611121831660506",
       "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202611121831660506_1.pdf?1794505336000.pdf",
+      "notice_eitime": "2026-11-12 17:38:31",
       "detail_title": "中芯国际:港股公告:中芯国际截至2026年9月30日止三个月未经审核业绩公布",
       "detail_categories": "其他",
       "detail_focus": "业绩类事项，重点看收入、利润、毛利率、费用和非经常性损益变化。",
@@ -313,14 +315,14 @@
         "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
         "如属于公告事实变化，加入下一次投研复盘的关注清单。"
       ],
-      "detail_fetch_error": "Remote end closed connection without response"
+      "detail_fetch_error": ""
     },
     {
       "company": "中芯国际",
       "code": "688981",
       "art_code": "AN202611121831660505",
       "title": "中芯国际:中芯国际2026年第三季度报告",
-      "display_time": "2026-11-12 17:35:48:668",
+      "display_time": "2026-11-12 17:35:48:667",
       "notice_date": "2026-11-13 00:00:00",
       "column_names": [
         "三季度报告全文"
@@ -328,7 +330,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611121831660505",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1794476148.668,
+      "sort_ts": 1794476148.667,
       "detail_anchor": "ann-AN202611121831660505",
       "detail_url": "#ann-AN202611121831660505",
       "detail_source": "页面内精排详情",
@@ -349,7 +351,7 @@
       "code": "688981",
       "art_code": "AN202611121831660258",
       "title": "中芯国际:港股公告:翌日披露报表",
-      "display_time": "2026-11-12 17:27:51:722",
+      "display_time": "2026-11-12 17:27:51:720",
       "notice_date": "2026-11-13 00:00:00",
       "column_names": [
         "其他"
@@ -357,7 +359,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611121831660258",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1794475671.722,
+      "sort_ts": 1794475671.72,
       "detail_anchor": "ann-AN202611121831660258",
       "detail_url": "#ann-AN202611121831660258",
       "detail_source": "页面内精排详情",
@@ -378,7 +380,7 @@
       "code": "000725",
       "art_code": "AN202611121831656164",
       "title": "京东方Ａ:关于回购股份注销完成暨股份变动的公告",
-      "display_time": "2026-11-12 16:33:08:305",
+      "display_time": "2026-11-12 16:33:08:406",
       "notice_date": "2026-11-13 00:00:00",
       "column_names": [
         "股本变动",
@@ -388,7 +390,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611121831656164",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1794472388.305,
+      "sort_ts": 1794472388.406,
       "detail_anchor": "ann-AN202611121831656164",
       "detail_url": "#ann-AN202611121831656164",
       "detail_source": "页面内精排详情",
@@ -409,7 +411,7 @@
       "code": "688981",
       "art_code": "AN202611111831632515",
       "title": "中芯国际:港股公告:翌日披露报表",
-      "display_time": "2026-11-11 18:45:00:724",
+      "display_time": "2026-11-11 18:45:00:723",
       "notice_date": "2026-11-12 00:00:00",
       "column_names": [
         "其他"
@@ -417,7 +419,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611111831632515",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1794393900.724,
+      "sort_ts": 1794393900.723,
       "detail_anchor": "ann-AN202611111831632515",
       "detail_url": "#ann-AN202611111831632515",
       "detail_source": "页面内精排详情",
@@ -438,7 +440,7 @@
       "code": "688110",
       "art_code": "AN202611111831631690",
       "title": "东芯股份:关于控股股东及其一致行动人权益变动触及1%刻度的提示性公告",
-      "display_time": "2026-11-11 18:13:09:558",
+      "display_time": "2026-11-11 18:13:09:454",
       "notice_date": "2026-11-12 00:00:00",
       "column_names": [
         "权益变动报告书"
@@ -446,7 +448,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611111831631690",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1794391989.558,
+      "sort_ts": 1794391989.454,
       "detail_anchor": "ann-AN202611111831631690",
       "detail_url": "#ann-AN202611111831631690",
       "detail_source": "页面内精排详情",
@@ -467,7 +469,7 @@
       "code": "000725",
       "art_code": "AN202611111831628625",
       "title": "京东方Ａ:“25BOEK3“2026年付息公告",
-      "display_time": "2026-11-11 16:55:05:386",
+      "display_time": "2026-11-11 16:55:05:488",
       "notice_date": "2026-11-12 00:00:00",
       "column_names": [
         "其他"
@@ -475,7 +477,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611111831628625",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1794387305.386,
+      "sort_ts": 1794387305.488,
       "detail_anchor": "ann-AN202611111831628625",
       "detail_url": "#ann-AN202611111831628625",
       "detail_source": "页面内精排详情",
@@ -494,9 +496,38 @@
     {
       "company": "京东方A",
       "code": "000725",
+      "art_code": "AN202611101831596289",
+      "title": "京东方Ａ:股东权益变动的提示性公告",
+      "display_time": "2026-11-10 20:09:07:338",
+      "notice_date": "2026-11-11 00:00:00",
+      "column_names": [
+        "权益变动报告书"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611101831596289",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1794312547.338,
+      "detail_anchor": "ann-AN202611101831596289",
+      "detail_url": "#ann-AN202611101831596289",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202611101831596289_1.pdf?1794341423000.pdf",
+      "notice_eitime": "2026-11-10 20:10:08",
+      "detail_title": "京东方Ａ:股东权益变动的提示性公告",
+      "detail_categories": "权益变动报告书",
+      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "京东方A",
+      "code": "000725",
       "art_code": "AN202611101831596295",
       "title": "京东方Ａ:简式权益变动报告书(北京国有资本运营管理有限公司)",
-      "display_time": "2026-11-10 20:09:07:275",
+      "display_time": "2026-11-10 20:09:07:337",
       "notice_date": "2026-11-11 00:00:00",
       "column_names": [
         "权益变动报告书"
@@ -504,7 +535,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611101831596295",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1794312547.275,
+      "sort_ts": 1794312547.337,
       "detail_anchor": "ann-AN202611101831596295",
       "detail_url": "#ann-AN202611101831596295",
       "detail_source": "页面内精排详情",
@@ -521,38 +552,11 @@
       "detail_fetch_error": ""
     },
     {
-      "company": "京东方A",
-      "code": "000725",
-      "art_code": "AN202611101831596289",
-      "title": "京东方Ａ:股东权益变动的提示性公告",
-      "display_time": "2026-11-10 20:09:07:273",
-      "notice_date": "2026-11-11 00:00:00",
-      "column_names": [
-        "权益变动报告书"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611101831596289",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1794312547.273,
-      "detail_anchor": "ann-AN202611101831596289",
-      "detail_url": "#ann-AN202611101831596289",
-      "detail_source": "页面内精排详情",
-      "detail_title": "京东方Ａ:股东权益变动的提示性公告",
-      "detail_categories": "权益变动报告书",
-      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
-      "detail_followups": [
-        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
-        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
-        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
-      ],
-      "detail_fetch_error": "Remote end closed connection without response"
-    },
-    {
       "company": "东芯股份",
       "code": "688110",
       "art_code": "AN202611101831592955",
       "title": "东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年11月10日)",
-      "display_time": "2026-11-10 18:11:06:677",
+      "display_time": "2026-11-10 18:11:06:576",
       "notice_date": "2026-11-10 00:00:00",
       "column_names": [
         "调研活动"
@@ -560,10 +564,12 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611101831592955",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1794305466.677,
+      "sort_ts": 1794305466.576,
       "detail_anchor": "ann-AN202611101831592955",
       "detail_url": "#ann-AN202611101831592955",
       "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202611101831592955_1.pdf?1794334241000.pdf",
+      "notice_eitime": "2026-11-10 18:10:35",
       "detail_title": "东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年11月10日)",
       "detail_categories": "调研活动",
       "detail_focus": "投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。",
@@ -572,14 +578,14 @@
         "与上一期调研记录对比，判断公司表述是否发生变化。",
         "把可验证事实和管理层判断分开记录，避免把观点写成公告事实。"
       ],
-      "detail_fetch_error": "Remote end closed connection without response"
+      "detail_fetch_error": ""
     },
     {
       "company": "中兴通讯",
       "code": "000063",
       "art_code": "AN202611091831555141",
       "title": "中兴通讯:中兴通讯股份有限公司2026年面向专业投资者公开发行科技创新可续期公司债券(第一期)发行结果公告",
-      "display_time": "2026-11-09 17:18:45:477",
+      "display_time": "2026-11-09 17:18:45:374",
       "notice_date": "2026-11-09 00:00:00",
       "column_names": [
         "其他",
@@ -588,10 +594,12 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611091831555141",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1794215925.477,
+      "sort_ts": 1794215925.374,
       "detail_anchor": "ann-AN202611091831555141",
       "detail_url": "#ann-AN202611091831555141",
       "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202611091831555141_1.pdf?1794245790000.pdf",
+      "notice_eitime": "2026-11-09 17:18:20",
       "detail_title": "中兴通讯:中兴通讯股份有限公司2026年面向专业投资者公开发行科技创新可续期公司债券(第一期)发行结果公告",
       "detail_categories": "其他、一般债券发行结果",
       "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
@@ -600,14 +608,14 @@
         "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
         "如属于公告事实变化，加入下一次投研复盘的关注清单。"
       ],
-      "detail_fetch_error": "Remote end closed connection without response"
+      "detail_fetch_error": ""
     },
     {
       "company": "中兴通讯",
       "code": "000063",
       "art_code": "AN202611061831503348",
       "title": "中兴通讯:中兴通讯股份有限公司2026年面向专业投资者公开发行科技创新可续期公司债券(第一期)票面利率公告",
-      "display_time": "2026-11-06 20:05:39:770",
+      "display_time": "2026-11-06 20:05:39:666",
       "notice_date": "2026-11-06 00:00:00",
       "column_names": [
         "其他",
@@ -616,10 +624,12 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611061831503348",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1793966739.77,
+      "sort_ts": 1793966739.666,
       "detail_anchor": "ann-AN202611061831503348",
       "detail_url": "#ann-AN202611061831503348",
       "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202611061831503348_1.pdf?1793995946000.pdf",
+      "notice_eitime": "2026-11-06 20:05:04",
       "detail_title": "中兴通讯:中兴通讯股份有限公司2026年面向专业投资者公开发行科技创新可续期公司债券(第一期)票面利率公告",
       "detail_categories": "其他、一般债券票面利率公告",
       "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
@@ -628,14 +638,14 @@
         "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
         "如属于公告事实变化，加入下一次投研复盘的关注清单。"
       ],
-      "detail_fetch_error": "Remote end closed connection without response"
+      "detail_fetch_error": ""
     },
     {
       "company": "东芯股份",
       "code": "688110",
       "art_code": "AN202611061831502223",
       "title": "东芯股份:关于控股股东首次增持公司股份暨增持股份进展的公告",
-      "display_time": "2026-11-06 19:10:07:275",
+      "display_time": "2026-11-06 19:10:07:168",
       "notice_date": "2026-11-07 00:00:00",
       "column_names": [
         "股东/实际控制人股份增持"
@@ -643,7 +653,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611061831502223",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1793963407.275,
+      "sort_ts": 1793963407.168,
       "detail_anchor": "ann-AN202611061831502223",
       "detail_url": "#ann-AN202611061831502223",
       "detail_source": "页面内精排详情",
@@ -662,7 +672,7 @@
       "code": "000063",
       "art_code": "AN202611061831501162",
       "title": "中兴通讯:关于延长中兴通讯股份有限公司2026年面向专业投资者公开发行科技创新可续期公司债券(第一期)簿记建档时间的公告",
-      "display_time": "2026-11-06 18:30:36:793",
+      "display_time": "2026-11-06 18:30:36:690",
       "notice_date": "2026-11-06 00:00:00",
       "column_names": [
         "其他",
@@ -671,7 +681,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611061831501162",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1793961036.793,
+      "sort_ts": 1793961036.69,
       "detail_anchor": "ann-AN202611061831501162",
       "detail_url": "#ann-AN202611061831501162",
       "detail_source": "页面内精排详情",
@@ -690,7 +700,7 @@
       "code": "000063",
       "art_code": "AN202611051831450814",
       "title": "中兴通讯:中兴通讯股份有限公司2026年面向专业投资者公开发行公司债券更名公告",
-      "display_time": "2026-11-05 16:14:45:787",
+      "display_time": "2026-11-05 16:14:45:702",
       "notice_date": "2026-11-05 00:00:00",
       "column_names": [
         "其他",
@@ -699,7 +709,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611051831450814",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1793866485.787,
+      "sort_ts": 1793866485.702,
       "detail_anchor": "ann-AN202611051831450814",
       "detail_url": "#ann-AN202611051831450814",
       "detail_source": "页面内精排详情",
@@ -714,38 +724,11 @@
       "detail_fetch_error": "Remote end closed connection without response"
     },
     {
-      "company": "东芯股份",
-      "code": "688110",
-      "art_code": "AN202611031831375600",
-      "title": "东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年11月3日)",
-      "display_time": "2026-11-03 18:08:42:703",
-      "notice_date": "2026-11-03 00:00:00",
-      "column_names": [
-        "调研活动"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611031831375600",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1793700522.703,
-      "detail_anchor": "ann-AN202611031831375600",
-      "detail_url": "#ann-AN202611031831375600",
-      "detail_source": "页面内精排详情",
-      "detail_title": "东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年11月3日)",
-      "detail_categories": "调研活动",
-      "detail_focus": "投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。",
-      "detail_followups": [
-        "提取问答中涉及价格、产能、订单、客户、产品进度的表述。",
-        "与上一期调研记录对比，判断公司表述是否发生变化。",
-        "把可验证事实和管理层判断分开记录，避免把观点写成公告事实。"
-      ],
-      "detail_fetch_error": "Remote end closed connection without response"
-    },
-    {
       "company": "联赢激光",
       "code": "688518",
       "art_code": "AN202611031831375601",
       "title": "联赢激光:投资者关系活动记录表2026年11月2日",
-      "display_time": "2026-11-03 18:08:42:612",
+      "display_time": "2026-11-03 18:08:42:703",
       "notice_date": "2026-11-03 00:00:00",
       "column_names": [
         "调研活动"
@@ -753,7 +736,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611031831375601",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1793700522.612,
+      "sort_ts": 1793700522.703,
       "detail_anchor": "ann-AN202611031831375601",
       "detail_url": "#ann-AN202611031831375601",
       "detail_source": "页面内精排详情",
@@ -768,11 +751,26 @@
       "detail_fetch_error": "Remote end closed connection without response"
     },
     {
+      "company": "东芯股份",
+      "code": "688110",
+      "art_code": "AN202611031831375600",
+      "title": "东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年11月3日)",
+      "display_time": "2026-11-03 18:08:42:599",
+      "notice_date": "2026-11-03 00:00:00",
+      "column_names": [
+        "调研活动"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611031831375600",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1793700522.599
+    },
+    {
       "company": "联赢激光",
       "code": "688518",
       "art_code": "AN202610301831233329",
       "title": "联赢激光:深圳市联赢激光股份有限公司2026年第三季度报告",
-      "display_time": "2026-10-30 17:00:24:492",
+      "display_time": "2026-10-30 17:00:24:503",
       "notice_date": "2026-10-31 00:00:00",
       "column_names": [
         "三季度报告全文"
@@ -780,14 +778,14 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610301831233329",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1793350824.492
+      "sort_ts": 1793350824.503
     },
     {
       "company": "联赢激光",
       "code": "688518",
       "art_code": "AN202610201830719277",
       "title": "联赢激光:投资者关系活动记录表2026年10月19日",
-      "display_time": "2026-10-20 16:59:03:900",
+      "display_time": "2026-10-20 16:59:03:851",
       "notice_date": "2026-10-20 00:00:00",
       "column_names": [
         "调研活动"
@@ -795,14 +793,14 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610201830719277",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1792486743.9
+      "sort_ts": 1792486743.851
     },
     {
       "company": "联赢激光",
       "code": "688518",
       "art_code": "AN202610091830259645",
       "title": "联赢激光:深圳市联赢激光股份有限公司关于召开2026年半年度业绩说明会的公告",
-      "display_time": "2026-10-09 15:32:10:586",
+      "display_time": "2026-10-09 15:32:10:600",
       "notice_date": "2026-10-10 00:00:00",
       "column_names": [
         "其他"
@@ -810,14 +808,14 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202610091830259645",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1791531130.586
+      "sort_ts": 1791531130.6
     },
     {
       "company": "联赢激光",
       "code": "688518",
       "art_code": "AN202609171829511847",
       "title": "联赢激光:深圳市联赢激光股份有限公司2026年半年度权益分派实施公告",
-      "display_time": "2026-09-17 16:26:11:197",
+      "display_time": "2026-09-17 16:26:11:301",
       "notice_date": "2026-09-18 00:00:00",
       "column_names": [
         "分配方案实施"
@@ -825,7 +823,7 @@
       "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202609171829511847",
       "source": "东方财富公告中心",
       "fetch_error": false,
-      "sort_ts": 1789633571.197
+      "sort_ts": 1789633571.301
     }
   ],
   "company_news": [
@@ -880,6 +878,26 @@
       "sort_ts": 1794911160.0
     },
     {
+      "company": "东芯股份",
+      "title": "存储行情分化：2028平衡预期悬而未决，“利基赛道”已提前博弈",
+      "display_time": "2026-11-13 20:15:07",
+      "source": "东方财富公司资讯",
+      "relevance": "关键词匹配",
+      "url": "http://finance.eastmoney.com/a/202611133930880250.html",
+      "fetch_error": false,
+      "sort_ts": 1794572107.0
+    },
+    {
+      "company": "东芯股份",
+      "title": "【调研快报】东芯股份接待通过线上方式参与公司2026年第三季度业绩说明会的投资者调研",
+      "display_time": "2026-11-13 16:27:35",
+      "source": "东方财富公司资讯",
+      "relevance": "关键词匹配",
+      "url": "http://stock.eastmoney.com/a/202611133930707478.html",
+      "fetch_error": false,
+      "sort_ts": 1794558455.0
+    },
+    {
       "company": "联赢激光",
       "title": "月内涨近40%！这家锂电激光焊接龙头Q3净利润同比增超200%，新签订单已达成全年目标|机构调研",
       "display_time": "2026-11-10 17:41:23",
@@ -888,16 +906,6 @@
       "url": "http://finance.eastmoney.com/a/202611103927403211.html",
       "fetch_error": false,
       "sort_ts": 1794303683.0
-    },
-    {
-      "company": "东芯股份",
-      "title": "最新消息抓取失败：'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte",
-      "display_time": "",
-      "source": "东方财富公司资讯",
-      "relevance": "抓取失败",
-      "url": "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SH688110",
-      "fetch_error": true,
-      "sort_ts": 0
     },
     {
       "company": "SpaceX",
@@ -911,7 +919,7 @@
     }
   ],
   "announcement_alert": {
-    "checked_at": "2026-11-19 14:29:47 CST",
+    "checked_at": "2026-11-19 14:35:07 CST",
     "first_run": false,
     "new_count": 0,
     "baseline_new_count": 0,
