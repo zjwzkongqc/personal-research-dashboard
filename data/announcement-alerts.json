@@ -1,8 +1,67 @@
 {
-  "checked_at": "2026-11-20 15:00:58 CST",
+  "checked_at": "2026-11-23 09:03:31 CST",
   "first_run": false,
-  "new_count": 0,
+  "new_count": 2,
   "baseline_new_count": 0,
-  "items": [],
-  "message": "本次未发现相较上次检查的新增公告。"
+  "items": [
+    {
+      "company": "京东方A",
+      "code": "000725",
+      "art_code": "AN202611231831941790",
+      "title": "京东方Ａ:056-2026年11月20日投资者关系活动记录表",
+      "display_time": "2026-11-23 08:56:42:471",
+      "notice_date": "2026-11-23 00:00:00",
+      "column_names": [
+        "调研活动"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611231831941790",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1795395402.471,
+      "detail_anchor": "ann-AN202611231831941790",
+      "detail_url": "#ann-AN202611231831941790",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202611231831941790_1.pdf?1795424199000.pdf",
+      "notice_eitime": "2026-11-23 08:56:31",
+      "detail_title": "京东方Ａ:056-2026年11月20日投资者关系活动记录表",
+      "detail_categories": "调研活动",
+      "detail_focus": "投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。",
+      "detail_followups": [
+        "提取问答中涉及价格、产能、订单、客户、产品进度的表述。",
+        "与上一期调研记录对比，判断公司表述是否发生变化。",
+        "把可验证事实和管理层判断分开记录，避免把观点写成公告事实。"
+      ],
+      "detail_fetch_error": ""
+    },
+    {
+      "company": "京东方A",
+      "code": "000725",
+      "art_code": "AN202611201831896279",
+      "title": "京东方Ａ:关于回购公司股份的进展公告",
+      "display_time": "2026-11-20 16:23:04:465",
+      "notice_date": "2026-11-21 00:00:00",
+      "column_names": [
+        "回购进展情况"
+      ],
+      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611201831896279",
+      "source": "东方财富公告中心",
+      "fetch_error": false,
+      "sort_ts": 1795162984.465,
+      "detail_anchor": "ann-AN202611201831896279",
+      "detail_url": "#ann-AN202611201831896279",
+      "detail_source": "页面内精排详情",
+      "pdf_url": "https://pdf.dfcfw.com/pdf/H2_AN202611201831896279_1.pdf?1795191862000.pdf",
+      "notice_eitime": "2026-11-20 16:24:09",
+      "detail_title": "京东方Ａ:关于回购公司股份的进展公告",
+      "detail_categories": "回购进展情况",
+      "detail_focus": "股份回购相关事项，重点看回购金额、价格区间、进度和资金来源。",
+      "detail_followups": [
+        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
+        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
+        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
+      ],
+      "detail_fetch_error": ""
+    }
+  ],
+  "message": "发现 2 条新增公告，页面已更新。"
 }
