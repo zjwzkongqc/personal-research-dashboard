@@ -1,7 +1,7 @@
 {
   "date": "2026-11-25",
-  "run_time": "2026-11-25 09:52:24 CST",
-  "run_clock": "09:52",
+  "run_time": "2026-11-25 12:40:05 CST",
+  "run_clock": "12:40",
   "companies": [
     {
       "name": "中芯国际",
@@ -16,16 +16,16 @@
       "name": "东芯股份",
       "codes": "688110",
       "track": "SLC NAND、NOR、DRAM、小容量存储、库存和价格周期。",
-      "announcement": "东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年11月19日)｜2026-11-19 18:13:45:556",
+      "announcement": "公告抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
       "follow": "观察存储价格、客户导入、产品结构和费用率变化。",
-      "announcement_link": "#ann-AN202611191831865523",
-      "announcement_source": "页面内精排详情"
+      "announcement_link": "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=688110",
+      "announcement_source": "东方财富公告中心"
     },
     {
       "name": "京东方A",
       "codes": "000725",
       "track": "LCD/OLED 面板价格、车载显示、IoT 创新业务和折旧压力。",
-      "announcement": "公告抓取失败：<urlopen error _ssl.c:1112: The handshake operation timed out>",
+      "announcement": "公告抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
       "follow": "重点看面板价格修复、OLED 良率和下游补库持续性。",
       "announcement_link": "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=000725",
       "announcement_source": "东方财富公告中心"
@@ -179,141 +179,6 @@
   ],
   "announcements": [
     {
-      "company": "东芯股份",
-      "code": "688110",
-      "art_code": "AN202611191831865523",
-      "title": "东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年11月19日)",
-      "display_time": "2026-11-19 18:13:45:556",
-      "notice_date": "2026-11-19 00:00:00",
-      "column_names": [
-        "调研活动"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611191831865523",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1795083225.556,
-      "detail_anchor": "ann-AN202611191831865523",
-      "detail_url": "#ann-AN202611191831865523",
-      "detail_source": "页面内精排详情",
-      "detail_title": "东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年11月19日)",
-      "detail_categories": "调研活动",
-      "detail_focus": "投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。",
-      "detail_followups": [
-        "提取问答中涉及价格、产能、订单、客户、产品进度的表述。",
-        "与上一期调研记录对比，判断公司表述是否发生变化。",
-        "把可验证事实和管理层判断分开记录，避免把观点写成公告事实。"
-      ],
-      "detail_fetch_error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
-    },
-    {
-      "company": "东芯股份",
-      "code": "688110",
-      "art_code": "AN202611131831689954",
-      "title": "东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年11月12日业绩说明会)",
-      "display_time": "2026-11-13 15:34:09:752",
-      "notice_date": "2026-11-13 00:00:00",
-      "column_names": [
-        "调研活动"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611131831689954",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1794555249.752,
-      "detail_anchor": "ann-AN202611131831689954",
-      "detail_url": "#ann-AN202611131831689954",
-      "detail_source": "页面内精排详情",
-      "detail_title": "东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年11月12日业绩说明会)",
-      "detail_categories": "调研活动",
-      "detail_focus": "投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。",
-      "detail_followups": [
-        "提取问答中涉及价格、产能、订单、客户、产品进度的表述。",
-        "与上一期调研记录对比，判断公司表述是否发生变化。",
-        "把可验证事实和管理层判断分开记录，避免把观点写成公告事实。"
-      ],
-      "detail_fetch_error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
-    },
-    {
-      "company": "东芯股份",
-      "code": "688110",
-      "art_code": "AN202611111831631690",
-      "title": "东芯股份:关于控股股东及其一致行动人权益变动触及1%刻度的提示性公告",
-      "display_time": "2026-11-11 18:13:09:453",
-      "notice_date": "2026-11-12 00:00:00",
-      "column_names": [
-        "权益变动报告书"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611111831631690",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1794391989.453,
-      "detail_anchor": "ann-AN202611111831631690",
-      "detail_url": "#ann-AN202611111831631690",
-      "detail_source": "页面内精排详情",
-      "detail_title": "东芯股份:关于控股股东及其一致行动人权益变动触及1%刻度的提示性公告",
-      "detail_categories": "权益变动报告书",
-      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
-      "detail_followups": [
-        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
-        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
-        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
-      ],
-      "detail_fetch_error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
-    },
-    {
-      "company": "东芯股份",
-      "code": "688110",
-      "art_code": "AN202611101831592955",
-      "title": "东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年11月10日)",
-      "display_time": "2026-11-10 18:11:06:577",
-      "notice_date": "2026-11-10 00:00:00",
-      "column_names": [
-        "调研活动"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611101831592955",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1794305466.577,
-      "detail_anchor": "ann-AN202611101831592955",
-      "detail_url": "#ann-AN202611101831592955",
-      "detail_source": "页面内精排详情",
-      "detail_title": "东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年11月10日)",
-      "detail_categories": "调研活动",
-      "detail_focus": "投关沟通/调研记录，重点看管理层对行业、订单、价格、产能和经营节奏的回答。",
-      "detail_followups": [
-        "提取问答中涉及价格、产能、订单、客户、产品进度的表述。",
-        "与上一期调研记录对比，判断公司表述是否发生变化。",
-        "把可验证事实和管理层判断分开记录，避免把观点写成公告事实。"
-      ],
-      "detail_fetch_error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
-    },
-    {
-      "company": "东芯股份",
-      "code": "688110",
-      "art_code": "AN202611061831502223",
-      "title": "东芯股份:关于控股股东首次增持公司股份暨增持股份进展的公告",
-      "display_time": "2026-11-06 19:10:07:170",
-      "notice_date": "2026-11-07 00:00:00",
-      "column_names": [
-        "股东/实际控制人股份增持"
-      ],
-      "content_url": "https://np-cnotice-stock.eastmoney.com/api/content/ann?client_source=web&art_code=AN202611061831502223",
-      "source": "东方财富公告中心",
-      "fetch_error": false,
-      "sort_ts": 1793963407.17,
-      "detail_anchor": "ann-AN202611061831502223",
-      "detail_url": "#ann-AN202611061831502223",
-      "detail_source": "页面内精排详情",
-      "detail_title": "东芯股份:关于控股股东首次增持公司股份暨增持股份进展的公告",
-      "detail_categories": "股东/实际控制人股份增持",
-      "detail_focus": "公告事实已记录，重点打开原文核验事项背景、金额、时间节点和是否需要后续跟进。",
-      "detail_followups": [
-        "核验公告 PDF 原文，确认标题、披露时间、公告编号和附件是否一致。",
-        "判断是否影响公司基本面、治理结构、资金安排或市场预期。",
-        "如属于公告事实变化，加入下一次投研复盘的关注清单。"
-      ],
-      "detail_fetch_error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
-    },
-    {
       "company": "中芯国际",
       "code": "688981",
       "art_code": "FETCH_ERROR_688981",
@@ -329,10 +194,25 @@
       "sort_ts": 0
     },
     {
+      "company": "东芯股份",
+      "code": "688110",
+      "art_code": "FETCH_ERROR_688110",
+      "title": "公告抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "display_time": "",
+      "notice_date": "",
+      "column_names": [
+        "抓取失败"
+      ],
+      "content_url": "https://np-anotice-stock.eastmoney.com/api/security/ann?sr=-1&page_size=5&page_index=1&ann_type=A&client_source=web&stock_list=688110",
+      "source": "东方财富公告中心",
+      "fetch_error": true,
+      "sort_ts": 0
+    },
+    {
       "company": "京东方A",
       "code": "000725",
       "art_code": "FETCH_ERROR_000725",
-      "title": "公告抓取失败：<urlopen error _ssl.c:1112: The handshake operation timed out>",
+      "title": "公告抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
       "display_time": "",
       "notice_date": "",
       "column_names": [
@@ -386,66 +266,6 @@
       "sort_ts": 1795569587.0
     },
     {
-      "company": "中芯国际",
-      "title": "国产半导体设备有了自己的“质量标尺”",
-      "display_time": "2026-11-24 18:56:49",
-      "source": "东方财富公司资讯",
-      "relevance": "关键词匹配",
-      "url": "http://finance.eastmoney.com/a/202611243938587156.html",
-      "fetch_error": false,
-      "sort_ts": 1795517809.0
-    },
-    {
-      "company": "中兴通讯",
-      "title": "瑞银集团在中兴通讯的H股好仓比例上升0.35%至6.18%",
-      "display_time": "2026-11-24 17:19:00",
-      "source": "东方财富公司资讯",
-      "relevance": "关键词匹配",
-      "url": "http://finance.eastmoney.com/a/202611243938518542.html",
-      "fetch_error": false,
-      "sort_ts": 1795511940.0
-    },
-    {
-      "company": "中兴通讯",
-      "title": "上市公司重要座谈会！工业富联、佰维存储、立讯精密、汇川技术、中兴通讯等参加，深圳监管、金融机构全力支持",
-      "display_time": "2026-11-24 17:03:00",
-      "source": "东方财富公司资讯",
-      "relevance": "关键词匹配",
-      "url": "http://forex.eastmoney.com/a/202611243938501346.html",
-      "fetch_error": false,
-      "sort_ts": 1795510980.0
-    },
-    {
-      "company": "中芯国际",
-      "title": "科创板收评：科创50指数收涨1.81% 半导体板块涨幅居前",
-      "display_time": "2026-11-24 15:07:14",
-      "source": "东方财富公司资讯",
-      "relevance": "关键词匹配",
-      "url": "http://finance.eastmoney.com/a/202611243938407010.html",
-      "fetch_error": false,
-      "sort_ts": 1795504034.0
-    },
-    {
-      "company": "东芯股份",
-      "title": "【调研快报】东芯股份接待爱建证券等15家机构调研",
-      "display_time": "2026-11-19 18:44:50",
-      "source": "东方财富公司资讯",
-      "relevance": "关键词匹配",
-      "url": "http://stock.eastmoney.com/a/202611193935141479.html",
-      "fetch_error": false,
-      "sort_ts": 1795085090.0
-    },
-    {
-      "company": "东芯股份",
-      "title": "存储行情分化：2028平衡预期悬而未决，“利基赛道”已提前博弈",
-      "display_time": "2026-11-13 20:15:07",
-      "source": "东方财富公司资讯",
-      "relevance": "关键词匹配",
-      "url": "http://finance.eastmoney.com/a/202611133930880250.html",
-      "fetch_error": false,
-      "sort_ts": 1794572107.0
-    },
-    {
       "company": "联赢激光",
       "title": "月内涨近40%！这家锂电激光焊接龙头Q3净利润同比增超200%，新签订单已达成全年目标|机构调研",
       "display_time": "2026-11-10 17:41:23",
@@ -454,6 +274,36 @@
       "url": "http://finance.eastmoney.com/a/202611103927403211.html",
       "fetch_error": false,
       "sort_ts": 1794303683.0
+    },
+    {
+      "company": "中芯国际",
+      "title": "最新消息抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "display_time": "",
+      "source": "东方财富公司资讯",
+      "relevance": "抓取失败",
+      "url": "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SH688981",
+      "fetch_error": true,
+      "sort_ts": 0
+    },
+    {
+      "company": "东芯股份",
+      "title": "最新消息抓取失败：<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+      "display_time": "",
+      "source": "东方财富公司资讯",
+      "relevance": "抓取失败",
+      "url": "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SH688110",
+      "fetch_error": true,
+      "sort_ts": 0
+    },
+    {
+      "company": "中兴通讯",
+      "title": "最新消息抓取失败：'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte",
+      "display_time": "",
+      "source": "东方财富公司资讯",
+      "relevance": "抓取失败",
+      "url": "https://emweb.securities.eastmoney.com/PC_HSF10/NewsBulletin/PageAjax?code=SZ000063",
+      "fetch_error": true,
+      "sort_ts": 0
     },
     {
       "company": "SpaceX",
@@ -467,7 +317,7 @@
     }
   ],
   "announcement_alert": {
-    "checked_at": "2026-11-25 09:52:24 CST",
+    "checked_at": "2026-11-25 12:40:05 CST",
     "first_run": false,
     "new_count": 0,
     "baseline_new_count": 0,
