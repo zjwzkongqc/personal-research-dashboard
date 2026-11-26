@@ -1,0 +1,42 @@
+{
+  "updated_at": "2026-06-28T00:00:00+08:00",
+  "purpose": "personal research dashboard",
+  "companies": [
+    {
+      "name": "中芯国际",
+      "tickers": ["688981", "00981"],
+      "market": ["SSE STAR", "HKEX"],
+      "focus": ["晶圆代工", "成熟制程", "国产替代", "资本开支", "出口管制"]
+    },
+    {
+      "name": "东芯股份",
+      "tickers": ["688110"],
+      "market": ["SSE STAR"],
+      "focus": ["SLC NAND", "NOR", "DRAM", "存储周期", "客户导入"]
+    },
+    {
+      "name": "京东方A",
+      "tickers": ["000725"],
+      "market": ["SZSE"],
+      "focus": ["LCD", "OLED", "面板价格", "车载显示", "IoT"]
+    },
+    {
+      "name": "中兴通讯",
+      "tickers": ["000063", "00763"],
+      "market": ["SZSE", "HKEX"],
+      "focus": ["通信设备", "算力网络", "服务器", "运营商资本开支", "全球合规"]
+    },
+    {
+      "name": "联赢激光",
+      "tickers": ["688518"],
+      "market": ["SSE STAR"],
+      "focus": ["激光焊接", "锂电设备", "储能", "订单兑现", "回款"]
+    },
+    {
+      "name": "SpaceX",
+      "tickers": ["private"],
+      "market": ["private company"],
+      "focus": ["Starlink", "Starship", "发射节奏", "监管许可", "政府合同", "融资估值"]
+    }
+  ]
+}
